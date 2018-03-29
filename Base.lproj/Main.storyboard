@@ -99,7 +99,7 @@ Herbert Ross Brown House
                                 <color key="backgroundColor" red="0.39929699897766113" green="0.8100208044052124" blue="0.99895060062408447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Request Appointment"/>
                                 <connections>
-                                    <segue destination="Moy-7E-mNq" kind="show" id="f2T-LJ-Ia5"/>
+                                    <segue destination="Moy-7E-mNq" kind="show" id="9n0-9C-fNX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -214,10 +214,10 @@ Herbert Ross Brown House
             </objects>
             <point key="canvasLocation" x="2116" y="1119"/>
         </scene>
-        <!--View Controller-->
+        <!--Request Appointment Counseling-->
         <scene sceneID="5HT-m0-WQm">
             <objects>
-                <viewController id="Moy-7E-mNq" sceneMemberID="viewController">
+                <viewController id="Moy-7E-mNq" customClass="RequestAppointmentCounseling" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IM2-H7-nUH"/>
                         <viewControllerLayoutGuide type="bottom" id="rXa-Pz-4Pi"/>
@@ -296,9 +296,10 @@ Herbert Ross Brown House
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="availableText" destination="FBK-29-Ehy" id="njG-j7-lF6"/>
-                        <outlet property="msgNotes" destination="Lg5-L5-sX8" id="n6o-VR-Ecb"/>
-                        <outlet property="pickerView" destination="tWH-J9-LR9" id="Qpu-e1-aqk"/>
+                        <outlet property="availabilityText" destination="FBK-29-Ehy" id="N8R-Om-bbw"/>
+                        <outlet property="notesText" destination="Lg5-L5-sX8" id="cXM-1U-Ey2"/>
+                        <outlet property="pickerView" destination="tWH-J9-LR9" id="YUN-9b-9Bi"/>
+                        <outlet property="sendBtn" destination="SQT-E1-9NO" id="n3e-eG-7T5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GXy-QC-Fxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
