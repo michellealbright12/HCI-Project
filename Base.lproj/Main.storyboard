@@ -329,7 +329,7 @@ Herbert Ross Brown House
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpv-AM-faz">
                                 <rect key="frame" x="16" y="159" width="343" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">A counselor is on-call to respond after business hours (5:00 pm - 8:30 am) and on the weekends. To reach the counselor, please call Bowdoin Security at 207-725-3500 and ask to speak with the "on-call" counselor.   Calls to security are recorded and logged, but you do not need to identify yourself when requesting to speak to the counselor on-call.</mutableString>
+                                <string key="text">A counselor is on-call to respond after business hours (5:00 pm - 8:30 am) and on the weekends. To reach the counselor, please call Bowdoin Security at 207-725-3500 and ask to speak with the "on-call" counselor.   Calls to security are recorded and logged, but you do not need to identify yourself when requesting to speak to the counselor on-call.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -645,12 +645,66 @@ Friday 8:30a-5p</string>
                         <segue destination="zDW-x0-tsO" kind="relationship" relationship="viewControllers" id="NRP-la-bRm"/>
                         <segue destination="zYq-Yy-efg" kind="relationship" relationship="viewControllers" id="Yi1-ma-bak"/>
                         <segue destination="ffQ-cV-xVD" kind="relationship" relationship="viewControllers" id="pyI-yG-Wsj"/>
-                        <segue destination="4eZ-P3-zEu" kind="relationship" relationship="viewControllers" id="mUG-TD-lGl"/>
+                        <segue destination="TCs-a4-DYe" kind="relationship" relationship="viewControllers" id="Djl-mt-Oku"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-40" y="20"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="yBT-a3-Lmz">
+            <objects>
+                <viewController id="Ij2-eM-bHG" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lzc-UF-oFn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fuu-9A-oVi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rcq-8x-Fk8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-Iv-vuW">
+                                <rect key="frame" x="43" y="153" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C55-pq-lTN">
+                                <rect key="frame" x="43" y="213" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-If-fOj">
+                                <rect key="frame" x="166" y="106" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-tZ-h22">
+                                <rect key="frame" x="168" y="302" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="buttontapped:" destination="Ij2-eM-bHG" eventType="touchUpInside" id="bC7-tA-d7J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dop-e5-DYP"/>
+                    <connections>
+                        <outlet property="passwordfield" destination="C55-pq-lTN" id="4KF-Rb-2QN"/>
+                        <outlet property="usernamefield" destination="Kk8-Iv-vuW" id="Cy3-J6-Fni"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3O-bh-FEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="-922"/>
         </scene>
         <!--Profile-->
         <scene sceneID="uPT-Ez-1zY">
@@ -665,7 +719,7 @@ Friday 8:30a-5p</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOc-yc-dcg">
-                                <rect key="frame" x="127" y="59" width="49" height="53"/>
+                                <rect key="frame" x="163" y="57" width="49" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -678,7 +732,7 @@ Friday 8:30a-5p</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKj-IM-hpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773.60000000000002" y="-901.79910044977521"/>
+            <point key="canvasLocation" x="2116" y="-922"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MfZ-gP-aCq">
@@ -857,7 +911,6 @@ Resources</string>
         <!--Counseling Center-->
         <scene sceneID="agL-nq-ZC5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nXV-Uf-vhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zDW-x0-tsO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Counseling Center" image="Counseling" id="QYD-Yh-xiK"/>
                     <toolbarItems/>
@@ -869,8 +922,27 @@ Resources</string>
                         <segue destination="4vX-5X-gDC" kind="relationship" relationship="rootViewController" id="YNp-pU-wJ9"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXV-Uf-vhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="1119"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="R7m-CL-eKs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TCs-a4-DYe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="Sur-1o-B6K"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wje-iO-uos">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ij2-eM-bHG" kind="relationship" relationship="rootViewController" id="82L-s3-Tse"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHR-ey-kTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772.79999999999995" y="-922.03898050974522"/>
         </scene>
     </scenes>
     <resources>
