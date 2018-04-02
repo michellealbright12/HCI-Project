@@ -14,6 +14,11 @@
 
 @implementation ProfileViewController
 
+- (IBAction)buttontapped:(id)sender; {
+    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"LOGGEDIN"];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;

@@ -730,7 +730,11 @@ Friday 8:30a-5p</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="xwb-P4-MB7">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="muA-mq-I1d"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="muA-mq-I1d">
+                            <connections>
+                                <action selector="buttontapped:" destination="4eZ-P3-zEu" id="7mr-5t-Nvo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKj-IM-hpB" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -16,12 +16,10 @@
 
 - (IBAction)buttontapped:(id)sender; {
     if ([[infodictionary objectForKey:usernamefield.text]isEqualToString:passwordfield.text]) {
-        //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Correct Password" message:@"The password is correct" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
-        //[alert show];
-        //[self showViewController:(UIViewController *)@"ProfileViewController" sender: self];
+        [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
         [self performSegueWithIdentifier:@"Login" sender:self];
     } else {
-        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"The password is incorrect" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Incorrect username or password." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
         [alert2 show];
     }
 }
@@ -29,6 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     infodictionary = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"password", nil] forKeys:[NSArray arrayWithObjects:@"username", nil]];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"LOGGEDIN"] == true) {
+        [self performSegueWithIdentifier:@"Login" sender:self];
+    }
     // Do any additional setup after loading the view.
 }
 
