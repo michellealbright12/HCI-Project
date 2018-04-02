@@ -13,8 +13,6 @@
 		0A87718E20696E4100EEA672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A87718C20696E4100EEA672 /* Main.storyboard */; };
 		0A87719020696E4100EEA672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A87718F20696E4100EEA672 /* Assets.xcassets */; };
 		0A87719320696E4100EEA672 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A87719120696E4100EEA672 /* LaunchScreen.storyboard */; };
-		0A87719E20696E4100EEA672 /* HCI_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A87719D20696E4100EEA672 /* HCI_ProjectTests.m */; };
-		0A8771A920696E4100EEA672 /* HCI_ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8771A820696E4100EEA672 /* HCI_ProjectUITests.m */; };
 		0A8771C0206AE4B200EEA672 /* BuckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8771B7206AE4B200EEA672 /* BuckViewController.m */; };
 		0A8771C1206AE4B200EEA672 /* MJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8771B9206AE4B200EEA672 /* MJDetailViewController.m */; };
 		0A8771C2206AE4B200EEA672 /* MJDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8771BA206AE4B200EEA672 /* MJDetailViewController.xib */; };
@@ -24,6 +22,8 @@
 		0A87720A206B0B3000EEA672 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A877209206B0B3000EEA672 /* MessageUI.framework */; };
 		0A9B59D7206BCA1B00B09F2A /* RequestAppointmentHealth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59D6206BCA1A00B09F2A /* RequestAppointmentHealth.m */; };
 		0A9B59E6206DA46100B09F2A /* RequestAppointmentCounseling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59E5206DA46100B09F2A /* RequestAppointmentCounseling.m */; };
+		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
+		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +55,7 @@
 		0A87719220696E4100EEA672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A87719420696E4100EEA672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A87719920696E4100EEA672 /* HCI ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HCI ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A87719D20696E4100EEA672 /* HCI_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCI_ProjectTests.m; sourceTree = "<group>"; };
-		0A87719F20696E4100EEA672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8771A420696E4100EEA672 /* HCI ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HCI ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A8771A820696E4100EEA672 /* HCI_ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCI_ProjectUITests.m; sourceTree = "<group>"; };
-		0A8771AA20696E4100EEA672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8771B6206AE4B200EEA672 /* BuckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuckViewController.h; sourceTree = "<group>"; };
 		0A8771B7206AE4B200EEA672 /* BuckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuckViewController.m; sourceTree = "<group>"; };
 		0A8771B8206AE4B200EEA672 /* MJDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDetailViewController.h; sourceTree = "<group>"; };
@@ -75,6 +71,10 @@
 		0A9B59D6206BCA1A00B09F2A /* RequestAppointmentHealth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestAppointmentHealth.m; sourceTree = "<group>"; };
 		0A9B59E4206DA46100B09F2A /* RequestAppointmentCounseling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestAppointmentCounseling.h; sourceTree = "<group>"; };
 		0A9B59E5206DA46100B09F2A /* RequestAppointmentCounseling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestAppointmentCounseling.m; sourceTree = "<group>"; };
+		3CFEFB18207161D4004B2654 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3CFEFB19207161D4004B2654 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3CFEFB1B20717A35004B2654 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		3CFEFB1C20717A35004B2654 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,6 @@
 			children = (
 				0A877209206B0B3000EEA672 /* MessageUI.framework */,
 				0A87717F20696E4100EEA672 /* HCI Project */,
-				0A87719C20696E4100EEA672 /* HCI ProjectTests */,
-				0A8771A720696E4100EEA672 /* HCI ProjectUITests */,
 				0A87717E20696E4100EEA672 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,6 +133,10 @@
 				0A8771BB206AE4B200EEA672 /* MJPopupBackgroundView.h */,
 				0A8771BC206AE4B200EEA672 /* MJPopupBackgroundView.m */,
 				0A8771BD206AE4B200EEA672 /* UIViewController+MJPopupViewController.h */,
+				3CFEFB18207161D4004B2654 /* LoginViewController.h */,
+				3CFEFB19207161D4004B2654 /* LoginViewController.m */,
+				3CFEFB1B20717A35004B2654 /* ProfileViewController.h */,
+				3CFEFB1C20717A35004B2654 /* ProfileViewController.m */,
 				0A8771BE206AE4B200EEA672 /* UIViewController+MJPopupViewController.m */,
 				0A87718320696E4100EEA672 /* AppDelegate.h */,
 				0A87718420696E4100EEA672 /* AppDelegate.m */,
@@ -151,7 +153,7 @@
 				0A87719420696E4100EEA672 /* Info.plist */,
 				0A87718020696E4100EEA672 /* Supporting Files */,
 			);
-			path = "HCI Project";
+			name = "HCI Project";
 			sourceTree = "<group>";
 		};
 		0A87718020696E4100EEA672 /* Supporting Files */ = {
@@ -160,24 +162,6 @@
 				0A87718120696E4100EEA672 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0A87719C20696E4100EEA672 /* HCI ProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				0A87719D20696E4100EEA672 /* HCI_ProjectTests.m */,
-				0A87719F20696E4100EEA672 /* Info.plist */,
-			);
-			path = "HCI ProjectTests";
-			sourceTree = "<group>";
-		};
-		0A8771A720696E4100EEA672 /* HCI ProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A8771A820696E4100EEA672 /* HCI_ProjectUITests.m */,
-				0A8771AA20696E4100EEA672 /* Info.plist */,
-			);
-			path = "HCI ProjectUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +231,7 @@
 				TargetAttributes = {
 					0A87717C20696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = SPKL99M6VN;
+						DevelopmentTeam = 58KQWW3M7K;
 					};
 					0A87719820696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -317,9 +301,11 @@
 				0A87718B20696E4100EEA672 /* HealthCenterViewController.m in Sources */,
 				0A87718520696E4100EEA672 /* AppDelegate.m in Sources */,
 				0A8771C1206AE4B200EEA672 /* MJDetailViewController.m in Sources */,
+				3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */,
 				0A87718220696E4100EEA672 /* main.m in Sources */,
 				0A8771C4206AE4B200EEA672 /* UIViewController+MJPopupViewController.m in Sources */,
 				0A8771C0206AE4B200EEA672 /* BuckViewController.m in Sources */,
+				3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */,
 				0A8771C3206AE4B200EEA672 /* MJPopupBackgroundView.m in Sources */,
 				0A9B59E6206DA46100B09F2A /* RequestAppointmentCounseling.m in Sources */,
 			);
@@ -329,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A87719E20696E4100EEA672 /* HCI_ProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A8771A920696E4100EEA672 /* HCI_ProjectUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,8 +464,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SPKL99M6VN;
-				INFOPLIST_FILE = "HCI Project/Info.plist";
+				DEVELOPMENT_TEAM = 58KQWW3M7K;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,8 +476,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SPKL99M6VN;
-				INFOPLIST_FILE = "HCI Project/Info.plist";
+				DEVELOPMENT_TEAM = 58KQWW3M7K;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";

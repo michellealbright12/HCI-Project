@@ -700,16 +700,17 @@ Friday 8:30a-5p</string>
                     <connections>
                         <outlet property="passwordfield" destination="C55-pq-lTN" id="4KF-Rb-2QN"/>
                         <outlet property="usernamefield" destination="Kk8-Iv-vuW" id="Cy3-J6-Fni"/>
+                        <segue destination="4eZ-P3-zEu" kind="show" identifier="Login" id="I9k-kR-Y71"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3O-bh-FEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1462" y="-922"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="uPT-Ez-1zY">
             <objects>
-                <viewController id="4eZ-P3-zEu" sceneMemberID="viewController">
+                <viewController id="4eZ-P3-zEu" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bcH-bJ-xOU"/>
                         <viewControllerLayoutGuide type="bottom" id="seS-Ho-ej9"/>
@@ -728,7 +729,9 @@ Friday 8:30a-5p</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="profileIcon" id="jdM-v6-0QI"/>
+                    <navigationItem key="navigationItem" id="xwb-P4-MB7">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="muA-mq-I1d"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKj-IM-hpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -950,6 +953,5 @@ Resources</string>
         <image name="Counseling" width="29" height="29"/>
         <image name="HealthCenter" width="29" height="29"/>
         <image name="Selfcare" width="29" height="29"/>
-        <image name="profileIcon" width="29" height="29"/>
     </resources>
 </document>
