@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
     // Do any additional setup after loading the view.
 }
 

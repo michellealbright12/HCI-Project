@@ -705,7 +705,7 @@ Friday 8:30a-5p</string>
                     <connections>
                         <outlet property="passwordfield" destination="C55-pq-lTN" id="4KF-Rb-2QN"/>
                         <outlet property="usernamefield" destination="Kk8-Iv-vuW" id="Cy3-J6-Fni"/>
-                        <segue destination="4eZ-P3-zEu" kind="show" identifier="Login" id="I9k-kR-Y71"/>
+                        <segue destination="4eZ-P3-zEu" kind="show" identifier="Login" customClass="LoginSegue" id="I9k-kR-Y71"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3O-bh-FEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
