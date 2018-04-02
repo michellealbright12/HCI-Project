@@ -19,9 +19,18 @@
         [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
         [self performSegueWithIdentifier:@"Login" sender:self];
     } else {
-        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Incorrect username or password." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Invalid username or password." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
         [alert2 show];
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear];
+    //infodictionary = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"password", nil] forKeys:[NSArray arrayWithObjects:@"username", nil]];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"LOGGEDIN"] == true) {
+        [self performSegueWithIdentifier:@"Login" sender:self];
+    }
+    // Do any additional setup after loading the view.
 }
 
 - (void)viewDidLoad {

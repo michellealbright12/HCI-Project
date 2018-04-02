@@ -640,6 +640,11 @@ Friday 8:30a-5p</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="QAA-iX-FcQ" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="zDW-x0-tsO" kind="relationship" relationship="viewControllers" id="NRP-la-bRm"/>

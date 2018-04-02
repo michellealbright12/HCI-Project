@@ -24,6 +24,7 @@
 		0A9B59E6206DA46100B09F2A /* RequestAppointmentCounseling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59E5206DA46100B09F2A /* RequestAppointmentCounseling.m */; };
 		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
+		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		3CFEFB19207161D4004B2654 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CFEFB1B20717A35004B2654 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		3CFEFB1C20717A35004B2654 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		3CFEFB1E2071E8BA004B2654 /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		3CFEFB1F2071E8BA004B2654 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				3CFEFB19207161D4004B2654 /* LoginViewController.m */,
 				3CFEFB1B20717A35004B2654 /* ProfileViewController.h */,
 				3CFEFB1C20717A35004B2654 /* ProfileViewController.m */,
+				3CFEFB1E2071E8BA004B2654 /* UserInfo.h */,
+				3CFEFB1F2071E8BA004B2654 /* UserInfo.m */,
 				0A8771BE206AE4B200EEA672 /* UIViewController+MJPopupViewController.m */,
 				0A87718320696E4100EEA672 /* AppDelegate.h */,
 				0A87718420696E4100EEA672 /* AppDelegate.m */,
@@ -301,6 +306,7 @@
 				0A87718B20696E4100EEA672 /* HealthCenterViewController.m in Sources */,
 				0A87718520696E4100EEA672 /* AppDelegate.m in Sources */,
 				0A8771C1206AE4B200EEA672 /* MJDetailViewController.m in Sources */,
+				3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */,
 				3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */,
 				0A87718220696E4100EEA672 /* main.m in Sources */,
 				0A8771C4206AE4B200EEA672 /* UIViewController+MJPopupViewController.m in Sources */,
