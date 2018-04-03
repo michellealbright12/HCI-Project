@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginViewController : UIViewController {
-    IBOutlet UITextField *usernamefield;
-    IBOutlet UITextField *passwordfield;
-    
     NSDictionary *infodictionary;
 }
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+
 - (IBAction)buttontapped:(id)sender;
 
 @end

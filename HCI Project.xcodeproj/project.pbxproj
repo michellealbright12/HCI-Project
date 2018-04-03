@@ -30,6 +30,7 @@
 		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
+		3CFEFB232072A6F2004B2654 /* LoginSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB222072A6F2004B2654 /* LoginSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		3CFEFB1C20717A35004B2654 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		3CFEFB1E2071E8BA004B2654 /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		3CFEFB1F2071E8BA004B2654 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		3CFEFB212072A6F2004B2654 /* LoginSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginSegue.h; sourceTree = "<group>"; };
+		3CFEFB222072A6F2004B2654 /* LoginSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				3CFEFB19207161D4004B2654 /* LoginViewController.m */,
 				3CFEFB1B20717A35004B2654 /* ProfileViewController.h */,
 				3CFEFB1C20717A35004B2654 /* ProfileViewController.m */,
+				3CFEFB212072A6F2004B2654 /* LoginSegue.h */,
+				3CFEFB222072A6F2004B2654 /* LoginSegue.m */,
 				3CFEFB1E2071E8BA004B2654 /* UserInfo.h */,
 				3CFEFB1F2071E8BA004B2654 /* UserInfo.m */,
 				0A8771BE206AE4B200EEA672 /* UIViewController+MJPopupViewController.m */,
@@ -339,6 +344,7 @@
 				3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */,
 				0A87718220696E4100EEA672 /* main.m in Sources */,
 				0A8771C4206AE4B200EEA672 /* UIViewController+MJPopupViewController.m in Sources */,
+				3CFEFB232072A6F2004B2654 /* LoginSegue.m in Sources */,
 				0A8771C0206AE4B200EEA672 /* BuckViewController.m in Sources */,
 				3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */,
 				0A8771C3206AE4B200EEA672 /* MJPopupBackgroundView.m in Sources */,

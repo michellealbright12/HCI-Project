@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserInfo.h"
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController {
+    UserInfo *user;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *idNumLabel;
 
 @end
