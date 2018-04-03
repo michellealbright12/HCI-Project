@@ -703,8 +703,8 @@ Friday 8:30a-5p</string>
                     </view>
                     <navigationItem key="navigationItem" id="dop-e5-DYP"/>
                     <connections>
-                        <outlet property="passwordfield" destination="C55-pq-lTN" id="4KF-Rb-2QN"/>
-                        <outlet property="usernamefield" destination="Kk8-Iv-vuW" id="Cy3-J6-Fni"/>
+                        <outlet property="passwordField" destination="C55-pq-lTN" id="xEf-6A-Pqg"/>
+                        <outlet property="usernameField" destination="Kk8-Iv-vuW" id="NYG-87-hlC"/>
                         <segue destination="4eZ-P3-zEu" kind="show" identifier="Login" customClass="LoginSegue" id="I9k-kR-Y71"/>
                     </connections>
                 </viewController>
@@ -731,6 +731,27 @@ Friday 8:30a-5p</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAP-le-9i2">
+                                <rect key="frame" x="16" y="136" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-0g-sDz">
+                                <rect key="frame" x="16" y="188" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BG-x0-Lnl">
+                                <rect key="frame" x="16" y="239" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -741,10 +762,15 @@ Friday 8:30a-5p</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameLabel" destination="rAP-le-9i2" id="xsu-iM-yaY"/>
+                        <outlet property="idNumLabel" destination="5BG-x0-Lnl" id="DPj-ug-j7h"/>
+                        <outlet property="lastNameLabel" destination="FOJ-0g-sDz" id="Tg9-ml-Iqq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKj-IM-hpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="-922"/>
+            <point key="canvasLocation" x="2116" y="-922.48875562218893"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MfZ-gP-aCq">

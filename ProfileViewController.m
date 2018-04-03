@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "UserInfo.h"
 
 @interface ProfileViewController ()
 
@@ -20,9 +21,16 @@
 }
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
     self.navigationItem.hidesBackButton = YES;
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
+    user = [[UserInfo alloc] initWithFirstName:@"John" withLastName:@"Smith" withIdNum:@"B1111"];
+    
+    self.firstNameLabel.text = [@"First Name: " stringByAppendingString:user.getFirstName];
+    self.lastNameLabel.text = [@"Last Name: " stringByAppendingString:user.getLastName];
+    self.idNumLabel.text = [@"ID Number: " stringByAppendingString:user.getIdNum];
     // Do any additional setup after loading the view.
 }
 

@@ -15,8 +15,10 @@
 @implementation LoginViewController
 
 - (IBAction)buttontapped:(id)sender; {
-    if ([[infodictionary objectForKey:usernamefield.text]isEqualToString:passwordfield.text]) {
+    if ([[infodictionary objectForKey:_usernameField.text]isEqualToString:_passwordField.text]) {
         [self performSegueWithIdentifier:@"Login" sender:self];
+        self.usernameField.text = nil;
+        self.passwordField.text = nil;
     } else {
         UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Login Failed" message:@"Invalid username or password." delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
         [alert2 show];
@@ -29,8 +31,8 @@
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"LOGGEDIN"] == true) {
         [self performSegueWithIdentifier:@"Login" sender:self];
     }
-    usernamefield.text = nil;
-    passwordfield.text = nil;
+    self.usernameField.text = nil;
+    self.passwordField.text = nil;
     // Do any additional setup after loading the view.
 }
 
