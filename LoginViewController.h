@@ -14,7 +14,6 @@
     
     NSDictionary *infodictionary;
 }
-
 - (IBAction)buttontapped:(id)sender;
 
 @end

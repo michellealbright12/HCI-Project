@@ -22,6 +22,11 @@
 		0A87720A206B0B3000EEA672 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A877209206B0B3000EEA672 /* MessageUI.framework */; };
 		0A9B59D7206BCA1B00B09F2A /* RequestAppointmentHealth.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59D6206BCA1A00B09F2A /* RequestAppointmentHealth.m */; };
 		0A9B59E6206DA46100B09F2A /* RequestAppointmentCounseling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59E5206DA46100B09F2A /* RequestAppointmentCounseling.m */; };
+		0A9B59E92072A16B00B09F2A /* CounselingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59E82072A16B00B09F2A /* CounselingViewController.m */; };
+		0A9B59EC2073232D00B09F2A /* MulticulturalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59EB2073232D00B09F2A /* MulticulturalViewController.m */; };
+		0A9B59EF2073AF9E00B09F2A /* SWAGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59EE2073AF9E00B09F2A /* SWAGController.m */; };
+		0A9B59F22073B2BD00B09F2A /* PeerHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */; };
+		0A9B59F52073C3DB00B09F2A /* OtherResourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */; };
 		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
@@ -72,6 +77,16 @@
 		0A9B59D6206BCA1A00B09F2A /* RequestAppointmentHealth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestAppointmentHealth.m; sourceTree = "<group>"; };
 		0A9B59E4206DA46100B09F2A /* RequestAppointmentCounseling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestAppointmentCounseling.h; sourceTree = "<group>"; };
 		0A9B59E5206DA46100B09F2A /* RequestAppointmentCounseling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestAppointmentCounseling.m; sourceTree = "<group>"; };
+		0A9B59E72072A16B00B09F2A /* CounselingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounselingViewController.h; sourceTree = "<group>"; };
+		0A9B59E82072A16B00B09F2A /* CounselingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounselingViewController.m; sourceTree = "<group>"; };
+		0A9B59EA2073232D00B09F2A /* MulticulturalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MulticulturalViewController.h; sourceTree = "<group>"; };
+		0A9B59EB2073232D00B09F2A /* MulticulturalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MulticulturalViewController.m; sourceTree = "<group>"; };
+		0A9B59ED2073AF9E00B09F2A /* SWAGController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWAGController.h; sourceTree = "<group>"; };
+		0A9B59EE2073AF9E00B09F2A /* SWAGController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWAGController.m; sourceTree = "<group>"; };
+		0A9B59F02073B2BD00B09F2A /* PeerHealthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerHealthViewController.h; sourceTree = "<group>"; };
+		0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerHealthViewController.m; sourceTree = "<group>"; };
+		0A9B59F32073C3DB00B09F2A /* OtherResourcesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherResourcesViewController.h; sourceTree = "<group>"; };
+		0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherResourcesViewController.m; sourceTree = "<group>"; };
 		3CFEFB18207161D4004B2654 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3CFEFB19207161D4004B2654 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CFEFB1B20717A35004B2654 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -153,6 +168,16 @@
 				0A87718920696E4100EEA672 /* HealthCenterViewController.h */,
 				0A87718A20696E4100EEA672 /* HealthCenterViewController.m */,
 				0A87718C20696E4100EEA672 /* Main.storyboard */,
+				0A9B59F32073C3DB00B09F2A /* OtherResourcesViewController.h */,
+				0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */,
+				0A9B59F02073B2BD00B09F2A /* PeerHealthViewController.h */,
+				0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */,
+				0A9B59ED2073AF9E00B09F2A /* SWAGController.h */,
+				0A9B59EE2073AF9E00B09F2A /* SWAGController.m */,
+				0A9B59EA2073232D00B09F2A /* MulticulturalViewController.h */,
+				0A9B59EB2073232D00B09F2A /* MulticulturalViewController.m */,
+				0A9B59E72072A16B00B09F2A /* CounselingViewController.h */,
+				0A9B59E82072A16B00B09F2A /* CounselingViewController.m */,
 				0A87718F20696E4100EEA672 /* Assets.xcassets */,
 				0A87719120696E4100EEA672 /* LaunchScreen.storyboard */,
 				0A87719420696E4100EEA672 /* Info.plist */,
@@ -236,7 +261,7 @@
 				TargetAttributes = {
 					0A87717C20696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 58KQWW3M7K;
+						DevelopmentTeam = SPKL99M6VN;
 					};
 					0A87719820696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -302,10 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9B59EC2073232D00B09F2A /* MulticulturalViewController.m in Sources */,
 				0A9B59D7206BCA1B00B09F2A /* RequestAppointmentHealth.m in Sources */,
 				0A87718B20696E4100EEA672 /* HealthCenterViewController.m in Sources */,
+				0A9B59F52073C3DB00B09F2A /* OtherResourcesViewController.m in Sources */,
 				0A87718520696E4100EEA672 /* AppDelegate.m in Sources */,
+				0A9B59E92072A16B00B09F2A /* CounselingViewController.m in Sources */,
 				0A8771C1206AE4B200EEA672 /* MJDetailViewController.m in Sources */,
+				0A9B59F22073B2BD00B09F2A /* PeerHealthViewController.m in Sources */,
 				3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */,
 				3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */,
 				0A87718220696E4100EEA672 /* main.m in Sources */,
@@ -314,6 +343,7 @@
 				3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */,
 				0A8771C3206AE4B200EEA672 /* MJPopupBackgroundView.m in Sources */,
 				0A9B59E6206DA46100B09F2A /* RequestAppointmentCounseling.m in Sources */,
+				0A9B59EF2073AF9E00B09F2A /* SWAGController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 58KQWW3M7K;
+				DEVELOPMENT_TEAM = SPKL99M6VN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
@@ -482,7 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 58KQWW3M7K;
+				DEVELOPMENT_TEAM = SPKL99M6VN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";

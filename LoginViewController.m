@@ -24,14 +24,6 @@
     }
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear];
-    //infodictionary = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"password", nil] forKeys:[NSArray arrayWithObjects:@"username", nil]];
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"LOGGEDIN"] == true) {
-        [self performSegueWithIdentifier:@"Login" sender:self];
-    }
-    // Do any additional setup after loading the view.
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
