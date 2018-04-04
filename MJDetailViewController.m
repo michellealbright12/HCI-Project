@@ -4,6 +4,7 @@
 //
 //  Created by Matt Memmo on 8/19/15.
 //  Copyright (c) 2015 RWS. All rights reserved.
+//  Edited by Chad Carrera on 4/3/2018
 //
 
 #import "MJDetailViewController.h"
@@ -14,11 +15,14 @@
 @end
 
 @implementation MJDetailViewController
-@synthesize popDate;
+@synthesize popDate, number, event;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSString *integerAsString = [@(dateNum) stringValue];
+    event.text = dailyActivity;
+    number.text = integerAsString;
     popDate.text=parseSpot3[1];
 }
 

@@ -5,6 +5,7 @@
 //  Created by Matt Memmo on 12/30/14.
 //  Copyright (c) 2014 RWS. All rights reserved.
 //  Edited by Michelle Albright on 3/28/18.
+//  Edited by Chad Carrera on 4/2/18
 
 #import "BuckViewController.h"
 
@@ -25,7 +26,8 @@ int thisMonth;//1-12
 NSArray * createdAt;
 NSArray * parseSpot3;
 NSArray * hadSession;
-
+NSInteger dateNum;
+NSString * dailyActivity;
 
 //NSDate * parseSpot;
 
@@ -33,8 +35,9 @@ NSArray * hadSession;
 @synthesize monthly;
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-
+    
     [self grabData];
     [self myCalView];//don't need if you're using parse. You will call from grabData method
 }
@@ -61,7 +64,7 @@ NSArray * hadSession;
         [[self.view viewWithTag:x] removeFromSuperview];
         x++;
     }
-
+    
 }
 
 /*
@@ -112,13 +115,13 @@ NSArray * hadSession;
     }
     
     [self moreDateInfo];
-  
+    
 }
 
 -(void)moreDateInfo{
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-   
+    
     //get first day of month's weekday
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
@@ -127,14 +130,14 @@ NSArray * hadSession;
     [components setMonth:thisMonth];
     [components setYear:thisYear];
     NSDate * newDate = [calendar dateFromComponents:components];
-     NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:newDate];
-      weekday=[comps weekday];
+    NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:newDate];
+    weekday=[comps weekday];
     
-   
+    
     //Get number of days in the month
     numDays=[self getCurrDateInfo:newDate];
     
-   
+    
     int newWeekDay=weekday-1;//make weekday zero based
     
     NSLog(@"Day week %d",newWeekDay);
@@ -149,7 +152,7 @@ NSArray * hadSession;
     NSLog(@"%@",[[formatter monthSymbols] objectAtIndex:(thisMonth - 1)]);
     monthly.text=[[formatter monthSymbols] objectAtIndex:(thisMonth - 1)];
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 
+    
     
     //use for loop to display each day
     for(int startD=1; startD<=numDays;startD++){
@@ -164,12 +167,12 @@ NSArray * hadSession;
             yCount++;
         }
         //Creates the buttons and gives them each a tag (id)
-        int popInt=startD;
+        int popInt = startD;
         addProject.frame = CGRectMake(xCoord, yCoord, 35, 25);
-        [addProject setTitle:[NSString stringWithFormat:@"%d", startD] forState:UIControlStateNormal];
+        [addProject setTitle:[NSString stringWithFormat:@"%d", popInt] forState:UIControlStateNormal];
         [addProject addTarget:self action:@selector(popupInfo:) forControlEvents:UIControlEventTouchUpInside];
         [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        addProject.tag = startD;
+        addProject.tag = popInt;
         
         
         //if you are using a database this section checks to see if
@@ -204,7 +207,7 @@ NSArray * hadSession;
     }
     
     
-
+    
 }
 
 
@@ -227,15 +230,77 @@ NSArray * hadSession;
     [components setMonth:thisMonth];
     [components setYear:thisYear];
     NSDate * newDate = [calendar dateFromComponents:components];
-    //Formats date to YYYY-MM-DD
+    //Formats date to MMM d, yyyy
     NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"yyyy-MM-dd"];
+    [dateFormat setDateFormat:@"EEEE, MMM d, yyyy"];
+    
+    //Calculate the day number from the subset of NSCalendarUnitWeekday so that we know what events
+    //should be displayed for the specific day of the week that the user clicked, in the range 1-7.
+    NSDateComponents *dateComponents = [calendar components:NSCalendarUnitWeekday fromDate:newDate];
+    dateNum = dateComponents.weekday;
+    
+    NSString * str1 = @"";
+    NSString * str2 = @"";
+    NSString * str3 = @"";
+    NSString * str4 = @"";
+    NSString * str5 = @"";
+    NSString * str6 = @"";
+    NSString * str7 = @"";
+    NSString * str8 = @"";
+    NSString * str9 = @"";
+    NSString * str10 = @"";
+    
+    if (dateNum == 1) {
+        dailyActivity = @"There are no events scheduled for this Sunday.";
+    } else if (dateNum == 2) {
+        str1 = @"Bowdoin Team Lift - Football";
+        str2 = @"6:30a-8:00a in Lower Level Weightroom";
+        
+        str3 = @"Buti Yoga - Tanya Grigsby";
+        str4 = @"6:30p-7:30p in Buck Room 213";
+        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+    } else if (dateNum == 3) {
+        str1 = @"Tai Chi - Ken Ryan";
+        str2 = @"12:00p-1:00p in Buck Room 301";
+        
+        str3 = @"Meditation - Bernie Hershberger";
+        str4 = @"4:30p-5:15p in Buck Room 302";
+        
+        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+    } else if (dateNum == 4) {
+        str1 = @"Cardio Kickboxing - Justine Chabot";
+        str2 = @"6:45a-7:30a in Buck Room 213";
+        
+        str3 = @"Yin Yoga - Lucretia Woodruf";
+        str4 = @"6:00p-7:00p in Buck Room 301";
+        
+        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+    } else if (dateNum == 5) {
+        str1 = @"Speed Training - Neil Willey";
+        str2 = @"6:00a-7:00a in Morrell Gym";
+        
+        str3 = @"ZUMBA® Fitness - Bea Blakemore";
+        str4 = @"5:15p-6:00p in Buck Room 213";
+        
+        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+    } else if (dateNum == 6) {
+        str1 = @"Mat Pilates - Cindy Carraway-Wilson";
+        str2 = @"12:00p-12:45p in Buck Room 301";
+        
+        str3 = @"Bowdoin Team Lift - Men's Soccer";
+        str4 = @"3:00p-4:30p in Lower Level Weightroom";
+        
+        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+    } else if (dateNum == 7) {
+        dailyActivity = @"There are no events scheduled for this Saturday.";
+    }
+    
     
     parseSpot3=@[@"p",[dateFormat stringFromDate:newDate]];
     //compare above date to parse database. See if current user has an entry
     
     
-   
+    
     
     //   ----- Launch a  POPUP SCREEN -----------
     
@@ -255,43 +320,43 @@ NSArray * hadSession;
     
     
     /*
-    PFUser *currentUser = [PFUser currentUser];
-    if (currentUser) {
-        // do stuff with the user
-        NSLog(@"I AM LOGGED IN NOW!");
-        //see if you have a score saved yet
-        NSString * un;
-        un=[NSString stringWithFormat:@"%@",[[PFUser currentUser]valueForKey:@"username"]];
-        //search for user
-        PFQuery *query = [PFQuery queryWithClassName:@"checkins"];
-        [query whereKey:@"username" equalTo:un];
-        //query desc by created at
-        [query findObjectsInBackgroundWithBlock:^(NSArray *  checkins, NSError *error) {
-            
-            
-            if (!error) {//You do have data in the databse - let's see if it's current
-                
-               
-                createdAt = [checkins valueForKey:@"createdAt"];
-                
-                [self myCalView];//call to show the calendar
-                
-            }else{//You don't have any data saved in the database yet-----------------------
-                NSLog(@"NO Good");//no data
-                [self myCalView];//still show calendar
-            }
-        }];
-        
-        
-    } else {
-        // show the signup or login screen
-        NSLog(@"I AM not LOGGED IN!!!");//*********************************************
-        
-        
-        
-    }
-    
-    */
+     PFUser *currentUser = [PFUser currentUser];
+     if (currentUser) {
+     // do stuff with the user
+     NSLog(@"I AM LOGGED IN NOW!");
+     //see if you have a score saved yet
+     NSString * un;
+     un=[NSString stringWithFormat:@"%@",[[PFUser currentUser]valueForKey:@"username"]];
+     //search for user
+     PFQuery *query = [PFQuery queryWithClassName:@"checkins"];
+     [query whereKey:@"username" equalTo:un];
+     //query desc by created at
+     [query findObjectsInBackgroundWithBlock:^(NSArray *  checkins, NSError *error) {
+     
+     
+     if (!error) {//You do have data in the databse - let's see if it's current
+     
+     
+     createdAt = [checkins valueForKey:@"createdAt"];
+     
+     [self myCalView];//call to show the calendar
+     
+     }else{//You don't have any data saved in the database yet-----------------------
+     NSLog(@"NO Good");//no data
+     [self myCalView];//still show calendar
+     }
+     }];
+     
+     
+     } else {
+     // show the signup or login screen
+     NSLog(@"I AM not LOGGED IN!!!");//*********************************************
+     
+     
+     
+     }
+     
+     */
 }
 
 
@@ -306,10 +371,10 @@ NSArray * hadSession;
  NSLog(@"Day: %ld", [components day]);
  NSLog(@"Month: %ld", [components month]);
  NSLog(@"Year: %ld", [components year]);
-
-
-
-*/
+ 
+ 
+ 
+ */
 
 /*
  NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
@@ -319,3 +384,4 @@ NSArray * hadSession;
 
 
 @end
+
