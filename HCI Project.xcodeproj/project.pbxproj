@@ -27,7 +27,73 @@
 		0A9B59EF2073AF9E00B09F2A /* SWAGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59EE2073AF9E00B09F2A /* SWAGController.m */; };
 		0A9B59F22073B2BD00B09F2A /* PeerHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */; };
 		0A9B59F52073C3DB00B09F2A /* OtherResourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */; };
-		0ACDCFBB207BDAEF00003988 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFBA207BDAEF00003988 /* Fonts */; };
+		0ACDCFBD207D145100003988 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A87719420696E4100EEA672 /* Info.plist */; };
+		0ACDD004207D1D4B00003988 /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC1207D1D4B00003988 /* SourceSansPro-Light.otf */; };
+		0ACDD005207D1D4B00003988 /* SourceSansPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC2207D1D4B00003988 /* SourceSansPro-LightIt.otf */; };
+		0ACDD006207D1D4B00003988 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC3207D1D4B00003988 /* SourceSansPro-SemiboldIt.otf */; };
+		0ACDD007207D1D4B00003988 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC4207D1D4B00003988 /* OpenSans-SemiBold.ttf */; };
+		0ACDD008207D1D4B00003988 /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC5207D1D4B00003988 /* SourceSansPro-It.otf */; };
+		0ACDD009207D1D4B00003988 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC6207D1D4B00003988 /* SourceSansPro-Bold.otf */; };
+		0ACDD00A207D1D4B00003988 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC7207D1D4B00003988 /* SourceSansPro-Regular.otf */; };
+		0ACDD00B207D1D4B00003988 /* SourceSansPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC8207D1D4B00003988 /* SourceSansPro-BoldIt.otf */; };
+		0ACDD00C207D1D4B00003988 /* SourceSansPro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC9207D1D4B00003988 /* SourceSansPro-BlackIt.otf */; };
+		0ACDD00D207D1D4B00003988 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFCA207D1D4B00003988 /* OpenSans-Light.ttf */; };
+		0ACDD00E207D1D4B00003988 /* SourceSansPro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFCB207D1D4B00003988 /* SourceSansPro-ExtraLightIt.otf */; };
+		0ACDD00F207D1D4B00003988 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFCC207D1D4B00003988 /* OpenSans-Italic.ttf */; };
+		0ACDD010207D1D4B00003988 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFCD207D1D4B00003988 /* OpenSans-ExtraBold.ttf */; };
+		0ACDD011207D1D4B00003988 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFCE207D1D4B00003988 /* OpenSans-LightItalic.ttf */; };
+		0ACDD012207D1D4B00003988 /* SourceSansPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFCF207D1D4B00003988 /* SourceSansPro-ExtraLight.otf */; };
+		0ACDD013207D1D4B00003988 /* The Refinery - Clarika Grot Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD1207D1D4B00003988 /* The Refinery - Clarika Grot Black Italic.otf */; };
+		0ACDD014207D1D4B00003988 /* The Refinery - Clarika Geo Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD2207D1D4B00003988 /* The Refinery - Clarika Geo Thin Italic.otf */; };
+		0ACDD015207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD3207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin Italic.otf */; };
+		0ACDD016207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD4207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack.otf */; };
+		0ACDD017207D1D4B00003988 /* The Refinery - Clarika Geo Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD5207D1D4B00003988 /* The Refinery - Clarika Geo Light.otf */; };
+		0ACDD018207D1D4B00003988 /* The Refinery - Clarika Grot Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD6207D1D4B00003988 /* The Refinery - Clarika Grot Black.otf */; };
+		0ACDD019207D1D4B00003988 /* The Refinery - Clarika Grot Thin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD7207D1D4B00003988 /* The Refinery - Clarika Grot Thin Italic.otf */; };
+		0ACDD01A207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD8207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack Italic.otf */; };
+		0ACDD01B207D1D4B00003988 /* The Refinery - Clarika Grot Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFD9207D1D4B00003988 /* The Refinery - Clarika Grot Thin.otf */; };
+		0ACDD01C207D1D4B00003988 /* ClarikaGeometric-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFDA207D1D4B00003988 /* ClarikaGeometric-DemiBold.otf */; };
+		0ACDD01D207D1D4B00003988 /* ClarikaGeometric-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFDB207D1D4B00003988 /* ClarikaGeometric-ExtraBold.otf */; };
+		0ACDD01E207D1D4B00003988 /* The Refinery - Clarika Grot Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFDC207D1D4B00003988 /* The Refinery - Clarika Grot Bold.otf */; };
+		0ACDD01F207D1D4B00003988 /* The Refinery - Clarika Geo Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFDD207D1D4B00003988 /* The Refinery - Clarika Geo Italic.otf */; };
+		0ACDD020207D1D4B00003988 /* The Refinery - Clarika Grot Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFDE207D1D4B00003988 /* The Refinery - Clarika Grot Italic.otf */; };
+		0ACDD021207D1D4B00003988 /* ClarikaGeometric-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFDF207D1D4B00003988 /* ClarikaGeometric-Regular.otf */; };
+		0ACDD022207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE0207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack.otf */; };
+		0ACDD023207D1D4B00003988 /* The Refinery - Clarika Grot Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE1207D1D4B00003988 /* The Refinery - Clarika Grot Regular.otf */; };
+		0ACDD024207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE2207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold.otf */; };
+		0ACDD025207D1D4B00003988 /* The Refinery - Clarika Grot Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE3207D1D4B00003988 /* The Refinery - Clarika Grot Bold Italic.otf */; };
+		0ACDD026207D1D4B00003988 /* The Refinery - Clarika Geo DemiBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE4207D1D4B00003988 /* The Refinery - Clarika Geo DemiBold Italic.otf */; };
+		0ACDD027207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE5207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin.otf */; };
+		0ACDD028207D1D4B00003988 /* The Refinery - Clarika Geo Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE6207D1D4B00003988 /* The Refinery - Clarika Geo Bold Italic.otf */; };
+		0ACDD029207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE7207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack Italic.otf */; };
+		0ACDD02A207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE8207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold Italic.otf */; };
+		0ACDD02B207D1D4B00003988 /* The Refinery - Clarika Geo Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFE9207D1D4B00003988 /* The Refinery - Clarika Geo Black Italic.otf */; };
+		0ACDD02C207D1D4B00003988 /* The Refinery - Clarika Geo Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFEA207D1D4B00003988 /* The Refinery - Clarika Geo Medium Italic.otf */; };
+		0ACDD02D207D1D4B00003988 /* ClarikaGeometric-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFEB207D1D4B00003988 /* ClarikaGeometric-Bold.otf */; };
+		0ACDD02E207D1D4B00003988 /* The Refinery - Clarika Grot Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFEC207D1D4B00003988 /* The Refinery - Clarika Grot Light Italic.otf */; };
+		0ACDD02F207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFED207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold.otf */; };
+		0ACDD030207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFEE207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin.otf */; };
+		0ACDD031207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFEF207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold Italic.otf */; };
+		0ACDD032207D1D4B00003988 /* The Refinery - Clarika Grot Medium Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF0207D1D4B00003988 /* The Refinery - Clarika Grot Medium Italic.otf */; };
+		0ACDD033207D1D4B00003988 /* The Refinery - Clarika Geo ExtraBold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF1207D1D4B00003988 /* The Refinery - Clarika Geo ExtraBold Italic.otf */; };
+		0ACDD034207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF2207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight.otf */; };
+		0ACDD035207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF3207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight Italic.otf */; };
+		0ACDD036207D1D4B00003988 /* The Refinery - Clarika Geo Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF4207D1D4B00003988 /* The Refinery - Clarika Geo Thin.otf */; };
+		0ACDD037207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF5207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight Italic.otf */; };
+		0ACDD038207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF6207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin Italic.otf */; };
+		0ACDD039207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF7207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight.otf */; };
+		0ACDD03A207D1D4B00003988 /* The Refinery - Clarika Geo Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF8207D1D4B00003988 /* The Refinery - Clarika Geo Black.otf */; };
+		0ACDD03B207D1D4B00003988 /* The Refinery - Clarika Geo Light Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFF9207D1D4B00003988 /* The Refinery - Clarika Geo Light Italic.otf */; };
+		0ACDD03C207D1D4B00003988 /* The Refinery - Clarika Grot Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFFA207D1D4B00003988 /* The Refinery - Clarika Grot Medium.otf */; };
+		0ACDD03D207D1D4B00003988 /* The Refinery - Clarika Geo Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFFB207D1D4B00003988 /* The Refinery - Clarika Geo Medium.otf */; };
+		0ACDD03E207D1D4B00003988 /* The Refinery - Clarika Grot Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFFC207D1D4B00003988 /* The Refinery - Clarika Grot Light.otf */; };
+		0ACDD03F207D1D4B00003988 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFFD207D1D4B00003988 /* OpenSans-Bold.ttf */; };
+		0ACDD040207D1D4B00003988 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFFE207D1D4B00003988 /* SourceSansPro-Semibold.otf */; };
+		0ACDD041207D1D4B00003988 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFFF207D1D4B00003988 /* OpenSans-SemiBoldItalic.ttf */; };
+		0ACDD042207D1D4B00003988 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD000207D1D4B00003988 /* OpenSans-ExtraBoldItalic.ttf */; };
+		0ACDD043207D1D4B00003988 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD001207D1D4B00003988 /* OpenSans-Regular.ttf */; };
+		0ACDD044207D1D4B00003988 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD002207D1D4B00003988 /* OpenSans-BoldItalic.ttf */; };
+		0ACDD045207D1D4B00003988 /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD003207D1D4B00003988 /* SourceSansPro-Black.otf */; };
 		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
@@ -89,7 +155,72 @@
 		0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerHealthViewController.m; sourceTree = "<group>"; };
 		0A9B59F32073C3DB00B09F2A /* OtherResourcesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherResourcesViewController.h; sourceTree = "<group>"; };
 		0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherResourcesViewController.m; sourceTree = "<group>"; };
-		0ACDCFBA207BDAEF00003988 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		0ACDCFC1207D1D4B00003988 /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.otf"; sourceTree = "<group>"; };
+		0ACDCFC2207D1D4B00003988 /* SourceSansPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightIt.otf"; sourceTree = "<group>"; };
+		0ACDCFC3207D1D4B00003988 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		0ACDCFC4207D1D4B00003988 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		0ACDCFC5207D1D4B00003988 /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-It.otf"; sourceTree = "<group>"; };
+		0ACDCFC6207D1D4B00003988 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
+		0ACDCFC7207D1D4B00003988 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		0ACDCFC8207D1D4B00003988 /* SourceSansPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldIt.otf"; sourceTree = "<group>"; };
+		0ACDCFC9207D1D4B00003988 /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; };
+		0ACDCFCA207D1D4B00003988 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		0ACDCFCB207D1D4B00003988 /* SourceSansPro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		0ACDCFCC207D1D4B00003988 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		0ACDCFCD207D1D4B00003988 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0ACDCFCE207D1D4B00003988 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		0ACDCFCF207D1D4B00003988 /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; };
+		0ACDCFD1207D1D4B00003988 /* The Refinery - Clarika Grot Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Black Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFD2207D1D4B00003988 /* The Refinery - Clarika Geo Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Thin Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFD3207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot UltraThin Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFD4207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo UltraBlack.otf"; sourceTree = "<group>"; };
+		0ACDCFD5207D1D4B00003988 /* The Refinery - Clarika Geo Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Light.otf"; sourceTree = "<group>"; };
+		0ACDCFD6207D1D4B00003988 /* The Refinery - Clarika Grot Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Black.otf"; sourceTree = "<group>"; };
+		0ACDCFD7207D1D4B00003988 /* The Refinery - Clarika Grot Thin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Thin Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFD8207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot UltraBlack Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFD9207D1D4B00003988 /* The Refinery - Clarika Grot Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Thin.otf"; sourceTree = "<group>"; };
+		0ACDCFDA207D1D4B00003988 /* ClarikaGeometric-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClarikaGeometric-DemiBold.otf"; sourceTree = "<group>"; };
+		0ACDCFDB207D1D4B00003988 /* ClarikaGeometric-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClarikaGeometric-ExtraBold.otf"; sourceTree = "<group>"; };
+		0ACDCFDC207D1D4B00003988 /* The Refinery - Clarika Grot Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Bold.otf"; sourceTree = "<group>"; };
+		0ACDCFDD207D1D4B00003988 /* The Refinery - Clarika Geo Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFDE207D1D4B00003988 /* The Refinery - Clarika Grot Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFDF207D1D4B00003988 /* ClarikaGeometric-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClarikaGeometric-Regular.otf"; sourceTree = "<group>"; };
+		0ACDCFE0207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot UltraBlack.otf"; sourceTree = "<group>"; };
+		0ACDCFE1207D1D4B00003988 /* The Refinery - Clarika Grot Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Regular.otf"; sourceTree = "<group>"; };
+		0ACDCFE2207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot DemiBold.otf"; sourceTree = "<group>"; };
+		0ACDCFE3207D1D4B00003988 /* The Refinery - Clarika Grot Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Bold Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFE4207D1D4B00003988 /* The Refinery - Clarika Geo DemiBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo DemiBold Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFE5207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo UltraThin.otf"; sourceTree = "<group>"; };
+		0ACDCFE6207D1D4B00003988 /* The Refinery - Clarika Geo Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Bold Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFE7207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo UltraBlack Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFE8207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot ExtraBold Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFE9207D1D4B00003988 /* The Refinery - Clarika Geo Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Black Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFEA207D1D4B00003988 /* The Refinery - Clarika Geo Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Medium Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFEB207D1D4B00003988 /* ClarikaGeometric-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClarikaGeometric-Bold.otf"; sourceTree = "<group>"; };
+		0ACDCFEC207D1D4B00003988 /* The Refinery - Clarika Grot Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Light Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFED207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot ExtraBold.otf"; sourceTree = "<group>"; };
+		0ACDCFEE207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot UltraThin.otf"; sourceTree = "<group>"; };
+		0ACDCFEF207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot DemiBold Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFF0207D1D4B00003988 /* The Refinery - Clarika Grot Medium Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Medium Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFF1207D1D4B00003988 /* The Refinery - Clarika Geo ExtraBold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo ExtraBold Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFF2207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo ExtraLight.otf"; sourceTree = "<group>"; };
+		0ACDCFF3207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot ExtraLight Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFF4207D1D4B00003988 /* The Refinery - Clarika Geo Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Thin.otf"; sourceTree = "<group>"; };
+		0ACDCFF5207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo ExtraLight Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFF6207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo UltraThin Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFF7207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot ExtraLight.otf"; sourceTree = "<group>"; };
+		0ACDCFF8207D1D4B00003988 /* The Refinery - Clarika Geo Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Black.otf"; sourceTree = "<group>"; };
+		0ACDCFF9207D1D4B00003988 /* The Refinery - Clarika Geo Light Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Light Italic.otf"; sourceTree = "<group>"; };
+		0ACDCFFA207D1D4B00003988 /* The Refinery - Clarika Grot Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Medium.otf"; sourceTree = "<group>"; };
+		0ACDCFFB207D1D4B00003988 /* The Refinery - Clarika Geo Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Geo Medium.otf"; sourceTree = "<group>"; };
+		0ACDCFFC207D1D4B00003988 /* The Refinery - Clarika Grot Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Refinery - Clarika Grot Light.otf"; sourceTree = "<group>"; };
+		0ACDCFFD207D1D4B00003988 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		0ACDCFFE207D1D4B00003988 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
+		0ACDCFFF207D1D4B00003988 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0ACDD000207D1D4B00003988 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		0ACDD001207D1D4B00003988 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		0ACDD002207D1D4B00003988 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0ACDD003207D1D4B00003988 /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.otf"; sourceTree = "<group>"; };
 		3CFEFB18207161D4004B2654 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3CFEFB19207161D4004B2654 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CFEFB1B20717A35004B2654 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -129,6 +260,7 @@
 		0A87717420696E4100EEA672 = {
 			isa = PBXGroup;
 			children = (
+				0ACDCFC0207D1D4B00003988 /* Fonts */,
 				0A877209206B0B3000EEA672 /* MessageUI.framework */,
 				0A87717F20696E4100EEA672 /* HCI Project */,
 				0A87717E20696E4100EEA672 /* Products */,
@@ -175,7 +307,6 @@
 				0A87718920696E4100EEA672 /* HealthCenterViewController.h */,
 				0A87718A20696E4100EEA672 /* HealthCenterViewController.m */,
 				0A87718C20696E4100EEA672 /* Main.storyboard */,
-				0ACDCFBA207BDAEF00003988 /* Fonts */,
 				0A9B59F32073C3DB00B09F2A /* OtherResourcesViewController.h */,
 				0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */,
 				0A9B59F02073B2BD00B09F2A /* PeerHealthViewController.h */,
@@ -200,6 +331,87 @@
 				0A87718120696E4100EEA672 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ACDCFC0207D1D4B00003988 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0ACDCFC1207D1D4B00003988 /* SourceSansPro-Light.otf */,
+				0ACDCFC2207D1D4B00003988 /* SourceSansPro-LightIt.otf */,
+				0ACDCFC3207D1D4B00003988 /* SourceSansPro-SemiboldIt.otf */,
+				0ACDCFC4207D1D4B00003988 /* OpenSans-SemiBold.ttf */,
+				0ACDCFC5207D1D4B00003988 /* SourceSansPro-It.otf */,
+				0ACDCFC6207D1D4B00003988 /* SourceSansPro-Bold.otf */,
+				0ACDCFC7207D1D4B00003988 /* SourceSansPro-Regular.otf */,
+				0ACDCFC8207D1D4B00003988 /* SourceSansPro-BoldIt.otf */,
+				0ACDCFC9207D1D4B00003988 /* SourceSansPro-BlackIt.otf */,
+				0ACDCFCA207D1D4B00003988 /* OpenSans-Light.ttf */,
+				0ACDCFCB207D1D4B00003988 /* SourceSansPro-ExtraLightIt.otf */,
+				0ACDCFCC207D1D4B00003988 /* OpenSans-Italic.ttf */,
+				0ACDCFCD207D1D4B00003988 /* OpenSans-ExtraBold.ttf */,
+				0ACDCFCE207D1D4B00003988 /* OpenSans-LightItalic.ttf */,
+				0ACDCFCF207D1D4B00003988 /* SourceSansPro-ExtraLight.otf */,
+				0ACDCFD0207D1D4B00003988 /* Clarika */,
+				0ACDCFFD207D1D4B00003988 /* OpenSans-Bold.ttf */,
+				0ACDCFFE207D1D4B00003988 /* SourceSansPro-Semibold.otf */,
+				0ACDCFFF207D1D4B00003988 /* OpenSans-SemiBoldItalic.ttf */,
+				0ACDD000207D1D4B00003988 /* OpenSans-ExtraBoldItalic.ttf */,
+				0ACDD001207D1D4B00003988 /* OpenSans-Regular.ttf */,
+				0ACDD002207D1D4B00003988 /* OpenSans-BoldItalic.ttf */,
+				0ACDD003207D1D4B00003988 /* SourceSansPro-Black.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0ACDCFD0207D1D4B00003988 /* Clarika */ = {
+			isa = PBXGroup;
+			children = (
+				0ACDCFD1207D1D4B00003988 /* The Refinery - Clarika Grot Black Italic.otf */,
+				0ACDCFD2207D1D4B00003988 /* The Refinery - Clarika Geo Thin Italic.otf */,
+				0ACDCFD3207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin Italic.otf */,
+				0ACDCFD4207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack.otf */,
+				0ACDCFD5207D1D4B00003988 /* The Refinery - Clarika Geo Light.otf */,
+				0ACDCFD6207D1D4B00003988 /* The Refinery - Clarika Grot Black.otf */,
+				0ACDCFD7207D1D4B00003988 /* The Refinery - Clarika Grot Thin Italic.otf */,
+				0ACDCFD8207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack Italic.otf */,
+				0ACDCFD9207D1D4B00003988 /* The Refinery - Clarika Grot Thin.otf */,
+				0ACDCFDA207D1D4B00003988 /* ClarikaGeometric-DemiBold.otf */,
+				0ACDCFDB207D1D4B00003988 /* ClarikaGeometric-ExtraBold.otf */,
+				0ACDCFDC207D1D4B00003988 /* The Refinery - Clarika Grot Bold.otf */,
+				0ACDCFDD207D1D4B00003988 /* The Refinery - Clarika Geo Italic.otf */,
+				0ACDCFDE207D1D4B00003988 /* The Refinery - Clarika Grot Italic.otf */,
+				0ACDCFDF207D1D4B00003988 /* ClarikaGeometric-Regular.otf */,
+				0ACDCFE0207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack.otf */,
+				0ACDCFE1207D1D4B00003988 /* The Refinery - Clarika Grot Regular.otf */,
+				0ACDCFE2207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold.otf */,
+				0ACDCFE3207D1D4B00003988 /* The Refinery - Clarika Grot Bold Italic.otf */,
+				0ACDCFE4207D1D4B00003988 /* The Refinery - Clarika Geo DemiBold Italic.otf */,
+				0ACDCFE5207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin.otf */,
+				0ACDCFE6207D1D4B00003988 /* The Refinery - Clarika Geo Bold Italic.otf */,
+				0ACDCFE7207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack Italic.otf */,
+				0ACDCFE8207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold Italic.otf */,
+				0ACDCFE9207D1D4B00003988 /* The Refinery - Clarika Geo Black Italic.otf */,
+				0ACDCFEA207D1D4B00003988 /* The Refinery - Clarika Geo Medium Italic.otf */,
+				0ACDCFEB207D1D4B00003988 /* ClarikaGeometric-Bold.otf */,
+				0ACDCFEC207D1D4B00003988 /* The Refinery - Clarika Grot Light Italic.otf */,
+				0ACDCFED207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold.otf */,
+				0ACDCFEE207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin.otf */,
+				0ACDCFEF207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold Italic.otf */,
+				0ACDCFF0207D1D4B00003988 /* The Refinery - Clarika Grot Medium Italic.otf */,
+				0ACDCFF1207D1D4B00003988 /* The Refinery - Clarika Geo ExtraBold Italic.otf */,
+				0ACDCFF2207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight.otf */,
+				0ACDCFF3207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight Italic.otf */,
+				0ACDCFF4207D1D4B00003988 /* The Refinery - Clarika Geo Thin.otf */,
+				0ACDCFF5207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight Italic.otf */,
+				0ACDCFF6207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin Italic.otf */,
+				0ACDCFF7207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight.otf */,
+				0ACDCFF8207D1D4B00003988 /* The Refinery - Clarika Geo Black.otf */,
+				0ACDCFF9207D1D4B00003988 /* The Refinery - Clarika Geo Light Italic.otf */,
+				0ACDCFFA207D1D4B00003988 /* The Refinery - Clarika Grot Medium.otf */,
+				0ACDCFFB207D1D4B00003988 /* The Refinery - Clarika Geo Medium.otf */,
+				0ACDCFFC207D1D4B00003988 /* The Refinery - Clarika Grot Light.otf */,
+			);
+			path = Clarika;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,12 +518,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACDD008207D1D4B00003988 /* SourceSansPro-It.otf in Resources */,
+				0ACDD00B207D1D4B00003988 /* SourceSansPro-BoldIt.otf in Resources */,
+				0ACDD021207D1D4B00003988 /* ClarikaGeometric-Regular.otf in Resources */,
+				0ACDD045207D1D4B00003988 /* SourceSansPro-Black.otf in Resources */,
+				0ACDD010207D1D4B00003988 /* OpenSans-ExtraBold.ttf in Resources */,
+				0ACDD039207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight.otf in Resources */,
+				0ACDD01B207D1D4B00003988 /* The Refinery - Clarika Grot Thin.otf in Resources */,
+				0ACDD03A207D1D4B00003988 /* The Refinery - Clarika Geo Black.otf in Resources */,
+				0ACDD040207D1D4B00003988 /* SourceSansPro-Semibold.otf in Resources */,
+				0ACDD023207D1D4B00003988 /* The Refinery - Clarika Grot Regular.otf in Resources */,
+				0ACDD02F207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold.otf in Resources */,
+				0ACDD004207D1D4B00003988 /* SourceSansPro-Light.otf in Resources */,
+				0ACDD032207D1D4B00003988 /* The Refinery - Clarika Grot Medium Italic.otf in Resources */,
+				0ACDD02C207D1D4B00003988 /* The Refinery - Clarika Geo Medium Italic.otf in Resources */,
+				0ACDD038207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin Italic.otf in Resources */,
+				0ACDD012207D1D4B00003988 /* SourceSansPro-ExtraLight.otf in Resources */,
+				0ACDD025207D1D4B00003988 /* The Refinery - Clarika Grot Bold Italic.otf in Resources */,
+				0ACDD016207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack.otf in Resources */,
+				0ACDD034207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight.otf in Resources */,
+				0ACDD014207D1D4B00003988 /* The Refinery - Clarika Geo Thin Italic.otf in Resources */,
+				0ACDD022207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack.otf in Resources */,
+				0ACDD03B207D1D4B00003988 /* The Refinery - Clarika Geo Light Italic.otf in Resources */,
+				0ACDD01A207D1D4B00003988 /* The Refinery - Clarika Grot UltraBlack Italic.otf in Resources */,
 				0A8771C2206AE4B200EEA672 /* MJDetailViewController.xib in Resources */,
+				0ACDD01E207D1D4B00003988 /* The Refinery - Clarika Grot Bold.otf in Resources */,
+				0ACDD044207D1D4B00003988 /* OpenSans-BoldItalic.ttf in Resources */,
 				0A87719320696E4100EEA672 /* LaunchScreen.storyboard in Resources */,
+				0ACDD020207D1D4B00003988 /* The Refinery - Clarika Grot Italic.otf in Resources */,
+				0ACDD015207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin Italic.otf in Resources */,
+				0ACDD036207D1D4B00003988 /* The Refinery - Clarika Geo Thin.otf in Resources */,
+				0ACDD042207D1D4B00003988 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				0ACDD00D207D1D4B00003988 /* OpenSans-Light.ttf in Resources */,
+				0ACDD00A207D1D4B00003988 /* SourceSansPro-Regular.otf in Resources */,
+				0ACDD007207D1D4B00003988 /* OpenSans-SemiBold.ttf in Resources */,
+				0ACDD029207D1D4B00003988 /* The Refinery - Clarika Geo UltraBlack Italic.otf in Resources */,
+				0ACDD030207D1D4B00003988 /* The Refinery - Clarika Grot UltraThin.otf in Resources */,
+				0ACDD03C207D1D4B00003988 /* The Refinery - Clarika Grot Medium.otf in Resources */,
+				0ACDD037207D1D4B00003988 /* The Refinery - Clarika Geo ExtraLight Italic.otf in Resources */,
+				0ACDD02A207D1D4B00003988 /* The Refinery - Clarika Grot ExtraBold Italic.otf in Resources */,
+				0ACDD019207D1D4B00003988 /* The Refinery - Clarika Grot Thin Italic.otf in Resources */,
+				0ACDD02B207D1D4B00003988 /* The Refinery - Clarika Geo Black Italic.otf in Resources */,
+				0ACDD035207D1D4B00003988 /* The Refinery - Clarika Grot ExtraLight Italic.otf in Resources */,
+				0ACDD018207D1D4B00003988 /* The Refinery - Clarika Grot Black.otf in Resources */,
+				0ACDD03E207D1D4B00003988 /* The Refinery - Clarika Grot Light.otf in Resources */,
+				0ACDD013207D1D4B00003988 /* The Refinery - Clarika Grot Black Italic.otf in Resources */,
 				0A8771C7206AE57D00EEA672 /* Calendar.storyboard in Resources */,
-				0ACDCFBB207BDAEF00003988 /* Fonts in Resources */,
+				0ACDD005207D1D4B00003988 /* SourceSansPro-LightIt.otf in Resources */,
+				0ACDD009207D1D4B00003988 /* SourceSansPro-Bold.otf in Resources */,
+				0ACDD00E207D1D4B00003988 /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				0ACDD03D207D1D4B00003988 /* The Refinery - Clarika Geo Medium.otf in Resources */,
+				0ACDD017207D1D4B00003988 /* The Refinery - Clarika Geo Light.otf in Resources */,
+				0ACDD033207D1D4B00003988 /* The Refinery - Clarika Geo ExtraBold Italic.otf in Resources */,
+				0ACDD028207D1D4B00003988 /* The Refinery - Clarika Geo Bold Italic.otf in Resources */,
+				0ACDD027207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin.otf in Resources */,
+				0ACDD00F207D1D4B00003988 /* OpenSans-Italic.ttf in Resources */,
+				0ACDD041207D1D4B00003988 /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				0ACDD02D207D1D4B00003988 /* ClarikaGeometric-Bold.otf in Resources */,
+				0ACDD03F207D1D4B00003988 /* OpenSans-Bold.ttf in Resources */,
+				0ACDD011207D1D4B00003988 /* OpenSans-LightItalic.ttf in Resources */,
+				0ACDD02E207D1D4B00003988 /* The Refinery - Clarika Grot Light Italic.otf in Resources */,
+				0ACDD024207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold.otf in Resources */,
 				0A87719020696E4100EEA672 /* Assets.xcassets in Resources */,
 				0A87718E20696E4100EEA672 /* Main.storyboard in Resources */,
+				0ACDCFBD207D145100003988 /* Info.plist in Resources */,
+				0ACDD00C207D1D4B00003988 /* SourceSansPro-BlackIt.otf in Resources */,
+				0ACDD01D207D1D4B00003988 /* ClarikaGeometric-ExtraBold.otf in Resources */,
+				0ACDD031207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold Italic.otf in Resources */,
+				0ACDD01C207D1D4B00003988 /* ClarikaGeometric-DemiBold.otf in Resources */,
+				0ACDD01F207D1D4B00003988 /* The Refinery - Clarika Geo Italic.otf in Resources */,
+				0ACDD026207D1D4B00003988 /* The Refinery - Clarika Geo DemiBold Italic.otf in Resources */,
+				0ACDD043207D1D4B00003988 /* OpenSans-Regular.ttf in Resources */,
+				0ACDD006207D1D4B00003988 /* SourceSansPro-SemiboldIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

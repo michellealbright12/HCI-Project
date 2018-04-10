@@ -4,13 +4,33 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>OpenSans-Bold.tff</string>
-		<string>OpenSans-Regular.tff</string>
-		<string>OpenSans-Italic.tff</string>
-		<string>SourceSansPro-Bold.otf</string>
-		<string>SourceSansPro-It.otf</string>
-		<string>SourceSansPro-Regular.otf</string>
+		<string>The Refinery - Clarika Geo Regular.otf</string>
+		<string>The Refinery - Clarika Geo Bold.otf</string>
+		<string>The Refinery - Clarika Geo DemiBold.otf</string>
+		<string>The Refinery - Clarika Geo Black.otf</string>
+		<string>The Refinery - Clarika Geo Grot Bold.otf</string>
+		<string>The Refinery - Clarika Geo ExtraBold.otf</string>
+		<string>The Refinery - Clarika Grot Regular.otf</string>
+		<string>The Refinery - Clarika Geo Black.otf</string>
 		<string>SourceSansPro-Black.otf</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

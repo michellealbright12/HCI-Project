@@ -10,13 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="The Refinery - Clarika Geo Bold.otf">
+        <array key="ClarikaGeometric-Bold.otf">
             <string>ClarikaGeometric-Bold</string>
         </array>
-        <array key="The Refinery - Clarika Geo DemiBold.otf">
+        <array key="ClarikaGeometric-DemiBold.otf">
             <string>ClarikaGeometric-DemiBold</string>
         </array>
-        <array key="The Refinery - Clarika Geo Regular.otf">
+        <array key="ClarikaGeometric-ExtraBold.otf">
+            <string>ClarikaGeometric-ExtraBold</string>
+        </array>
+        <array key="ClarikaGeometric-Regular.otf">
             <string>ClarikaGeometric-Regular</string>
         </array>
     </customFonts>
@@ -131,6 +134,7 @@
                             <constraint firstItem="eB0-FR-3ay" firstAttribute="leading" secondItem="gGp-d4-f3V" secondAttribute="leading" id="Lwy-5r-zSW"/>
                             <constraint firstItem="l8r-L6-GXM" firstAttribute="centerY" secondItem="gGp-d4-f3V" secondAttribute="centerY" id="Mab-fR-hnm"/>
                             <constraint firstItem="Ahg-3l-P8f" firstAttribute="top" secondItem="l8r-L6-GXM" secondAttribute="bottom" constant="9" id="OVp-Hw-HHX"/>
+                            <constraint firstItem="vJO-7t-tu6" firstAttribute="trailing" secondItem="HpA-uT-3zl" secondAttribute="trailing" constant="56" id="PhQ-t9-APZ"/>
                             <constraint firstItem="eB0-FR-3ay" firstAttribute="leading" secondItem="vJO-7t-tu6" secondAttribute="leading" constant="16" id="QyY-vD-sDP"/>
                             <constraint firstItem="xg4-ew-VOv" firstAttribute="top" secondItem="gGp-d4-f3V" secondAttribute="bottom" constant="9" id="SdJ-sz-8Hh"/>
                             <constraint firstItem="sRJ-uw-rni" firstAttribute="height" secondItem="xg4-ew-VOv" secondAttribute="height" id="UuB-8C-XfD"/>
@@ -139,18 +143,19 @@
                             <constraint firstItem="Ahg-3l-P8f" firstAttribute="trailing" secondItem="l8r-L6-GXM" secondAttribute="trailing" id="Vg6-Si-4Vy"/>
                             <constraint firstItem="xg4-ew-VOv" firstAttribute="centerX" secondItem="gGp-d4-f3V" secondAttribute="centerX" id="WYG-PK-Ih1"/>
                             <constraint firstItem="Ahg-3l-P8f" firstAttribute="centerY" secondItem="xg4-ew-VOv" secondAttribute="centerY" id="Y0J-qI-RCp"/>
-                            <constraint firstItem="HpA-uT-3zl" firstAttribute="top" secondItem="vJO-7t-tu6" secondAttribute="top" constant="56" id="Y5z-gg-KAA"/>
                             <constraint firstItem="Ahg-3l-P8f" firstAttribute="centerX" secondItem="l8r-L6-GXM" secondAttribute="centerX" id="Zi7-Ym-AOJ"/>
                             <constraint firstItem="vJO-7t-tu6" firstAttribute="bottom" secondItem="Ahg-3l-P8f" secondAttribute="bottom" constant="323" id="bV3-EF-j43"/>
                             <constraint firstItem="eB0-FR-3ay" firstAttribute="top" secondItem="xg4-ew-VOv" secondAttribute="bottom" constant="9" id="bhy-o8-4fE"/>
                             <constraint firstItem="gGp-d4-f3V" firstAttribute="leading" secondItem="vJO-7t-tu6" secondAttribute="leading" constant="16" id="cmI-9p-twi"/>
                             <constraint firstItem="sRJ-uw-rni" firstAttribute="top" secondItem="Ahg-3l-P8f" secondAttribute="bottom" constant="9" id="eu2-CI-f9n"/>
+                            <constraint firstItem="HpA-uT-3zl" firstAttribute="top" secondItem="vJO-7t-tu6" secondAttribute="top" constant="56" id="hkZ-mT-6Mf"/>
                             <constraint firstItem="l8r-L6-GXM" firstAttribute="width" secondItem="gGp-d4-f3V" secondAttribute="width" id="i94-og-ycF"/>
                             <constraint firstItem="vJO-7t-tu6" firstAttribute="bottom" secondItem="l8r-L6-GXM" secondAttribute="bottom" constant="389" id="iG1-iH-EaP"/>
                             <constraint firstItem="vJO-7t-tu6" firstAttribute="trailing" secondItem="sRJ-uw-rni" secondAttribute="trailing" constant="16" id="iJf-CH-Bt8"/>
                             <constraint firstItem="eB0-FR-3ay" firstAttribute="centerX" secondItem="gGp-d4-f3V" secondAttribute="centerX" id="n4R-RB-BdW"/>
                             <constraint firstItem="l8r-L6-GXM" firstAttribute="leading" secondItem="gGp-d4-f3V" secondAttribute="trailing" constant="37" id="nbW-Rd-y9W"/>
                             <constraint firstItem="xg4-ew-VOv" firstAttribute="leading" secondItem="vJO-7t-tu6" secondAttribute="leading" constant="16" id="tXb-zp-Bwq"/>
+                            <constraint firstItem="HpA-uT-3zl" firstAttribute="leading" secondItem="vJO-7t-tu6" secondAttribute="leading" constant="56" id="wb5-Os-1Xf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vJO-7t-tu6"/>
                     </view>
@@ -1540,153 +1545,147 @@ Friday 8:30a-5p</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-is-5jN">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1775"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGW-aj-XLi">
-                                                <rect key="frame" x="8" y="28" width="350" height="88"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGW-aj-XLi">
+                                                <rect key="frame" x="8" y="28" width="350" height="90"/>
                                                 <string key="text">A 45 minute high-intensity, low-impact, full-body workout that combines ballet-based movements, weight conditioning, core-focused exercises and stretching. This class is for the absolute beginner to the seasoned barre enthusiast.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Buti Yoga" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-Pq-OF2">
-                                                <rect key="frame" x="8" y="124" width="77.5" height="29"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buti Yoga" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSu-Pq-OF2">
+                                                <rect key="frame" x="8" y="126" width="71" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-vA-wqc">
-                                                <rect key="frame" x="8" y="149" width="350" height="154"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-vA-wqc">
+                                                <rect key="frame" x="8" y="146.5" width="350" height="192"/>
                                                 <string key="text">In Indian Marathi, Buti means "the cure to something hidden or kept secret." This class will combine power yoga with cardiointensive bursts of tribal dance, plyometrics, deep abdominal toning and strength conditioning. It is all woven seamlessly into a dynamic yoga practice that includes balancing of the Chakra energy system in the body. Participants will move with energetic music to remove outside distractions and unify movement and breath.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Circuit Training" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcD-a2-cem">
-                                                <rect key="frame" x="8" y="310" width="125.5" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circuit Training" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcD-a2-cem">
+                                                <rect key="frame" x="8" y="345.5" width="113" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTf-kL-YWE">
-                                                <rect key="frame" x="8" y="334" width="359" height="151"/>
-                                                <string key="text">Lack of time or not sure what type of exercises to do on the 1st floor of the Fitness Center? This class will help you overcome these roadblocks to help you exercise consistently and correctly in a pre-planned
-workout going from station to station. Your instructor will have you alternate between muscle groups, challenging one set of muscles to work while others rest, a great way to combine cardio with strength training. </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTf-kL-YWE">
+                                                <rect key="frame" x="8" y="366" width="359" height="144"/>
+                                                <string key="text">Lack of time or not sure what type of exercises to do on the 1st floor of the Fitness Center? This class will help you overcome these roadblocks to help you exercise consistently and correctly in a pre-planned workout going from station to station. Your instructor will have you alternate between muscle groups, challenging one set of muscles to work while others rest, a great way to combine cardio with strength training. </string>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mat Pilates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebu-dN-TQM">
-                                                <rect key="frame" x="8" y="493" width="91" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mat Pilates" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebu-dN-TQM">
+                                                <rect key="frame" x="8" y="518" width="84" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-VN-c4T">
-                                                <rect key="frame" x="8" y="514" width="350" height="104"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-VN-c4T">
+                                                <rect key="frame" x="8" y="538.5" width="350" height="108"/>
                                                 <string key="text">Mat Pilates class will challenge you to focus on specific muscle groups and with practice you will soon build tremendous core strength. Strong core muscles support the spine, reduce back pain and are in integral component of athletic performance as well as every day balance.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Qi Gong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNS-1B-qhb">
-                                                <rect key="frame" x="8" y="626" width="65.5" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qi Gong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNS-1B-qhb">
+                                                <rect key="frame" x="8" y="654.5" width="61.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn9-7h-AXg">
-                                                <rect key="frame" x="8" y="649" width="350" height="153"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn9-7h-AXg">
+                                                <rect key="frame" x="8" y="675" width="350" height="162"/>
                                                 <string key="text">Ancient Chinese art that utilizes posture, breathing and mind-intention to cultivate the vital energy of the body for the purpose of healing and maintaining health and vitality. A cornerstone of traditional Chinese Medicine, Qi Gong has been described as “acupuncture without the needles” and has been found beneficial for treating a wide spectrum of illnesses as well as strengthening the immune system and promoting resilience and longevity.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="met-Pz-Uwz">
-                                                <rect key="frame" x="8" y="829" width="359" height="108"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="met-Pz-Uwz">
+                                                <rect key="frame" x="8" y="865.5" width="359" height="115.5"/>
                                                 <string key="text">This 45 minute class is designed to be a maximum calorie killer. High Intensity Interval Training is known to burn more fat and increase your metabolism! You'll leave feeling sweaty and stronger. Perfect for beginners and experienced riders alike; you are in control of the intensity and pace from start to finish!</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Spin-Indoor Cycling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1B-nL-Nwi">
-                                                <rect key="frame" x="8" y="810" width="163" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin-Indoor Cycling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1B-nL-Nwi">
+                                                <rect key="frame" x="8" y="845" width="145" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tai Chi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziM-Rt-Tjv">
-                                                <rect key="frame" x="8" y="943" width="49" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tai Chi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziM-Rt-Tjv">
+                                                <rect key="frame" x="8" y="987" width="49" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfU-iX-Qub">
-                                                <rect key="frame" x="8" y="965" width="350" height="120"/>
-                                                <string key="text">If you're looking for a way to reduce stress, consider Tai Chi (TIE-CHEE). Originally developed for self-defense, Tai Chi has evolved into a graceful form of exercise that's now used for stress reduction and a variety of other health conditions. Often described as
-meditation in motion, Tai Chi promotes serenity
-through gentle, flowing movements.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfU-iX-Qub">
+                                                <rect key="frame" x="8" y="1007.5" width="350" height="126"/>
+                                                <string key="text">If you're looking for a way to reduce stress, consider Tai Chi (TIE-CHEE). Originally developed for self-defense, Tai Chi has evolved into a graceful form of exercise that's now used for stress reduction and a variety of other health conditions. Often described as meditation in motion, Tai Chi promotes serenity through gentle, flowing movements.</string>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Vinyasa Flow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3h-xN-uYF">
-                                                <rect key="frame" x="8" y="1093" width="95.5" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vinyasa Flow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3h-xN-uYF">
+                                                <rect key="frame" x="8" y="1141.5" width="98" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxg-gJ-Qm4">
-                                                <rect key="frame" x="8" y="1114" width="350" height="90"/>
-                                                <string key="text">This class will focus on alignment and breathing as you link and flow through standing sequences. The sequences will include forward and back bends, twits and inversions; ending with restorative poses to
-deepen and assimilate the practice.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxg-gJ-Qm4">
+                                                <rect key="frame" x="8" y="1162" width="350" height="90"/>
+                                                <string key="text">This class will focus on alignment and breathing as you link and flow through standing sequences. The sequences will include forward and back bends, twits and inversions; ending with restorative poses to deepen and assimilate the practice.</string>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Yin Yoga" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ap-zL-q2b">
-                                                <rect key="frame" x="8" y="1212" width="63.5" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yin Yoga" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ap-zL-q2b">
+                                                <rect key="frame" x="8" y="1260" width="64" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-du-xKS">
-                                                <rect key="frame" x="8" y="1235" width="350" height="136"/>
-                                                <string key="text">This class is a complementary practice to the more dynamic yoga styles, such as Vinyasa. Yin postures are held for several minutes in order to work into the deep layers of connective tissue in the body. Yin yoga restores and maintains the natural mobility of the joints, while also emphasizing stillness and silence.
-Yin yoga prepares both the body and the mind
-for meditation.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-du-xKS">
+                                                <rect key="frame" x="8" y="1280.5" width="350" height="118"/>
+                                                <string key="text">This class is a complementary practice to the more dynamic yoga styles, such as Vinyasa. Yin postures are held for several minutes in order to work into the deep layers of connective tissue in the body. Yin yoga restores and maintains the natural mobility of the joints, while also emphasizing stillness and silence. Yin yoga prepares both the body and the mind for meditation.</string>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Yoga Flow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ju-ID-MCn">
-                                                <rect key="frame" x="8" y="1379" width="74" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoga Flow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ju-ID-MCn">
+                                                <rect key="frame" x="8" y="1406.5" width="75.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-hX-VnL">
-                                                <rect key="frame" x="8" y="1400" width="350" height="106"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-hX-VnL">
+                                                <rect key="frame" x="8" y="1427" width="350" height="108"/>
                                                 <string key="text">Focus on a series of joint warmups and yoga postures that invite both flexibility and strength. Along with breath work that is grounding and warming to the body centering the mind as the season shifts from warm to cool. Be prepared for moderate to vigorous flowing movement.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ZUMBA Fitness®" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g30-BW-fcr">
-                                                <rect key="frame" x="8" y="1514" width="121.5" height="27"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZUMBA Fitness®" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g30-BW-fcr">
+                                                <rect key="frame" x="8" y="1543" width="119.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-yx-5aL">
-                                                <rect key="frame" x="8" y="1539" width="350" height="85"/>
+                                                <rect key="frame" x="8" y="1563.5" width="350" height="90"/>
                                                 <string key="text">Dance your way to a fitter you! This class combines Latin rhythms with cardiovascular exercise to create an aerobic routine that is fun and easy to follow. With
 exciting and unique moves you will have fun while getting fit. </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Barre Workout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvB-7W-PXW">
-                                                <rect key="frame" x="8" y="5" width="119" height="22"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <rect key="frame" x="8" y="5" width="109" height="22"/>
+                                                <fontDescription key="fontDescription" name="ClarikaGeometric-ExtraBold" family="Clarika Geometric" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1702,7 +1701,7 @@ exciting and unique moves you will have fun while getting fit. </string>
                                             <constraint firstItem="U1B-nL-Nwi" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="5qM-sS-T7n"/>
                                             <constraint firstAttribute="trailing" secondItem="jTf-kL-YWE" secondAttribute="trailing" constant="8" id="7sp-ka-srX"/>
                                             <constraint firstItem="ebu-dN-TQM" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="896-o3-Ycy"/>
-                                            <constraint firstItem="met-Pz-Uwz" firstAttribute="top" secondItem="U1B-nL-Nwi" secondAttribute="bottom" constant="-8" id="8uv-aj-M80"/>
+                                            <constraint firstItem="met-Pz-Uwz" firstAttribute="top" secondItem="U1B-nL-Nwi" secondAttribute="bottom" constant="1" id="8uv-aj-M80"/>
                                             <constraint firstItem="zcD-a2-cem" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="8xL-yK-CoT"/>
                                             <constraint firstAttribute="trailing" secondItem="fl3-yx-5aL" secondAttribute="trailing" constant="17" id="9NN-KN-xcR"/>
                                             <constraint firstAttribute="trailing" secondItem="bfU-iX-Qub" secondAttribute="trailing" constant="17" id="9Zt-I6-3on"/>
@@ -1711,24 +1710,24 @@ exciting and unique moves you will have fun while getting fit. </string>
                                             <constraint firstItem="ziM-Rt-Tjv" firstAttribute="top" secondItem="met-Pz-Uwz" secondAttribute="bottom" constant="6" id="AVe-LS-woA"/>
                                             <constraint firstItem="5ap-zL-q2b" firstAttribute="top" secondItem="pxg-gJ-Qm4" secondAttribute="bottom" constant="8" id="Cdf-Ca-vl1"/>
                                             <constraint firstItem="jNS-1B-qhb" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="EYv-Ue-s4c"/>
-                                            <constraint firstItem="bfU-iX-Qub" firstAttribute="top" secondItem="ziM-Rt-Tjv" secondAttribute="bottom" constant="-5" id="F57-b8-Ajb"/>
+                                            <constraint firstItem="bfU-iX-Qub" firstAttribute="top" secondItem="ziM-Rt-Tjv" secondAttribute="bottom" constant="1" id="F57-b8-Ajb"/>
                                             <constraint firstItem="XLA-du-xKS" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="HNp-QX-BPX"/>
                                             <constraint firstItem="FvB-7W-PXW" firstAttribute="top" secondItem="ULe-is-5jN" secondAttribute="top" constant="5" id="JzK-9O-0be"/>
-                                            <constraint firstItem="jTf-kL-YWE" firstAttribute="top" secondItem="zcD-a2-cem" secondAttribute="bottom" constant="-3" id="LSA-p3-eNv"/>
+                                            <constraint firstItem="jTf-kL-YWE" firstAttribute="top" secondItem="zcD-a2-cem" secondAttribute="bottom" constant="1" id="LSA-p3-eNv"/>
                                             <constraint firstItem="jNS-1B-qhb" firstAttribute="top" secondItem="Zf9-VN-c4T" secondAttribute="bottom" constant="8" id="Mb6-IL-ZL1"/>
                                             <constraint firstAttribute="trailing" secondItem="XLA-du-xKS" secondAttribute="trailing" constant="17" id="Ns2-Ke-Jdu"/>
-                                            <constraint firstItem="Yn9-7h-AXg" firstAttribute="top" secondItem="jNS-1B-qhb" secondAttribute="bottom" constant="-4" id="Qy5-s3-555"/>
-                                            <constraint firstItem="pxg-gJ-Qm4" firstAttribute="top" secondItem="M3h-xN-uYF" secondAttribute="bottom" constant="-6" id="TrX-gb-xMj"/>
+                                            <constraint firstItem="Yn9-7h-AXg" firstAttribute="top" secondItem="jNS-1B-qhb" secondAttribute="bottom" constant="1" id="Qy5-s3-555"/>
+                                            <constraint firstItem="pxg-gJ-Qm4" firstAttribute="top" secondItem="M3h-xN-uYF" secondAttribute="bottom" constant="1" id="TrX-gb-xMj"/>
                                             <constraint firstAttribute="trailing" secondItem="met-Pz-Uwz" secondAttribute="trailing" constant="8" id="Uoi-Jn-At9"/>
-                                            <constraint firstItem="kcJ-vA-wqc" firstAttribute="top" secondItem="vSu-Pq-OF2" secondAttribute="bottom" constant="-4" id="XE2-7k-6oF"/>
+                                            <constraint firstItem="kcJ-vA-wqc" firstAttribute="top" secondItem="vSu-Pq-OF2" secondAttribute="bottom" constant="1" id="XE2-7k-6oF"/>
                                             <constraint firstItem="vSu-Pq-OF2" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="Z3y-Df-9Nd"/>
                                             <constraint firstItem="jTf-kL-YWE" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="aLE-t5-SwJ"/>
                                             <constraint firstItem="tGW-aj-XLi" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="aXd-xn-uI6"/>
                                             <constraint firstAttribute="trailing" secondItem="tGW-aj-XLi" secondAttribute="trailing" constant="17" id="aqW-Ad-89T"/>
                                             <constraint firstItem="Cax-hX-VnL" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="auu-eN-2Ab"/>
-                                            <constraint firstItem="Zf9-VN-c4T" firstAttribute="top" secondItem="ebu-dN-TQM" secondAttribute="bottom" constant="-6" id="c1a-Ct-EQA"/>
+                                            <constraint firstItem="Zf9-VN-c4T" firstAttribute="top" secondItem="ebu-dN-TQM" secondAttribute="bottom" constant="1" id="c1a-Ct-EQA"/>
                                             <constraint firstItem="FvB-7W-PXW" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="dQW-CW-6rL"/>
-                                            <constraint firstItem="fl3-yx-5aL" firstAttribute="top" secondItem="g30-BW-fcr" secondAttribute="bottom" constant="-2" id="dq7-09-wTu"/>
+                                            <constraint firstItem="fl3-yx-5aL" firstAttribute="top" secondItem="g30-BW-fcr" secondAttribute="bottom" constant="1" id="dq7-09-wTu"/>
                                             <constraint firstItem="Yn9-7h-AXg" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="epo-q4-8AN"/>
                                             <constraint firstAttribute="trailing" secondItem="kcJ-vA-wqc" secondAttribute="trailing" constant="17" id="gDz-ch-mMv"/>
                                             <constraint firstAttribute="trailing" secondItem="Cax-hX-VnL" secondAttribute="trailing" constant="17" id="i40-r8-HuJ"/>
@@ -1738,7 +1737,7 @@ exciting and unique moves you will have fun while getting fit. </string>
                                             <constraint firstItem="U1B-nL-Nwi" firstAttribute="top" secondItem="Yn9-7h-AXg" secondAttribute="bottom" constant="8" id="kzr-2B-htE"/>
                                             <constraint firstItem="g30-BW-fcr" firstAttribute="top" secondItem="Cax-hX-VnL" secondAttribute="bottom" constant="8" id="lQl-Fh-sED"/>
                                             <constraint firstItem="bfU-iX-Qub" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="lib-YF-D7i"/>
-                                            <constraint firstItem="Cax-hX-VnL" firstAttribute="top" secondItem="6Ju-ID-MCn" secondAttribute="bottom" constant="-6" id="nJa-fc-1rH"/>
+                                            <constraint firstItem="Cax-hX-VnL" firstAttribute="top" secondItem="6Ju-ID-MCn" secondAttribute="bottom" constant="1" id="nJa-fc-1rH"/>
                                             <constraint firstAttribute="trailing" secondItem="Yn9-7h-AXg" secondAttribute="trailing" constant="17" id="nx6-hr-l7A"/>
                                             <constraint firstItem="g30-BW-fcr" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="pfr-Vk-cGu"/>
                                             <constraint firstItem="M3h-xN-uYF" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="q6D-2q-8UC"/>
@@ -1746,7 +1745,7 @@ exciting and unique moves you will have fun while getting fit. </string>
                                             <constraint firstAttribute="trailing" secondItem="pxg-gJ-Qm4" secondAttribute="trailing" constant="17" id="uN8-8G-bOZ"/>
                                             <constraint firstItem="kcJ-vA-wqc" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="usv-fn-nf7"/>
                                             <constraint firstItem="fl3-yx-5aL" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="v41-DL-Wdw"/>
-                                            <constraint firstItem="XLA-du-xKS" firstAttribute="top" secondItem="5ap-zL-q2b" secondAttribute="bottom" constant="-4" id="vpZ-uY-fSJ"/>
+                                            <constraint firstItem="XLA-du-xKS" firstAttribute="top" secondItem="5ap-zL-q2b" secondAttribute="bottom" constant="1" id="vpZ-uY-fSJ"/>
                                             <constraint firstAttribute="height" constant="1775" id="xEx-Xu-ac3"/>
                                             <constraint firstItem="5ap-zL-q2b" firstAttribute="leading" secondItem="ULe-is-5jN" secondAttribute="leading" constant="8" id="xKo-zL-X1t"/>
                                             <constraint firstItem="M3h-xN-uYF" firstAttribute="top" secondItem="bfU-iX-Qub" secondAttribute="bottom" constant="8" id="xc9-Kh-ZBy"/>
@@ -1770,10 +1769,8 @@ exciting and unique moves you will have fun while getting fit. </string>
                             <constraint firstItem="jlg-Ku-ZY4" firstAttribute="leading" secondItem="GtE-VZ-zFB" secondAttribute="leading" id="Hxh-pF-ash"/>
                             <constraint firstItem="jlg-Ku-ZY4" firstAttribute="trailing" secondItem="GtE-VZ-zFB" secondAttribute="trailing" id="Oos-Wf-kwQ"/>
                             <constraint firstItem="ULe-is-5jN" firstAttribute="width" secondItem="jlg-Ku-ZY4" secondAttribute="width" id="iJ3-cP-aXc"/>
-                            <constraint firstItem="GtE-VZ-zFB" firstAttribute="bottom" secondItem="fl3-yx-5aL" secondAttribute="bottom" constant="38" id="nJq-9W-d32"/>
                             <constraint firstItem="jlg-Ku-ZY4" firstAttribute="width" secondItem="ag1-ve-emu" secondAttribute="width" id="nOW-PO-MgN"/>
                             <constraint firstItem="jlg-Ku-ZY4" firstAttribute="top" secondItem="GtE-VZ-zFB" secondAttribute="top" id="ne2-64-3Ad"/>
-                            <constraint firstItem="GtE-VZ-zFB" firstAttribute="bottom" secondItem="g30-BW-fcr" secondAttribute="bottom" constant="121" id="oMS-f7-kNT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GtE-VZ-zFB"/>
                     </view>
@@ -2113,22 +2110,21 @@ Sunday</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX4-OD-jKo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX4-OD-jKo">
                                 <rect key="frame" x="16" y="151" width="343" height="451"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Buck Center includes a free-weight fitness facility with rowing machines on the lower level, 
-a cardiovascular fitness center with weight machines on the ground floor and a new interior climbing wall.
+                                <mutableString key="text">The Buck Center includes a free-weight fitness facility with rowing machines on the lower level, a cardiovascular fitness center with weight machines on the ground floor and a new interior climbing wall.
 
 Fitness programs will continue to include spinning, multiple levels of Pilates and aerobics, and classes focused on circuit training and overall physical fitness.
 
 Flexible space on the third floor has been designed to accommodate these programs and others, such as yoga, tai chi/qigong and dance.
 
-Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be available on the first Tuesday of each month (February 6, March 6, April 3, May 1) from 11:30a-12:30p to provide an overview of and orientation to the training equipment available at Buck Fitness Center.</string>
+Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be available on the first Tuesday of each month (February 6, March 6, April 3, May 1) from 11:30a-12:30p to provide an overview of and orientation to the training equipment available at Buck Fitness Center.</mutableString>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su5-Kc-ted">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su5-Kc-ted">
                                 <rect key="frame" x="0.0" y="95" width="375" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
