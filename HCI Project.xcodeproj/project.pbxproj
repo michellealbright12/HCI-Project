@@ -27,6 +27,7 @@
 		0A9B59EF2073AF9E00B09F2A /* SWAGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59EE2073AF9E00B09F2A /* SWAGController.m */; };
 		0A9B59F22073B2BD00B09F2A /* PeerHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */; };
 		0A9B59F52073C3DB00B09F2A /* OtherResourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */; };
+		0ACDCFBB207BDAEF00003988 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFBA207BDAEF00003988 /* Fonts */; };
 		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
@@ -88,6 +89,7 @@
 		0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerHealthViewController.m; sourceTree = "<group>"; };
 		0A9B59F32073C3DB00B09F2A /* OtherResourcesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherResourcesViewController.h; sourceTree = "<group>"; };
 		0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherResourcesViewController.m; sourceTree = "<group>"; };
+		0ACDCFBA207BDAEF00003988 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		3CFEFB18207161D4004B2654 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3CFEFB19207161D4004B2654 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CFEFB1B20717A35004B2654 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				0A87718920696E4100EEA672 /* HealthCenterViewController.h */,
 				0A87718A20696E4100EEA672 /* HealthCenterViewController.m */,
 				0A87718C20696E4100EEA672 /* Main.storyboard */,
+				0ACDCFBA207BDAEF00003988 /* Fonts */,
 				0A9B59F32073C3DB00B09F2A /* OtherResourcesViewController.h */,
 				0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */,
 				0A9B59F02073B2BD00B09F2A /* PeerHealthViewController.h */,
@@ -306,6 +309,7 @@
 				0A8771C2206AE4B200EEA672 /* MJDetailViewController.xib in Resources */,
 				0A87719320696E4100EEA672 /* LaunchScreen.storyboard in Resources */,
 				0A8771C7206AE57D00EEA672 /* Calendar.storyboard in Resources */,
+				0ACDCFBB207BDAEF00003988 /* Fonts in Resources */,
 				0A87719020696E4100EEA672 /* Assets.xcassets in Resources */,
 				0A87718E20696E4100EEA672 /* Main.storyboard in Resources */,
 			);

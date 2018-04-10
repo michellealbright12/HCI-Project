@@ -12,6 +12,7 @@
 
 @interface RequestAppointment : UIViewController<MFMailComposeViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *requestAppointment;
+@property (strong, nonatomic) IBOutlet UILabel *pageLabel;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (strong, nonatomic) IBOutlet UILabel *labelText;
 @property (strong, nonatomic) IBOutlet UILabel *daysLabel;
@@ -19,6 +20,7 @@
 //@property (strong, nonatomic) IBOutlet UILabel *timesLabel;
 //@property (strong, nonatomic) IBOutlet UITableView *timesTable;
 @property (strong, nonatomic) IBOutlet UITextField *messageText;
+@property (strong, nonatomic) IBOutlet UILabel *notesLabel;
 @property (strong, nonatomic) IBOutlet UITextField *noteText;
 
 @end

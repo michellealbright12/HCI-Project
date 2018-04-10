@@ -15,9 +15,11 @@
 @implementation SecondViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+
     _requestBtn.layer.cornerRadius = 10;
-    _resourcesBtn.layer.cornerRadius = 10;
+_resourcesBtn.layer.cornerRadius = 10;
     _requestBtn.clipsToBounds = true;
     _resourcesBtn.clipsToBounds = true;
     // Do any additional setup after loading the view, typically from a nib.

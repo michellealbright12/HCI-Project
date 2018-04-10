@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Bold.tff</string>
+		<string>OpenSans-Regular.tff</string>
+		<string>OpenSans-Italic.tff</string>
+		<string>SourceSansPro-Bold.otf</string>
+		<string>SourceSansPro-It.otf</string>
+		<string>SourceSansPro-Regular.otf</string>
+		<string>SourceSansPro-Black.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
