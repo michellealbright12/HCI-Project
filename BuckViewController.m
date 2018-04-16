@@ -381,6 +381,18 @@ NSString * dailyActivity;
  weekday = [comps weekday];
  */
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender; {
+    [super prepareForSegue:segue sender:sender];
+    
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+}
+
 
 
 @end
