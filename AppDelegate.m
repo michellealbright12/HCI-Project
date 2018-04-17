@@ -30,11 +30,6 @@
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-//    [self.navigationController.navigationBar setTitleTextAttributes:
-//     @{NSForegroundColorAttributeName:[UIColor redColor],
-//       NSFontAttributeName:[UIFont fontWithName:@"mplus-1c-regular" size:21]}];
-    //UITabBar.appearance().backgroundColor = UIColor(red:0, green:0, blue:0, alpha:1)
-    //UITabBar.
     
     // Override point for customization after application launch.
     return YES;

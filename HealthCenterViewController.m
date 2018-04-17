@@ -22,7 +22,20 @@
 _resourcesBtn.layer.cornerRadius = 10;
     _requestBtn.clipsToBounds = true;
     _resourcesBtn.clipsToBounds = true;
+    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender; {
+    [super prepareForSegue:segue sender:sender];
+    
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
