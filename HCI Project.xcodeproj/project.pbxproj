@@ -27,7 +27,6 @@
 		0A9B59EF2073AF9E00B09F2A /* SWAGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59EE2073AF9E00B09F2A /* SWAGController.m */; };
 		0A9B59F22073B2BD00B09F2A /* PeerHealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F12073B2BD00B09F2A /* PeerHealthViewController.m */; };
 		0A9B59F52073C3DB00B09F2A /* OtherResourcesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */; };
-		0ACDCFBD207D145100003988 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A87719420696E4100EEA672 /* Info.plist */; };
 		0ACDD004207D1D4B00003988 /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC1207D1D4B00003988 /* SourceSansPro-Light.otf */; };
 		0ACDD005207D1D4B00003988 /* SourceSansPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC2207D1D4B00003988 /* SourceSansPro-LightIt.otf */; };
 		0ACDD006207D1D4B00003988 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDCFC3207D1D4B00003988 /* SourceSansPro-SemiboldIt.otf */; };
@@ -290,13 +289,13 @@
 				0A8771BB206AE4B200EEA672 /* MJPopupBackgroundView.h */,
 				0A8771BC206AE4B200EEA672 /* MJPopupBackgroundView.m */,
 				0A8771BD206AE4B200EEA672 /* UIViewController+MJPopupViewController.h */,
+				0A8771BE206AE4B200EEA672 /* UIViewController+MJPopupViewController.m */,
 				3CFEFB18207161D4004B2654 /* LoginViewController.h */,
 				3CFEFB19207161D4004B2654 /* LoginViewController.m */,
 				3CFEFB212072A6F2004B2654 /* LoginSegue.h */,
 				3CFEFB222072A6F2004B2654 /* LoginSegue.m */,
 				3CFEFB1E2071E8BA004B2654 /* UserInfo.h */,
 				3CFEFB1F2071E8BA004B2654 /* UserInfo.m */,
-				0A8771BE206AE4B200EEA672 /* UIViewController+MJPopupViewController.m */,
 				0A87718320696E4100EEA672 /* AppDelegate.h */,
 				0A87718420696E4100EEA672 /* AppDelegate.m */,
 				0A9B59D6206BCA1A00B09F2A /* RequestAppointmentHealth.m */,
@@ -581,7 +580,6 @@
 				0ACDD024207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold.otf in Resources */,
 				0A87719020696E4100EEA672 /* Assets.xcassets in Resources */,
 				0A87718E20696E4100EEA672 /* Main.storyboard in Resources */,
-				0ACDCFBD207D145100003988 /* Info.plist in Resources */,
 				0ACDD00C207D1D4B00003988 /* SourceSansPro-BlackIt.otf in Resources */,
 				0ACDD01D207D1D4B00003988 /* ClarikaGeometric-ExtraBold.otf in Resources */,
 				0ACDD031207D1D4B00003988 /* The Refinery - Clarika Grot DemiBold Italic.otf in Resources */,
