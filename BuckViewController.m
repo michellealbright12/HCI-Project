@@ -143,7 +143,7 @@ NSString * dailyActivity;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int yVal=175;
+    int yVal=190;
     int yCount=1;
     
     
@@ -243,12 +243,12 @@ NSString * dailyActivity;
     NSString * str2 = @"";
     NSString * str3 = @"";
     NSString * str4 = @"";
-    NSString * str5 = @"";
-    NSString * str6 = @"";
-    NSString * str7 = @"";
-    NSString * str8 = @"";
-    NSString * str9 = @"";
-    NSString * str10 = @"";
+//    NSString * str5 = @"";
+//    NSString * str6 = @"";
+//    NSString * str7 = @"";
+//    NSString * str8 = @"";
+//    NSString * str9 = @"";
+//    NSString * str10 = @"";
     
     if (dateNum == 1) {
         dailyActivity = @"There are no events scheduled for this Sunday.";

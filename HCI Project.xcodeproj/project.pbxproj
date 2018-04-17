@@ -282,6 +282,8 @@
 			children = (
 				0A8771B6206AE4B200EEA672 /* BuckViewController.h */,
 				0A8771B7206AE4B200EEA672 /* BuckViewController.m */,
+				3CFEFB1B20717A35004B2654 /* ProfileViewController.h */,
+				3CFEFB1C20717A35004B2654 /* ProfileViewController.m */,
 				0A8771B8206AE4B200EEA672 /* MJDetailViewController.h */,
 				0A8771B9206AE4B200EEA672 /* MJDetailViewController.m */,
 				0A8771BA206AE4B200EEA672 /* MJDetailViewController.xib */,
@@ -290,8 +292,6 @@
 				0A8771BD206AE4B200EEA672 /* UIViewController+MJPopupViewController.h */,
 				3CFEFB18207161D4004B2654 /* LoginViewController.h */,
 				3CFEFB19207161D4004B2654 /* LoginViewController.m */,
-				3CFEFB1B20717A35004B2654 /* ProfileViewController.h */,
-				3CFEFB1C20717A35004B2654 /* ProfileViewController.m */,
 				3CFEFB212072A6F2004B2654 /* LoginSegue.h */,
 				3CFEFB222072A6F2004B2654 /* LoginSegue.m */,
 				3CFEFB1E2071E8BA004B2654 /* UserInfo.h */,

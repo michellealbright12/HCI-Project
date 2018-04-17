@@ -2113,13 +2113,13 @@ Sunday</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX4-OD-jKo">
                                 <rect key="frame" x="16" y="151" width="343" height="451"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">The Buck Center includes a free-weight fitness facility with rowing machines on the lower level, a cardiovascular fitness center with weight machines on the ground floor and a new interior climbing wall.
+                                <string key="text">The Buck Center includes a free-weight fitness facility with rowing machines on the lower level, a cardiovascular fitness center with weight machines on the ground floor and a new interior climbing wall.
 
 Fitness programs will continue to include spinning, multiple levels of Pilates and aerobics, and classes focused on circuit training and overall physical fitness.
 
 Flexible space on the third floor has been designed to accommodate these programs and others, such as yoga, tai chi/qigong and dance.
 
-Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be available on the first Tuesday of each month (February 6, March 6, April 3, May 1) from 11:30a-12:30p to provide an overview of and orientation to the training equipment available at Buck Fitness Center.</mutableString>
+Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be available on the first Tuesday of each month (February 6, March 6, April 3, May 1) from 11:30a-12:30p to provide an overview of and orientation to the training equipment available at Buck Fitness Center.</string>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
