@@ -98,6 +98,7 @@
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
 		3CFEFB232072A6F2004B2654 /* LoginSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB222072A6F2004B2654 /* LoginSegue.m */; };
+		A92E368220865971005A9665 /* ProfileDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A92E368120865971005A9665 /* ProfileDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 		3CFEFB1F2071E8BA004B2654 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		3CFEFB212072A6F2004B2654 /* LoginSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginSegue.h; sourceTree = "<group>"; };
 		3CFEFB222072A6F2004B2654 /* LoginSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginSegue.m; sourceTree = "<group>"; };
+		A92E368120865971005A9665 /* ProfileDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 				0A8771B8206AE4B200EEA672 /* MJDetailViewController.h */,
 				0A8771B9206AE4B200EEA672 /* MJDetailViewController.m */,
 				0A8771BA206AE4B200EEA672 /* MJDetailViewController.xib */,
+				A92E368120865971005A9665 /* ProfileDetailViewController.xib */,
 				0A8771BB206AE4B200EEA672 /* MJPopupBackgroundView.h */,
 				0A8771BC206AE4B200EEA672 /* MJPopupBackgroundView.m */,
 				0A8771BD206AE4B200EEA672 /* UIViewController+MJPopupViewController.h */,
@@ -573,6 +576,7 @@
 				0ACDD028207D1D4B00003988 /* The Refinery - Clarika Geo Bold Italic.otf in Resources */,
 				0ACDD027207D1D4B00003988 /* The Refinery - Clarika Geo UltraThin.otf in Resources */,
 				0ACDD00F207D1D4B00003988 /* OpenSans-Italic.ttf in Resources */,
+				A92E368220865971005A9665 /* ProfileDetailViewController.xib in Resources */,
 				0ACDD041207D1D4B00003988 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				0ACDD02D207D1D4B00003988 /* ClarikaGeometric-Bold.otf in Resources */,
 				0ACDD03F207D1D4B00003988 /* OpenSans-Bold.ttf in Resources */,
