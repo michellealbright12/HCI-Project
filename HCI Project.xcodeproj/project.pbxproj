@@ -791,6 +791,7 @@
 				DEVELOPMENT_TEAM = SPKL99M6VN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = default;
 				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
