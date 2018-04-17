@@ -8,21 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "UserInfo.h"
-#import "BuckViewController.h"
-
-extern NSArray * createdAt;
-extern NSArray * parseSpot3;
-extern NSArray * hadSession;
-extern NSInteger dateNum;
-extern NSString * dailyActivity;
 
 @interface ProfileViewController : UIViewController {
     UserInfo *user;
 }
-
-- (IBAction)nextAct:(id)sender;
-
-- (IBAction)prevAct:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
