@@ -48,13 +48,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Self-Care" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkC-EQ-mEe">
-                                <rect key="frame" x="168" y="28" width="78" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGp-d4-f3V">
                                 <rect key="frame" x="16" y="172.5" width="153" height="57"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -203,6 +196,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oT-N8-Atm">
                                 <rect key="frame" x="29" y="348" width="317" height="141.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Sexuality, Women and Gender Center cultivates a campus environment in which women and queer people feel safe, valued and supported through academic, co-curricular and personal development.  It builds awareness surrounding issues of gender and sexuality existing on campus and in the world.The co-directors and student directors collaborate with students, faculty and staff from across campus to offer diverse, relevant programming for Bowdoin community members of all genders and orientations.</string>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -349,10 +343,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="X3S-w5-0ac">
-                                <rect key="frame" x="144" y="498" width="87" height="53"/>
+                                <rect key="frame" x="140" y="498" width="95" height="53"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
-                                <state key="normal" title="Outing Club   Webpage">
+                                <state key="normal" title=" Outing Club     Webpage ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -363,7 +357,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Q6m-2W-ZqT" firstAttribute="trailing" secondItem="Wpv-xZ-Hi4" secondAttribute="trailing" id="4UC-iz-jsq"/>
                             <constraint firstItem="zZL-LQ-tdg" firstAttribute="top" secondItem="Wpv-xZ-Hi4" secondAttribute="bottom" constant="29" id="6HI-ff-XD2"/>
@@ -530,7 +524,7 @@
                                 <rect key="frame" x="113" y="474.5" width="148" height="32.5"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
-                                <state key="normal" title="Contact Peer Health"/>
+                                <state key="normal" title=" Contact Peer Health "/>
                                 <connections>
                                     <action selector="contactBtn:" destination="b8b-qf-YPd" eventType="touchUpInside" id="bub-X8-03j"/>
                                 </connections>
@@ -596,26 +590,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staff" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVi-cE-dFA">
-                                <rect key="frame" x="172.5" y="389" width="30.5" height="17"/>
-                                <fontDescription key="fontDescription" name="ClarikaGeometric-Bold" family="Clarika Geometric" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director: Benjamin G. Harris" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT7-rB-5LL">
-                                <rect key="frame" x="108" y="410" width="158" height="34"/>
+                                <rect key="frame" x="105" y="427" width="164" height="17"/>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Associate Dean of Students for Diversity and Inclusion:: Leana E. Amaez" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaF-fQ-IfL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Associate Dean of Students for Diversity and Inclusion: Leana E. Amaez" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaF-fQ-IfL">
                                 <rect key="frame" x="16" y="511" width="343" height="34"/>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avc-Df-Uw0">
-                                <rect key="frame" x="127" y="553" width="121" height="32"/>
+                                <rect key="frame" x="132" y="553" width="111" height="32"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="16"/>
                                 <state key="normal" title="Email Leana">
@@ -626,16 +614,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-tQ-WhZ">
-                                <rect key="frame" x="127" y="452" width="121" height="32"/>
+                                <rect key="frame" x="132" y="452" width="111" height="32"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="16"/>
-                                <state key="normal" title="Email Benjamin">
+                                <state key="normal" title=" Email Benjamin ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="directorEmail:" destination="a0X-5F-cOb" eventType="touchUpInside" id="JTE-B4-PRc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Staff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVi-cE-dFA">
+                                <rect key="frame" x="172" y="389" width="30.5" height="17"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Bold" family="Clarika Geometric" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -652,15 +646,11 @@
                             <constraint firstItem="o52-2y-qDJ" firstAttribute="leading" secondItem="OGQ-mV-0xA" secondAttribute="leading" id="PgC-lo-xke"/>
                             <constraint firstItem="q60-s4-rxT" firstAttribute="centerY" secondItem="Tle-4B-SDT" secondAttribute="centerY" id="QsP-ry-wIb"/>
                             <constraint firstItem="C0Z-LD-8g2" firstAttribute="top" secondItem="DaT-ig-RaE" secondAttribute="bottom" constant="8" id="S0G-uI-2vE"/>
-                            <constraint firstItem="OGQ-mV-0xA" firstAttribute="trailing" secondItem="WV0-tQ-WhZ" secondAttribute="trailing" constant="127" id="Say-xb-DK2"/>
                             <constraint firstItem="q60-s4-rxT" firstAttribute="centerX" secondItem="o52-2y-qDJ" secondAttribute="centerX" id="UrR-uh-ciS"/>
-                            <constraint firstItem="WV0-tQ-WhZ" firstAttribute="leading" secondItem="OGQ-mV-0xA" secondAttribute="leading" constant="127" id="XSW-Hh-jTf"/>
                             <constraint firstItem="avc-Df-Uw0" firstAttribute="width" secondItem="WV0-tQ-WhZ" secondAttribute="width" id="Xce-2a-GAw"/>
                             <constraint firstItem="avc-Df-Uw0" firstAttribute="top" secondItem="HVi-cE-dFA" secondAttribute="bottom" constant="147" id="Yml-Ni-Wex"/>
                             <constraint firstItem="WV0-tQ-WhZ" firstAttribute="top" secondItem="HVi-cE-dFA" secondAttribute="bottom" constant="46" id="ZaY-nP-FZ4"/>
-                            <constraint firstItem="OGQ-mV-0xA" firstAttribute="trailing" secondItem="kT7-rB-5LL" secondAttribute="trailing" constant="109" id="bZQ-oz-PGE"/>
                             <constraint firstItem="WV0-tQ-WhZ" firstAttribute="top" secondItem="kT7-rB-5LL" secondAttribute="bottom" constant="8" id="ghC-ys-noF"/>
-                            <constraint firstItem="kT7-rB-5LL" firstAttribute="leading" secondItem="OGQ-mV-0xA" secondAttribute="leading" constant="108" id="kbc-y4-DgX"/>
                             <constraint firstItem="q60-s4-rxT" firstAttribute="leading" secondItem="OGQ-mV-0xA" secondAttribute="leading" constant="16" id="mAi-l0-DiX"/>
                             <constraint firstItem="OGQ-mV-0xA" firstAttribute="trailing" secondItem="o52-2y-qDJ" secondAttribute="trailing" id="nMu-VY-x4t"/>
                             <constraint firstItem="o52-2y-qDJ" firstAttribute="top" secondItem="OGQ-mV-0xA" secondAttribute="top" constant="36" id="sQc-11-J4G"/>
@@ -949,13 +939,13 @@ Herbert Ross Brown House
                                 <rect key="frame" x="27" y="209.5" width="320" height="100"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQT-E1-9NO">
-                                <rect key="frame" x="160.5" y="512.5" width="55" height="39"/>
+                                <rect key="frame" x="158.5" y="512.5" width="59" height="39"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="rhk-VV-gFl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="22"/>
-                                <state key="normal" title="Send">
+                                <state key="normal" title=" Send ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -1062,17 +1052,17 @@ Herbert Ross Brown House
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjl-Wc-M0v">
-                                <rect key="frame" x="109" y="394" width="157" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjl-Wc-M0v">
+                                <rect key="frame" x="109" y="394.5" width="157" height="32"/>
                                 <color key="backgroundColor" red="0.39929699899999999" green="0.81002080440000002" blue="0.99895060059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
-                                <state key="normal" title="Request Appointment"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="16"/>
+                                <state key="normal" title=" Request Appointment "/>
                                 <connections>
                                     <segue destination="VgQ-ss-a3w" kind="show" id="gjp-AG-eYb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Z-1s-F8o">
-                                <rect key="frame" x="83.5" y="479" width="207.5" height="61.5"/>
+                                <rect key="frame" x="83.5" y="477.5" width="207.5" height="61.5"/>
                                 <string key="text">Contact:
 207-725-3770
 healthservices@bowdoin.edu</string>
@@ -1080,10 +1070,10 @@ healthservices@bowdoin.edu</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS3-tC-lsP">
-                                <rect key="frame" x="109" y="308" width="157" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS3-tC-lsP">
+                                <rect key="frame" x="109" y="317.5" width="157" height="32"/>
                                 <color key="backgroundColor" red="0.39929699897766113" green="0.8100208044052124" blue="0.99895060062408447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="16"/>
                                 <state key="normal" title="Available Resources"/>
                                 <connections>
                                     <segue destination="kWY-RW-Kl5" kind="show" id="Gec-fP-ZUk"/>
@@ -1192,7 +1182,7 @@ Friday 8:30a-5p</string>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="7Ug-p2-vjF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="20"/>
-                                <state key="normal" title="Send">
+                                <state key="normal" title=" Send ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -1788,6 +1778,23 @@ exciting and unique moves you will have fun while getting fit. </string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g4O-0z-fOu">
+                                <rect key="frame" x="227" y="450" width="97" height="53"/>
+                                <color key="backgroundColor" red="0.4000048041343689" green="0.80004358291625977" blue="0.9989391565322876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
+                                <state key="normal">
+                                    <string key="title">      Class
+Descriptions</string>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="nlt-qM-fua" kind="show" id="Cvj-Ru-qb3"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gto-Sk-yAJ">
                                 <rect key="frame" x="136" y="522" width="103" height="33"/>
                                 <color key="backgroundColor" red="0.4000048041343689" green="0.80004358291625977" blue="0.9989391565322876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1828,7 +1835,7 @@ Resources</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0O-UG-GRS">
-                                <rect key="frame" x="50" y="164" width="54" height="30"/>
+                                <rect key="frame" x="50" y="154" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt;&lt; Prev">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1838,7 +1845,7 @@ Resources</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msw-Bg-f2C">
-                                <rect key="frame" x="257" y="164" width="55" height="30"/>
+                                <rect key="frame" x="257" y="154" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next &gt;&gt;">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1848,78 +1855,61 @@ Resources</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx8-47-h8i">
-                                <rect key="frame" x="50" y="197" width="35" height="20"/>
+                                <rect key="frame" x="50" y="187" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLG-Hz-FoG">
-                                <rect key="frame" x="89" y="197" width="35" height="20"/>
+                                <rect key="frame" x="89" y="187" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4B-1N-wrf">
-                                <rect key="frame" x="127" y="197" width="35" height="20"/>
+                                <rect key="frame" x="127" y="187" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH7-hx-SYZ">
-                                <rect key="frame" x="169" y="197" width="35" height="20"/>
+                                <rect key="frame" x="169" y="187" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atu-05-mLd">
-                                <rect key="frame" x="249" y="197" width="35" height="20"/>
+                                <rect key="frame" x="249" y="187" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7v-L7-QkZ">
-                                <rect key="frame" x="289" y="197" width="35" height="20"/>
+                                <rect key="frame" x="289" y="187" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnr-Bf-MBx">
-                                <rect key="frame" x="125" y="144" width="114" height="21"/>
+                                <rect key="frame" x="125" y="134" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHl-ht-zlO">
-                                <rect key="frame" x="212" y="197" width="35" height="20"/>
+                                <rect key="frame" x="212" y="187" width="35" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g4O-0z-fOu">
-                                <rect key="frame" x="227" y="450" width="97" height="53"/>
-                                <color key="backgroundColor" red="0.4000048041343689" green="0.80004358291625977" blue="0.9989391565322876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="17"/>
-                                <state key="normal">
-                                    <string key="title">      Class
-Descriptions</string>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="nlt-qM-fua" kind="show" id="Cvj-Ru-qb3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
