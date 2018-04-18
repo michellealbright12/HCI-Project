@@ -35,6 +35,9 @@ NSInteger popupDefinition;
 
 @implementation ViewController
 @synthesize monthly;
+@synthesize calendarSun;
+@synthesize viewLabel;
+@synthesize prevLabel;
 
 - (void)viewDidLoad {
     
@@ -145,7 +148,12 @@ NSInteger popupDefinition;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int yVal=190;
+    int calendarOriginX = calendarSun.frame.origin.x + 15;
+    int calendarOriginY = viewLabel.frame.origin.y;
+    
+    int yVal= calendarOriginY + viewLabel.frame.size.height; //190;
+    
+    NSLog((@"sunday height: %d"), yVal);
     int yCount=1;
     
     
@@ -160,7 +168,7 @@ NSInteger popupDefinition;
     for(int startD=1; startD<=numDays;startD++){
         UIButton *addProject = [UIButton buttonWithType: UIButtonTypeRoundedRect];
         
-        int xCoord=(newWeekDay*40)+50;
+        int xCoord=(newWeekDay*40)+calendarOriginX; //50;
         int yCoord=(yCount*30)+yVal;
         
         newWeekDay++;

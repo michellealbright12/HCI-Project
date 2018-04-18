@@ -155,7 +155,7 @@ NSString * popup_Label;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int yVal=300;
+    int yVal=350;
     int yCount=1;
     
     

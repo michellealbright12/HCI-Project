@@ -19,6 +19,9 @@ extern NSInteger popupDefinition;
 
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *calendarSun;
+@property (strong, nonatomic) IBOutlet UILabel *viewLabel;
+@property (strong, nonatomic) IBOutlet UIButton *prevLabel;
 
 
 - (IBAction)nextAct:(id)sender;
