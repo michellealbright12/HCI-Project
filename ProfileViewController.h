@@ -16,6 +16,7 @@ extern NSArray * had_Session;
 extern NSInteger dateNums;
 extern NSString * dailyActivities;
 extern NSString * popup_Label;
+extern NSString * monthName;
 
 @interface ProfileViewController : UIViewController {
     UserInfo *user;
