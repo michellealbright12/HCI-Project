@@ -28,6 +28,8 @@ NSArray * parseSpot3;
 NSArray * hadSession;
 NSInteger dateNum;
 NSString * dailyActivity;
+NSString * popupLabel;
+NSInteger popupDefinition;
 
 //NSDate * parseSpot;
 
@@ -222,6 +224,9 @@ NSString * dailyActivity;
 
 
 -(void) popupInfo: (id) sender {
+    popupDefinition = 1;
+    popupLabel = @"Events at Buck today:";
+    
     UIButton* btn = (UIButton *) sender;
     
     NSCalendar *calendar = [NSCalendar currentCalendar];

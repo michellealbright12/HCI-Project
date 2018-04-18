@@ -9,13 +9,14 @@
 
 #import "MJDetailViewController.h"
 #import "BuckViewController.h"
+#import "ProfileViewController.h"
 
 @interface MJDetailViewController ()
 
 @end
 
 @implementation MJDetailViewController
-@synthesize popDate, number, event;
+@synthesize popDate, number, event, popLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +25,13 @@
     event.text = dailyActivity;
     number.text = integerAsString;
     popDate.text=parseSpot3[1];
+    
+    if(popupDefinition == 1){
+        popLabel.text = popupLabel;
+        
+    } else {
+        popLabel.text = popup_Label;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

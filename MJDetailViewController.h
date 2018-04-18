@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *popDate;
 @property (weak, nonatomic) IBOutlet UILabel *number;
 @property (weak, nonatomic) IBOutlet UILabel *event;
-
+@property (weak, nonatomic) IBOutlet UILabel *popLabel;
 
 @end
