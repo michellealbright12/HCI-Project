@@ -16,22 +16,22 @@
 @end
 
 @implementation MJDetailViewController
-@synthesize popDate, number, event, popLabel;
+@synthesize popDate, event, popLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSString *integerAsString = [@(dateNum) stringValue];
-    event.text = dailyActivity;
-    number.text = integerAsString;
-    popDate.text=parseSpot3[1];
+
     
     if(popupDefinition == 1){
         popLabel.text = popupLabel;
-        
+        popDate.text=parseSpot3[1];
+        event.text = dailyActivity;
     } else {
         popLabel.text = popup_Label;
+        popDate.text=parse_Spot3[1];
     }
+    
 }
 
 - (void)didReceiveMemoryWarning {

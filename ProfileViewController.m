@@ -27,6 +27,7 @@ NSArray * had_Session;
 NSInteger dateNums;
 NSString * dailyActivities;
 NSString * popup_Label;
+NSString * monthName;
 
 @implementation ProfileViewController;
 @synthesize monthlyView;
@@ -155,7 +156,7 @@ NSString * popup_Label;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int yVal=300;
+    int yVal=385;
     int yCount=1;
     
     
@@ -253,62 +254,62 @@ NSString * popup_Label;
     NSDateComponents *dateComponents = [calendar components:NSCalendarUnitWeekday fromDate:newDate];
     dateNums = dateComponents.weekday;
     
-    NSString * str1 = @"";
-    NSString * str2 = @"";
-    NSString * str3 = @"";
-    NSString * str4 = @"";
-    //    NSString * str5 = @"";
-    //    NSString * str6 = @"";
-    //    NSString * str7 = @"";
-    //    NSString * str8 = @"";
-    //    NSString * str9 = @"";
-    //    NSString * str10 = @"";
-    /*
-    if (dateNums == 1) {
-        dailyActivity = @"There are no events scheduled for this Sunday.";
-    } else if (dateNums == 2) {
-        str1 = @"Bowdoin Team Lift - Football";
-        str2 = @"6:30a-8:00a in Lower Level Weightroom";
-        
-        str3 = @"Buti Yoga - Tanya Grigsby";
-        str4 = @"6:30p-7:30p in Buck Room 213";
-        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNums == 3) {
-        str1 = @"Tai Chi - Ken Ryan";
-        str2 = @"12:00p-1:00p in Buck Room 301";
-        
-        str3 = @"Meditation - Bernie Hershberger";
-        str4 = @"4:30p-5:15p in Buck Room 302";
-        
-        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNums == 4) {
-        str1 = @"Cardio Kickboxing - Justine Chabot";
-        str2 = @"6:45a-7:30a in Buck Room 213";
-        
-        str3 = @"Yin Yoga - Lucretia Woodruf";
-        str4 = @"6:00p-7:00p in Buck Room 301";
-        
-        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNums == 5) {
-        str1 = @"Speed Training - Neil Willey";
-        str2 = @"6:00a-7:00a in Morrell Gym";
-        
-        str3 = @"ZUMBA® Fitness - Bea Blakemore";
-        str4 = @"5:15p-6:00p in Buck Room 213";
-        
-        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNums == 6) {
-        str1 = @"Mat Pilates - Cindy Carraway-Wilson";
-        str2 = @"12:00p-12:45p in Buck Room 301";
-        
-        str3 = @"Bowdoin Team Lift - Men's Soccer";
-        str4 = @"3:00p-4:30p in Lower Level Weightroom";
-        
-        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNums == 7) {
-        dailyActivity = @"There are no events scheduled for this Saturday.";
-    }
-    */
+//    NSString * str1 = @"";
+//    NSString * str2 = @"";
+//    NSString * str3 = @"";
+//    NSString * str4 = @"";
+//    NSString * str5 = @"";
+//    NSString * str6 = @"";
+//    NSString * str7 = @"";
+//    NSString * str8 = @"";
+//    NSString * str9 = @"";
+//    NSString * str10 = @"";
+//
+//    if (dateNums == 1) {
+//        dailyActivity = @"There are no events scheduled for this Sunday.";
+//    } else if (dateNums == 2) {
+//        str1 = @"Bowdoin Team Lift - Football";
+//        str2 = @"6:30a-8:00a in Lower Level Weightroom";
+//
+//        str3 = @"Buti Yoga - Tanya Grigsby";
+//        str4 = @"6:30p-7:30p in Buck Room 213";
+//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+//    } else if (dateNums == 3) {
+//        str1 = @"Tai Chi - Ken Ryan";
+//        str2 = @"12:00p-1:00p in Buck Room 301";
+//
+//        str3 = @"Meditation - Bernie Hershberger";
+//        str4 = @"4:30p-5:15p in Buck Room 302";
+//
+//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+//    } else if (dateNums == 4) {
+//        str1 = @"Cardio Kickboxing - Justine Chabot";
+//        str2 = @"6:45a-7:30a in Buck Room 213";
+//
+//        str3 = @"Yin Yoga - Lucretia Woodruf";
+//        str4 = @"6:00p-7:00p in Buck Room 301";
+//
+//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+//    } else if (dateNums == 5) {
+//        str1 = @"Speed Training - Neil Willey";
+//        str2 = @"6:00a-7:00a in Morrell Gym";
+//
+//        str3 = @"ZUMBA® Fitness - Bea Blakemore";
+//        str4 = @"5:15p-6:00p in Buck Room 213";
+//
+//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+//    } else if (dateNums == 6) {
+//        str1 = @"Mat Pilates - Cindy Carraway-Wilson";
+//        str2 = @"12:00p-12:45p in Buck Room 301";
+//
+//        str3 = @"Bowdoin Team Lift - Men's Soccer";
+//        str4 = @"3:00p-4:30p in Lower Level Weightroom";
+//
+//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+//    } else if (dateNums == 7) {
+//        dailyActivity = @"There are no events scheduled for this Saturday.";
+//    }
+    
     
     parse_Spot3=@[@"p",[dateFormat stringFromDate:newDate]];
     //compare above date to parse database. See if current user has an entry
