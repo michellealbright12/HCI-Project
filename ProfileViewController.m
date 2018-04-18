@@ -31,6 +31,9 @@ NSString * monthName;
 
 @implementation ProfileViewController;
 @synthesize monthlyView;
+@synthesize sunLabel;
+@synthesize titleLabel;
+@synthesize prevBtn;
 
 - (IBAction)buttontapped:(id)sender; {
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"LOGGEDIN"];
@@ -156,8 +159,11 @@ NSString * monthName;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-
-    int yVal=385;
+    int calendarOriginX = sunLabel.frame.origin.x + 15;
+    int calendarOriginY = prevBtn.frame.origin.y - 10;
+    
+    int yVal= calendarOriginY + prevBtn.frame.size.height;
+    //int yVal=385;
     int yCount=1;
     
     
@@ -172,7 +178,7 @@ NSString * monthName;
     for(int startD=1; startD<=num_Days;startD++){
         UIButton *addProject = [UIButton buttonWithType: UIButtonTypeRoundedRect];
         
-        int xCoord=(newWeekDay*40)+50;
+        int xCoord=(newWeekDay*40)+calendarOriginX; //50;
         int yCoord=(yCount*30)+yVal;
         
         newWeekDay++;

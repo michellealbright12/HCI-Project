@@ -25,6 +25,9 @@ extern NSString * monthName;
 - (IBAction)nextAction:(id)sender;
 
 - (IBAction)prevAction:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UIButton *prevBtn;
+@property (strong, nonatomic) IBOutlet UILabel *sunLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
