@@ -15,6 +15,7 @@
 
 @end
 
+<<<<<<< HEAD
 NSUInteger num_Days;//1-31
 int this_Year;//2015
 int weekdayNumber;//1-7
@@ -29,6 +30,9 @@ NSString * popup_Label;
 
 @implementation ProfileViewController
 @synthesize monthlyView;
+=======
+@implementation ProfileViewController
+>>>>>>> 4d6f9d4a32336e7b16cf70510b2dd547a63a9634
 
 - (IBAction)buttontapped:(id)sender; {
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"LOGGEDIN"];
@@ -38,8 +42,13 @@ NSString * popup_Label;
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+<<<<<<< HEAD
     [self grabData];
     [self myCalendarView];//don't need if you're using parse. You will call from grabData method
+=======
+//    [self grabData];
+//    [self myCalView];//don't need if you're using parse. You will call from grabData method
+>>>>>>> 4d6f9d4a32336e7b16cf70510b2dd547a63a9634
     
     self.navigationItem.hidesBackButton = YES;
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
@@ -55,6 +64,7 @@ NSString * popup_Label;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+<<<<<<< HEAD
 - (IBAction)nextAction:(id)sender {
     this_Month++;
     [self removeTags];
@@ -388,6 +398,8 @@ NSString * popup_Label;
  */
 
 
+=======
+>>>>>>> 4d6f9d4a32336e7b16cf70510b2dd547a63a9634
 
 
 /*
