@@ -14,6 +14,8 @@ extern NSArray * parseSpot3;
 extern NSArray * hadSession;
 extern NSInteger dateNum;
 extern NSString * dailyActivity;
+extern NSString * popupLabel;
+extern NSInteger popupDefinition;
 
 
 @interface ViewController : UIViewController

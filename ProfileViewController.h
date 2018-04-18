@@ -10,23 +10,24 @@
 #import "UserInfo.h"
 #import "BuckViewController.h"
 
-extern NSArray * createdAt;
-extern NSArray * parseSpot3;
-extern NSArray * hadSession;
-extern NSInteger dateNum;
-extern NSString * dailyActivity;
+extern NSArray * created_At;
+extern NSArray * parse_Spot3;
+extern NSArray * had_Session;
+extern NSInteger dateNums;
+extern NSString * dailyActivities;
+extern NSString * popup_Label;
 
 @interface ProfileViewController : UIViewController {
     UserInfo *user;
 }
 
-- (IBAction)nextAct:(id)sender;
+- (IBAction)nextAction:(id)sender;
 
-- (IBAction)prevAct:(id)sender;
+- (IBAction)prevAction:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *idNumLabel;
-@property (weak, nonatomic) IBOutlet UILabel *monthly;
+@property (weak, nonatomic) IBOutlet UILabel *monthlyView;
 
 @end

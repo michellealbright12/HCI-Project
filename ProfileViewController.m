@@ -15,19 +15,20 @@
 
 @end
 
-NSUInteger numDays;//1-31
-int thisYear;//2015
-int weekday;//1-7
-int thisMonth;//1-12
+NSUInteger num_Days;//1-31
+int this_Year;//2015
+int weekdayNumber;//1-7
+int this_Month;//1-12
 
-NSArray * createdAt;
-NSArray * parseSpot3;
-NSArray * hadSession;
-NSInteger dateNum;
-NSString * dailyActivity;
+NSArray * created_At;
+NSArray * parse_Spot3;
+NSArray * had_Session;
+NSInteger dateNums;
+NSString * dailyActivities;
+NSString * popup_Label;
 
 @implementation ProfileViewController
-@synthesize monthly;
+@synthesize monthlyView;
 
 - (IBAction)buttontapped:(id)sender; {
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"LOGGEDIN"];
@@ -38,7 +39,7 @@ NSString * dailyActivity;
     
     [super viewDidLoad];
     [self grabData];
-    [self myCalView];//don't need if you're using parse. You will call from grabData method
+    [self myCalendarView];//don't need if you're using parse. You will call from grabData method
     
     self.navigationItem.hidesBackButton = YES;
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
@@ -54,16 +55,16 @@ NSString * dailyActivity;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)nextAct:(id)sender {
-    thisMonth++;
+- (IBAction)nextAction:(id)sender {
+    this_Month++;
     [self removeTags];
-    [self updateCalNow];
+    [self updateCalendarNow];
 }
 
-- (IBAction)prevAct:(id)sender {
-    thisMonth--;
+- (IBAction)prevAction:(id)sender {
+    this_Month--;
     [self removeTags];
-    [self updateCalNow];
+    [self updateCalendarNow];
 }
 
 -(void) removeTags{
@@ -92,17 +93,17 @@ NSString * dailyActivity;
  This is the method called to create the calendar
  */
 
--(void)myCalView{
+-(void)myCalendarView{
     
-    ///numDays=[self getCurrDateInfo:[NSDate date]];
+    ///num_Days=[self getCurrDateInfo:[NSDate date]];
     
-    thisYear = [[[NSCalendar currentCalendar]
+    this_Year = [[[NSCalendar currentCalendar]
                  components:NSCalendarUnitYear fromDate:[NSDate date]]
                 year];
     
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDateComponents *comps2 = [cal components:NSCalendarUnitMonth fromDate:[NSDate date]];
-    thisMonth=[comps2 month];
+    this_Month=[comps2 month];
     
     
     [self moreDateInfo];
@@ -111,15 +112,15 @@ NSString * dailyActivity;
 
 
 
--(void)updateCalNow{// try to condense this so only one method is used instead of two
-    if(thisMonth>12){
-        thisMonth=1;
-        thisYear++;
+-(void)updateCalendarNow{// try to condense this so only one method is used instead of two
+    if(this_Month>12){
+        this_Month=1;
+        this_Year++;
     }
     
-    if(thisMonth<1){
-        thisMonth=12;
-        thisYear--;
+    if(this_Month<1){
+        this_Month=12;
+        this_Year--;
     }
     
     [self moreDateInfo];
@@ -135,35 +136,35 @@ NSString * dailyActivity;
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setDay:1];
-    [components setMonth:thisMonth];
-    [components setYear:thisYear];
+    [components setMonth:this_Month];
+    [components setYear:this_Year];
     NSDate * newDate = [calendar dateFromComponents:components];
     NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:newDate];
-    weekday=[comps weekday];
+    weekdayNumber=[comps weekday];
     
     
     //Get number of days in the month
-    numDays=[self getCurrDateInfo:newDate];
+    num_Days=[self getCurrDateInfo:newDate];
     
     
-    int newWeekDay=weekday-1;//make weekday zero based
+    int newWeekDay=weekdayNumber-1;//make weekday zero based
     
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int yVal=190;
+    int yVal=300;
     int yCount=1;
     
     
     //Display name of month++++++++++++++++++++++++++++++++++++++++++++
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    NSLog(@"%@",[[formatter monthSymbols] objectAtIndex:(thisMonth - 1)]);
-    monthly.text=[[formatter monthSymbols] objectAtIndex:(thisMonth - 1)];
+    NSLog(@"%@",[[formatter monthSymbols] objectAtIndex:(this_Month - 1)]);
+    monthlyView.text=[[formatter monthSymbols] objectAtIndex:(this_Month - 1)];
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
     
     //use for loop to display each day
-    for(int startD=1; startD<=numDays;startD++){
+    for(int startD=1; startD<=num_Days;startD++){
         UIButton *addProject = [UIButton buttonWithType: UIButtonTypeRoundedRect];
         
         int xCoord=(newWeekDay*40)+50;
@@ -178,7 +179,7 @@ NSString * dailyActivity;
         int popInt = startD;
         addProject.frame = CGRectMake(xCoord, yCoord, 35, 25);
         [addProject setTitle:[NSString stringWithFormat:@"%d", popInt] forState:UIControlStateNormal];
-        [addProject addTarget:self action:@selector(popupInfo:) forControlEvents:UIControlEventTouchUpInside];
+        [addProject addTarget:self action:@selector(popupInformation:) forControlEvents:UIControlEventTouchUpInside];
         [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         addProject.tag = popInt;
         
@@ -187,9 +188,9 @@ NSString * dailyActivity;
         //a certain criteria is met. If so, you can give the button a different background color.
         BOOL match=NO;
         
-        for(int parseNum=0; parseNum<createdAt.count; parseNum++){
+        for(int parseNum=0; parseNum<created_At.count; parseNum++){
             //Break Down date from Parse
-            NSDate * parseDate = createdAt[parseNum];
+            NSDate * parseDate = created_At[parseNum];
             NSDateComponents * parseComp = [gregorian components:NSCalendarUnitMonth fromDate:parseDate];
             int parseMonth=(int)[parseComp month];
             int parseYear=(int)[[[NSCalendar currentCalendar]components:NSCalendarUnitYear fromDate:parseDate] year];
@@ -197,9 +198,9 @@ NSString * dailyActivity;
             int parseDay= (int)[[[NSCalendar currentCalendar]components:NSCalendarUnitDay fromDate:parseDate] day];
             
             
-            if((parseYear==thisYear) && (parseMonth==thisMonth) && (parseDay==startD)){
+            if((parseYear==this_Year) && (parseMonth==this_Month) && (parseDay==startD)){
                 match=YES;
-                if([hadSession[parseNum] isEqual:@"YES"])
+                if([had_Session[parseNum] isEqual:@"YES"])
                     addProject.backgroundColor = [UIColor redColor];
                 else
                     addProject.backgroundColor = [UIColor greenColor];
@@ -228,14 +229,17 @@ NSString * dailyActivity;
  */
 
 
--(void) popupInfo: (id) sender {
+-(void) popupInformation: (id) sender {
+    popupDefinition = 2;
+    popup_Label = @"Your schedule for today:";
+    
     UIButton* btn = (UIButton *) sender;
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setDay:[btn.currentTitle integerValue]];
-    [components setMonth:thisMonth];
-    [components setYear:thisYear];
+    [components setMonth:this_Month];
+    [components setYear:this_Year];
     NSDate * newDate = [calendar dateFromComponents:components];
     //Formats date to MMM d, yyyy
     NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
@@ -244,7 +248,7 @@ NSString * dailyActivity;
     //Calculate the day number from the subset of NSCalendarUnitWeekday so that we know what events
     //should be displayed for the specific day of the week that the user clicked, in the range 1-7.
     NSDateComponents *dateComponents = [calendar components:NSCalendarUnitWeekday fromDate:newDate];
-    dateNum = dateComponents.weekday;
+    dateNums = dateComponents.weekday;
     
     NSString * str1 = @"";
     NSString * str2 = @"";
@@ -256,17 +260,17 @@ NSString * dailyActivity;
     //    NSString * str8 = @"";
     //    NSString * str9 = @"";
     //    NSString * str10 = @"";
-    
-    if (dateNum == 1) {
+    /*
+    if (dateNums == 1) {
         dailyActivity = @"There are no events scheduled for this Sunday.";
-    } else if (dateNum == 2) {
+    } else if (dateNums == 2) {
         str1 = @"Bowdoin Team Lift - Football";
         str2 = @"6:30a-8:00a in Lower Level Weightroom";
         
         str3 = @"Buti Yoga - Tanya Grigsby";
         str4 = @"6:30p-7:30p in Buck Room 213";
         dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNum == 3) {
+    } else if (dateNums == 3) {
         str1 = @"Tai Chi - Ken Ryan";
         str2 = @"12:00p-1:00p in Buck Room 301";
         
@@ -274,7 +278,7 @@ NSString * dailyActivity;
         str4 = @"4:30p-5:15p in Buck Room 302";
         
         dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNum == 4) {
+    } else if (dateNums == 4) {
         str1 = @"Cardio Kickboxing - Justine Chabot";
         str2 = @"6:45a-7:30a in Buck Room 213";
         
@@ -282,7 +286,7 @@ NSString * dailyActivity;
         str4 = @"6:00p-7:00p in Buck Room 301";
         
         dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNum == 5) {
+    } else if (dateNums == 5) {
         str1 = @"Speed Training - Neil Willey";
         str2 = @"6:00a-7:00a in Morrell Gym";
         
@@ -290,7 +294,7 @@ NSString * dailyActivity;
         str4 = @"5:15p-6:00p in Buck Room 213";
         
         dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNum == 6) {
+    } else if (dateNums == 6) {
         str1 = @"Mat Pilates - Cindy Carraway-Wilson";
         str2 = @"12:00p-12:45p in Buck Room 301";
         
@@ -298,12 +302,12 @@ NSString * dailyActivity;
         str4 = @"3:00p-4:30p in Lower Level Weightroom";
         
         dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-    } else if (dateNum == 7) {
+    } else if (dateNums == 7) {
         dailyActivity = @"There are no events scheduled for this Saturday.";
     }
+    */
     
-    
-    parseSpot3=@[@"p",[dateFormat stringFromDate:newDate]];
+    parse_Spot3=@[@"p",[dateFormat stringFromDate:newDate]];
     //compare above date to parse database. See if current user has an entry
     
     
@@ -341,7 +345,7 @@ NSString * dailyActivity;
      if (!error) {//You do have data in the databse - let's see if it's current
      
      
-     createdAt = [checkins valueForKey:@"createdAt"];
+     created_At = [checkins valueForKey:@"created_At"];
      
      [self myCalView];//call to show the calendar
      
