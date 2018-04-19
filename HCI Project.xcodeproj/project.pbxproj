@@ -485,7 +485,7 @@
 				TargetAttributes = {
 					0A87717C20696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = TBHG3353RU;
+						DevelopmentTeam = SPKL99M6VN;
 					};
 					0A87719820696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -792,12 +792,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TBHG3353RU;
+				DEVELOPMENT_TEAM = SPKL99M6VN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"MTL_ENABLE_DEBUG_INFO[arch=*]" = default;
-				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project12345";
+				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -806,11 +806,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TBHG3353RU;
+				DEVELOPMENT_TEAM = SPKL99M6VN;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project12345";
+				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

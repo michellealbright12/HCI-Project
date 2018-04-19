@@ -52,6 +52,11 @@ NSDate *date;
 
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [datePicker resignFirstResponder];
+    [eventName resignFirstResponder];
+}
+
 /*
 #pragma mark - Navigation
 
