@@ -17,6 +17,7 @@ extern NSInteger dateNums;
 extern NSString * dailyActivities;
 extern NSString * popup_Label;
 extern NSString * monthName;
+extern NSMutableDictionary * dict;
 
 @interface ProfileViewController : UIViewController {
     UserInfo *user;
@@ -28,6 +29,7 @@ extern NSString * monthName;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIButton *prevBtn;
 @property (strong, nonatomic) IBOutlet UILabel *sunLabel;
+@property(nonatomic, retain) NSDate *date;
 
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;

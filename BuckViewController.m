@@ -39,6 +39,7 @@ NSInteger popupDefinition;
 @synthesize viewLabel;
 @synthesize prevLabel;
 
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];

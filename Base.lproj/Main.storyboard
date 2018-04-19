@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4352" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,6 +30,7 @@
                 <navigationController id="CEp-Fw-AeS" userLabel="Other Resources" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Other Resources" image="Selfcare" id="S3m-ND-q8L" userLabel="Other Resources"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AB0-I3-gxC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1132,7 +1133,7 @@ Friday 8:30a-5p</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. Monday 8-10, Tuesday 1-3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-At-qIw">
-                                <rect key="frame" x="76.5" y="353.5" width="221" height="30"/>
+                                <rect key="frame" x="76.5" y="354" width="221" height="30"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1152,7 +1153,7 @@ Friday 8:30a-5p</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woO-Vx-3e1">
-                                <rect key="frame" x="27.5" y="208.5" width="320" height="95"/>
+                                <rect key="frame" x="27.5" y="208" width="320" height="95"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko2-Ew-RAE">
                                 <rect key="frame" x="0.0" y="104" width="375" height="24"/>
@@ -1574,6 +1575,19 @@ Friday 8:30a-5p</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXk-xD-jcV">
+                                <rect key="frame" x="102" y="551" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="FPX-JZ-BDv" kind="show" id="5nL-Ri-CDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-kO-LZa">
+                                <rect key="frame" x="228" y="551" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1624,6 +1638,94 @@ Friday 8:30a-5p</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKj-IM-hpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2152.8000000000002" y="-922.48875562218893"/>
+        </scene>
+        <!--Add Event-->
+        <scene sceneID="KfE-95-5ZN">
+            <objects>
+                <viewController id="FPX-JZ-BDv" customClass="AddEvent" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fgv-qP-IBf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2I-QE-UKO">
+                                <rect key="frame" x="0.0" y="100" width="375" height="24"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Bold" family="Clarika Geometric" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqL-SN-Trc">
+                                <rect key="frame" x="103" y="168" width="169" height="23"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-aa-6Fl">
+                                <rect key="frame" x="103" y="199" width="169" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFs-ki-2N5">
+                                <rect key="frame" x="103" y="268" width="169" height="23"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Regular" family="Clarika Geometric" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6up-oV-3PD">
+                                <rect key="frame" x="163" y="523" width="49" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitEvent:" destination="FPX-JZ-BDv" eventType="touchUpInside" id="Wq9-OM-u6Z"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="VWP-av-Z6h">
+                                <rect key="frame" x="16" y="299" width="343" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="545854024.59429598">
+                                    <!--2018-04-19 18:07:04 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nnp-aa-6Fl" firstAttribute="leading" secondItem="QM8-Ih-1vn" secondAttribute="leading" constant="103" id="353-C9-hkO"/>
+                            <constraint firstItem="ZFs-ki-2N5" firstAttribute="top" secondItem="Nnp-aa-6Fl" secondAttribute="bottom" constant="39" id="60b-H9-TZZ"/>
+                            <constraint firstItem="ZFs-ki-2N5" firstAttribute="width" secondItem="Nnp-aa-6Fl" secondAttribute="width" id="9H6-lE-zsY"/>
+                            <constraint firstItem="VWP-av-Z6h" firstAttribute="leading" secondItem="QM8-Ih-1vn" secondAttribute="leading" constant="16" id="A7C-fn-rt4"/>
+                            <constraint firstItem="d2I-QE-UKO" firstAttribute="leading" secondItem="QM8-Ih-1vn" secondAttribute="leading" id="Boz-4P-WWu"/>
+                            <constraint firstItem="ZFs-ki-2N5" firstAttribute="centerX" secondItem="Fgv-qP-IBf" secondAttribute="centerX" id="HTf-t1-bIh"/>
+                            <constraint firstItem="d2I-QE-UKO" firstAttribute="centerX" secondItem="Fgv-qP-IBf" secondAttribute="centerX" id="KZT-kI-0RJ"/>
+                            <constraint firstItem="gqL-SN-Trc" firstAttribute="top" secondItem="d2I-QE-UKO" secondAttribute="bottom" constant="44" id="LG2-aA-Zir"/>
+                            <constraint firstItem="VWP-av-Z6h" firstAttribute="top" secondItem="ZFs-ki-2N5" secondAttribute="bottom" constant="8" id="TEV-Ql-zWP"/>
+                            <constraint firstItem="Nnp-aa-6Fl" firstAttribute="top" secondItem="gqL-SN-Trc" secondAttribute="bottom" constant="8" id="Ywg-xX-RQ7"/>
+                            <constraint firstItem="gqL-SN-Trc" firstAttribute="centerX" secondItem="Fgv-qP-IBf" secondAttribute="centerX" id="Z5f-Nc-I9g"/>
+                            <constraint firstItem="Nnp-aa-6Fl" firstAttribute="centerX" secondItem="Fgv-qP-IBf" secondAttribute="centerX" id="bxk-WQ-KK2"/>
+                            <constraint firstItem="QM8-Ih-1vn" firstAttribute="trailing" secondItem="gqL-SN-Trc" secondAttribute="trailing" constant="103" id="eWg-3a-wez"/>
+                            <constraint firstItem="QM8-Ih-1vn" firstAttribute="trailing" secondItem="VWP-av-Z6h" secondAttribute="trailing" constant="16" id="fLw-51-SPm"/>
+                            <constraint firstItem="QM8-Ih-1vn" firstAttribute="trailing" secondItem="Nnp-aa-6Fl" secondAttribute="trailing" constant="103" id="gdS-VT-t9G"/>
+                            <constraint firstItem="QM8-Ih-1vn" firstAttribute="trailing" secondItem="d2I-QE-UKO" secondAttribute="trailing" id="nac-A9-VnQ"/>
+                            <constraint firstItem="d2I-QE-UKO" firstAttribute="top" secondItem="QM8-Ih-1vn" secondAttribute="top" constant="36" id="oBd-Ng-4wu"/>
+                            <constraint firstItem="QM8-Ih-1vn" firstAttribute="bottom" secondItem="6up-oV-3PD" secondAttribute="bottom" constant="65" id="ogP-V9-Hlm"/>
+                            <constraint firstItem="6up-oV-3PD" firstAttribute="centerX" secondItem="Fgv-qP-IBf" secondAttribute="centerX" id="oig-Xz-A0O"/>
+                            <constraint firstItem="gqL-SN-Trc" firstAttribute="leading" secondItem="QM8-Ih-1vn" secondAttribute="leading" constant="103" id="r6K-8N-swN"/>
+                            <constraint firstItem="QM8-Ih-1vn" firstAttribute="trailing" secondItem="6up-oV-3PD" secondAttribute="trailing" constant="163" id="u2s-kJ-FTv"/>
+                            <constraint firstItem="6up-oV-3PD" firstAttribute="leading" secondItem="QM8-Ih-1vn" secondAttribute="leading" constant="163" id="z0r-hX-yM6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QM8-Ih-1vn"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="VWP-av-Z6h" id="uZt-By-MCc"/>
+                        <outlet property="eventName" destination="Nnp-aa-6Fl" id="RkF-A1-Lqb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Efd-XC-TuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="-922.48875562218893"/>
         </scene>
         <!--Class Descriptions-->
         <scene sceneID="eKY-as-2CE">
@@ -2265,6 +2367,7 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Health Center" image="HealthCenter" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sWw-1Y-Jdc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2283,6 +2386,7 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Buck Fitness" image="Buck" id="FJH-QX-oMf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pDJ-Vk-g5e">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2301,6 +2405,7 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Counseling Center" image="Counseling" id="QYD-Yh-xiK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z9x-EH-FcZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2319,6 +2424,7 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Profile" image="profileIcon" id="Sur-1o-B6K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wje-iO-uos">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -93,6 +93,7 @@
 		0ACDD043207D1D4B00003988 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD001207D1D4B00003988 /* OpenSans-Regular.ttf */; };
 		0ACDD044207D1D4B00003988 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD002207D1D4B00003988 /* OpenSans-BoldItalic.ttf */; };
 		0ACDD045207D1D4B00003988 /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD003207D1D4B00003988 /* SourceSansPro-Black.otf */; };
+		0AE70021208909B80048FFC9 /* AddEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE70020208909B80048FFC9 /* AddEvent.m */; };
 		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
@@ -220,6 +221,8 @@
 		0ACDD001207D1D4B00003988 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		0ACDD002207D1D4B00003988 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		0ACDD003207D1D4B00003988 /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.otf"; sourceTree = "<group>"; };
+		0AE7001F208909B80048FFC9 /* AddEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddEvent.h; sourceTree = "<group>"; };
+		0AE70020208909B80048FFC9 /* AddEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddEvent.m; sourceTree = "<group>"; };
 		3CFEFB18207161D4004B2654 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3CFEFB19207161D4004B2654 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CFEFB1B20717A35004B2654 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 			children = (
 				0A8771B6206AE4B200EEA672 /* BuckViewController.h */,
 				0A8771B7206AE4B200EEA672 /* BuckViewController.m */,
+				0AE7001F208909B80048FFC9 /* AddEvent.h */,
+				0AE70020208909B80048FFC9 /* AddEvent.m */,
 				3CFEFB1B20717A35004B2654 /* ProfileViewController.h */,
 				3CFEFB1C20717A35004B2654 /* ProfileViewController.m */,
 				0A8771B8206AE4B200EEA672 /* MJDetailViewController.h */,
@@ -623,6 +628,7 @@
 				3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */,
 				3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */,
 				0A87718220696E4100EEA672 /* main.m in Sources */,
+				0AE70021208909B80048FFC9 /* AddEvent.m in Sources */,
 				0A8771C4206AE4B200EEA672 /* UIViewController+MJPopupViewController.m in Sources */,
 				3CFEFB232072A6F2004B2654 /* LoginSegue.m in Sources */,
 				0A8771C0206AE4B200EEA672 /* BuckViewController.m in Sources */,

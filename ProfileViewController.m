@@ -28,12 +28,14 @@ NSInteger dateNums;
 NSString * dailyActivities;
 NSString * popup_Label;
 NSString * monthName;
+NSMutableDictionary * dict;
 
 @implementation ProfileViewController;
 @synthesize monthlyView;
 @synthesize sunLabel;
 @synthesize titleLabel;
 @synthesize prevBtn;
+@synthesize date;
 
 - (IBAction)buttontapped:(id)sender; {
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"LOGGEDIN"];
@@ -46,7 +48,8 @@ NSString * monthName;
 
     [self grabData];
     [self myCalendarView];
-    
+    dict = [NSMutableDictionary dictionary];
+    NSLog(@"%@", dict);
     self.navigationItem.hidesBackButton = YES;
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
     user = [[UserInfo alloc] initWithFirstName:@"John" withLastName:@"Smith" withIdNum:@"B1111"];
