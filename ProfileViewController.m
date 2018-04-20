@@ -35,7 +35,7 @@ NSMutableDictionary * dict;
 @synthesize sunLabel;
 @synthesize titleLabel;
 @synthesize prevBtn;
-@synthesize date;
+//@synthesize date;
 
 - (IBAction)buttontapped:(id)sender; {
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"LOGGEDIN"];
@@ -258,11 +258,45 @@ NSMutableDictionary * dict;
     //Formats date to MMM d, yyyy
     NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"EEEE, MMM d, yyyy"];
+    NSLog(@"%@", newDate);
     
     //Calculate the day number from the subset of NSCalendarUnitWeekday so that we know what events
     //should be displayed for the specific day of the week that the user clicked, in the range 1-7.
     NSDateComponents *dateComponents = [calendar components:NSCalendarUnitWeekday fromDate:newDate];
     dateNums = dateComponents.weekday;
+    NSString *selectedDate = [dateFormat stringFromDate:newDate];
+    //go through dictinoary and and get the event name and time for the relevant date
+    NSDate *addEventOnDate = [NSDate date];
+    NSDateFormatter *nowDateFormatter = [[NSDateFormatter alloc] init];
+    [nowDateFormatter setDateFormat:@"e"];
+    //NSInteger weekdayNumber = (NSInteger)[[nowDateFormatter stringFromDate:newDate] integerValue];
+    NSLog(@"%@ day num: %ld", newDate, dateNums);
+    //key is the event name
+    //objectForKey:key is the date
+    for (id key in dict) {
+        NSLog(@"key=%@ value=%@", key, [dict objectForKey:key]);
+        
+        addEventOnDate = [dict objectForKey:key];
+        NSString *addEventDate = [dateFormat stringFromDate:addEventOnDate];
+        if ([addEventDate isEqual:selectedDate]) {
+            dailyActivity = key;
+        }
+        NSInteger addWeekdayNumber = (NSInteger)[[nowDateFormatter stringFromDate:addEventOnDate] integerValue];
+        
+        
+    }
+    parse_Spot3=@[@"p",[dateFormat stringFromDate:newDate]];
+    //compare above date to parse database. See if current user has an entry
+    
+    
+    //   ----- Launch a  POPUP SCREEN -----------
+    
+    
+    MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
+    
+    [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
+    
+    
     
 //    NSString * str1 = @"";
 //    NSString * str2 = @"";
@@ -319,19 +353,7 @@ NSMutableDictionary * dict;
 //    } else if (dateNums == 7) {
 //        dailyActivity = @"There are no events scheduled for this Saturday.";
 //    }
-    
-    
-    parse_Spot3=@[@"p",[dateFormat stringFromDate:newDate]];
-    //compare above date to parse database. See if current user has an entry
-    
-    
-    //   ----- Launch a  POPUP SCREEN -----------
-    
-    
-    MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
-    
-    [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
-    
+
     
     
     

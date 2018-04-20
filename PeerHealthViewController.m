@@ -35,4 +35,7 @@
         printf("No mail account configured\n");
     }
 }
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
