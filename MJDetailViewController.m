@@ -30,6 +30,7 @@
     } else {
         popLabel.text = popup_Label;
         popDate.text=parse_Spot3[1];
+        event.text = dailyActivity;
     }
     
 }

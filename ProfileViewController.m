@@ -29,13 +29,15 @@ NSString * dailyActivities;
 NSString * popup_Label;
 NSString * monthName;
 NSMutableDictionary * dict;
+int calendarY;
+int yValue;
 
 @implementation ProfileViewController;
 @synthesize monthlyView;
 @synthesize sunLabel;
 @synthesize titleLabel;
 @synthesize prevBtn;
-//@synthesize date;
+
 
 - (IBAction)buttontapped:(id)sender; {
     [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"LOGGEDIN"];
@@ -45,6 +47,9 @@ NSMutableDictionary * dict;
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    calendarY = prevBtn.frame.origin.y - 10;
+    
+    yValue = calendarY + prevBtn.frame.size.height;
 
     [self grabData];
     [self myCalendarView];
@@ -162,10 +167,10 @@ NSMutableDictionary * dict;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int calendarOriginX = sunLabel.frame.origin.x + 15;
-    int calendarOriginY = prevBtn.frame.origin.y - 10;
+    int calendarOriginX = sunLabel.frame.origin.x - 3;
+    //int calendarOriginY = prevBtn.frame.origin.y - 10;
     
-    int yVal= calendarOriginY + prevBtn.frame.size.height;
+    //int yVal= calendarOriginY + prevBtn.frame.size.height;
     //int yVal=385;
     int yCount=1;
     
@@ -182,7 +187,7 @@ NSMutableDictionary * dict;
         UIButton *addProject = [UIButton buttonWithType: UIButtonTypeRoundedRect];
         
         int xCoord=(newWeekDay*40)+calendarOriginX; //50;
-        int yCoord=(yCount*30)+yVal;
+        int yCoord=(yCount*30)+yValue;
         
         newWeekDay++;
         if(newWeekDay>6){//drops buttons on y axis every 7 days
@@ -258,32 +263,34 @@ NSMutableDictionary * dict;
     //Formats date to MMM d, yyyy
     NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"EEEE, MMM d, yyyy"];
-    NSLog(@"%@", newDate);
+    NSLog(@"The date:%@", newDate);
     
-    //Calculate the day number from the subset of NSCalendarUnitWeekday so that we know what events
-    //should be displayed for the specific day of the week that the user clicked, in the range 1-7.
-    NSDateComponents *dateComponents = [calendar components:NSCalendarUnitWeekday fromDate:newDate];
-    dateNums = dateComponents.weekday;
+    //gets the time format
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    [timeFormatter setDateFormat:@"HH:mm"];
+
     NSString *selectedDate = [dateFormat stringFromDate:newDate];
+    
     //go through dictinoary and and get the event name and time for the relevant date
     NSDate *addEventOnDate = [NSDate date];
     NSDateFormatter *nowDateFormatter = [[NSDateFormatter alloc] init];
     [nowDateFormatter setDateFormat:@"e"];
-    //NSInteger weekdayNumber = (NSInteger)[[nowDateFormatter stringFromDate:newDate] integerValue];
-    NSLog(@"%@ day num: %ld", newDate, dateNums);
+   
     //key is the event name
     //objectForKey:key is the date
+    BOOL isEvent = false;
     for (id key in dict) {
-        NSLog(@"key=%@ value=%@", key, [dict objectForKey:key]);
-        
         addEventOnDate = [dict objectForKey:key];
         NSString *addEventDate = [dateFormat stringFromDate:addEventOnDate];
         if ([addEventDate isEqual:selectedDate]) {
-            dailyActivity = key;
+            NSString *timeString = [NSString stringWithFormat:@"Time: %@", [timeFormatter stringFromDate:addEventOnDate]];
+            
+            dailyActivity = [NSString stringWithFormat:@"%@\n%@", key, timeString];;
+            isEvent = true;
         }
-        NSInteger addWeekdayNumber = (NSInteger)[[nowDateFormatter stringFromDate:addEventOnDate] integerValue];
-        
-        
+    }
+    if (!isEvent) {
+        dailyActivity = @"No events";
     }
     parse_Spot3=@[@"p",[dateFormat stringFromDate:newDate]];
     //compare above date to parse database. See if current user has an entry
@@ -293,7 +300,7 @@ NSMutableDictionary * dict;
     
     
     MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
-    
+   
     [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
     
     

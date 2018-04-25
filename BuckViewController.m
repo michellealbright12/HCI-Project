@@ -30,6 +30,8 @@ NSInteger dateNum;
 NSString * dailyActivity;
 NSString * popupLabel;
 NSInteger popupDefinition;
+int yVal;
+int calendarOriginY;
 
 //NSDate * parseSpot;
 
@@ -42,6 +44,9 @@ NSInteger popupDefinition;
 
 - (void)viewDidLoad {
     
+    calendarOriginY = viewLabel.frame.origin.y;
+    
+    yVal= calendarOriginY + viewLabel.frame.size.height;
     [super viewDidLoad];
     
     [self grabData];
@@ -149,12 +154,10 @@ NSInteger popupDefinition;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int calendarOriginX = calendarSun.frame.origin.x + 15;
-    int calendarOriginY = viewLabel.frame.origin.y;
+    int calendarOriginX = calendarSun.frame.origin.x -5;
+   
     
-    int yVal= calendarOriginY + viewLabel.frame.size.height; //190;
-    
-    NSLog((@"sunday height: %d"), yVal);
+    NSLog((@"buck label y: %f"), calendarOriginX);
     int yCount=1;
     
     
