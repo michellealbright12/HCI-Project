@@ -29,9 +29,12 @@ NSString * dailyActivities;
 NSString * popup_Label;
 NSString * monthName;
 NSMutableDictionary * dict;
+NSMutableArray *buttons;
 int calendarY;
 int yValue;
+int x, y;
 int numEvents;
+int calendarX;
 
 @implementation ProfileViewController;
 @synthesize monthlyView;
@@ -48,11 +51,15 @@ int numEvents;
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    calendarY = prevBtn.frame.origin.y - 10;
-    
+    y = prevBtn.frame.origin.y;
+    calendarY = y - 11;
+    x = sunLabel.frame.origin.x;
+    //x = 75;
+    calendarX = x + 13;
+    NSLog(@"x origin: %d",x);
     yValue = calendarY + prevBtn.frame.size.height;
 
-    [self grabData];
+    //[self grabData];
     [self myCalendarView];
     dict = [NSMutableDictionary dictionary];
     int numEvents = 0;
@@ -80,6 +87,18 @@ int numEvents;
 
 - (IBAction)prevAction:(id)sender {
     this_Month--;
+    [self removeTags];
+    [self updateCalendarNow];
+}
+
+- (IBAction)deleteSubviews:(id)sender {
+    /*for (UIView *subview in [self.view subviews]) {
+            [subview removeFromSuperview];
+        }*/
+    [self removeTags];
+}
+
+-(void) viewWillAppear:(BOOL)animated {
     [self removeTags];
     [self updateCalendarNow];
 }
@@ -144,15 +163,9 @@ int numEvents;
     
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    NSLog(@"view will Appear");
-    [self moreDateInfo];
-}
-
 -(void)moreDateInfo{
     
+    buttons = [NSMutableArray new];
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     //get first day of month's weekday
@@ -176,8 +189,9 @@ int numEvents;
     NSLog(@"Day week %d",newWeekDay);
     
     //coordinates for displaying the buttons
-    int calendarOriginX = sunLabel.frame.origin.x - 3;
+   // int calendarOriginX = sunLabel.frame.origin.x - 3;
     //int calendarOriginY = prevBtn.frame.origin.y - 10;
+     calendarY = y - 11;
     
     //int yVal= calendarOriginY + prevBtn.frame.size.height;
     //int yVal=385;
@@ -190,12 +204,12 @@ int numEvents;
     monthlyView.text=[[formatter monthSymbols] objectAtIndex:(this_Month - 1)];
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
-    
+    NSLog(@"dict: \n%@", dict);
     //use for loop to display each day
     for(int startD=1; startD<=num_Days;startD++){
         UIButton *addProject = [UIButton buttonWithType: UIButtonTypeRoundedRect];
         
-        int xCoord=(newWeekDay*40)+calendarOriginX; //50;
+        int xCoord=(newWeekDay*40)+calendarX; //50;
         int yCoord=(yCount*30)+yValue;
         
         newWeekDay++;
@@ -225,7 +239,7 @@ int numEvents;
             }
         }
 
-        
+       
         [self.view addSubview:addProject];
     }
     
@@ -292,8 +306,6 @@ int numEvents;
     
     
     //   ----- Launch a  POPUP SCREEN -----------
-    
-    
     MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
    
     [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
@@ -303,12 +315,8 @@ int numEvents;
 
 
 -(void)grabData{//get data from your database system
-    
-    
+
 }
-
-
-
 
 /*
 #pragma mark - Navigation

@@ -33,6 +33,7 @@ NSInteger popupDefinition;
 NSMutableDictionary * eventDict;
 int yVal;
 int calendarOriginY;
+int calendarOriginX;
 
 //NSDate * parseSpot;
 
@@ -45,9 +46,9 @@ int calendarOriginY;
 
 - (void)viewDidLoad {
     
-    calendarOriginY = viewLabel.frame.origin.y;
-    
-    yVal= calendarOriginY + viewLabel.frame.size.height;
+    calendarOriginY = monthly.frame.origin.y;
+    calendarOriginX = calendarSun.frame.origin.x + 14;
+    yVal= calendarOriginY - 5;
     [super viewDidLoad];
     eventDict = [NSMutableDictionary dictionary];
     NSLog(@"%@", eventDict);
@@ -155,7 +156,7 @@ int calendarOriginY;
     int newWeekDay=weekday-1;//make weekday zero based
     
     //coordinates for displaying the buttons
-    int calendarOriginX = calendarSun.frame.origin.x -5;
+    //int calendarOriginX = calendarSun.frame.origin.x -5;
     int yCount=1;
     
     
@@ -327,23 +328,14 @@ int calendarOriginY;
     
     parseSpot3=@[@"p",[dateFormat stringFromDate:newDate]];
     //compare above date to parse database. See if current user has an entry
-    
-    
-    
-    
+   
     //   ----- Launch a  POPUP SCREEN -----------
-    
-    
+  
     MJDetailViewController *detailViewController = [[MJDetailViewController alloc] initWithNibName:@"MJDetailViewController" bundle:nil];
     
     [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
-    
-    
-    
-    
+
 }
-
-
 
 -(void)grabData{
     NSString * str1 = @"";
@@ -396,72 +388,11 @@ int calendarOriginY;
         } else if (i == 7) {
             dailyActivity = @"There are no events scheduled for this day.";
         }
-        NSString *event = dailyActivity;
         NSNumber *date = [NSNumber numberWithInteger:i + 1];
         [eventDict setObject:dailyActivity forKey:date];//get data from your database system
     }
-    
-    /*
-     PFUser *currentUser = [PFUser currentUser];
-     if (currentUser) {
-     // do stuff with the user
-     NSLog(@"I AM LOGGED IN NOW!");
-     //see if you have a score saved yet
-     NSString * un;
-     un=[NSString stringWithFormat:@"%@",[[PFUser currentUser]valueForKey:@"username"]];
-     //search for user
-     PFQuery *query = [PFQuery queryWithClassName:@"checkins"];
-     [query whereKey:@"username" equalTo:un];
-     //query desc by created at
-     [query findObjectsInBackgroundWithBlock:^(NSArray *  checkins, NSError *error) {
-     
-     
-     if (!error) {//You do have data in the databse - let's see if it's current
-     
-     
-     createdAt = [checkins valueForKey:@"createdAt"];
-     
-     [self myCalView];//call to show the calendar
-     
-     }else{//You don't have any data saved in the database yet-----------------------
-     NSLog(@"NO Good");//no data
-     [self myCalView];//still show calendar
-     }
-     }];
-     
-     
-     } else {
-     // show the signup or login screen
-     NSLog(@"I AM not LOGGED IN!!!");//*********************************************
-     
-     
-     
-     }
-     
-     */
 }
 
-
-
-/*
- NSDate *now = [NSDate date];
- NSCalendar *calendar = [[NSCalendar alloc]
- initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
- NSCalendarUnit units = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
- NSDateComponents *components = [calendar components:units fromDate:now];
- 
- NSLog(@"Day: %ld", [components day]);
- NSLog(@"Month: %ld", [components month]);
- NSLog(@"Year: %ld", [components year]);
- 
- 
- 
- */
-
-/*
- NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
- weekday = [comps weekday];
- */
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender; {
     [super prepareForSegue:segue sender:sender];
