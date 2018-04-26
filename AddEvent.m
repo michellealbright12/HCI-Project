@@ -39,9 +39,10 @@ NSDate *date;
         
     }
     else {
-        
+        numEvents++;
+        event = [NSString stringWithFormat:@"%@%d", event, numEvents];
         [dict setObject:date forKey:event];
-        NSLog(@"%@", dict);
+        
         alert = [[UIAlertView alloc] initWithTitle:@"Event Added"
         message:nil
         delegate:self

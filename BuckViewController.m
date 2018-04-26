@@ -30,6 +30,7 @@ NSInteger dateNum;
 NSString * dailyActivity;
 NSString * popupLabel;
 NSInteger popupDefinition;
+NSMutableDictionary * eventDict;
 int yVal;
 int calendarOriginY;
 
@@ -48,6 +49,8 @@ int calendarOriginY;
     
     yVal= calendarOriginY + viewLabel.frame.size.height;
     [super viewDidLoad];
+    eventDict = [NSMutableDictionary dictionary];
+    NSLog(@"%@", eventDict);
     
     [self grabData];
     [self myCalView];//don't need if you're using parse. You will call from grabData method
@@ -151,13 +154,8 @@ int calendarOriginY;
     
     int newWeekDay=weekday-1;//make weekday zero based
     
-    NSLog(@"Day week %d",newWeekDay);
-    
     //coordinates for displaying the buttons
     int calendarOriginX = calendarSun.frame.origin.x -5;
-   
-    
-    NSLog((@"buck label y: %f"), calendarOriginX);
     int yCount=1;
     
     
@@ -188,34 +186,20 @@ int calendarOriginY;
         [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         addProject.tag = popInt;
         
+        NSNumber *date = [NSNumber numberWithInteger:newWeekDay + 1];
+        NSString *activity = [eventDict objectForKey:date];
+        
+        if (activity == nil || activity.length == 0 || [activity isEqualToString:@"There are no events scheduled for this day."]) {
+            addProject.backgroundColor = [UIColor grayColor];
+        } else {
+            addProject.backgroundColor = [UIColor colorWithRed:0.04 green:0.85 blue:0.36 alpha:1.0];;
+        }
+        
+        //get items in eventDict that make newWeekDay+1
+        //if there are items for that num, make the backgroundcolor green
         
         //if you are using a database this section checks to see if
         //a certain criteria is met. If so, you can give the button a different background color.
-        BOOL match=NO;
-        
-        for(int parseNum=0; parseNum<createdAt.count; parseNum++){
-            //Break Down date from Parse
-            NSDate * parseDate = createdAt[parseNum];
-            NSDateComponents * parseComp = [gregorian components:NSCalendarUnitMonth fromDate:parseDate];
-            int parseMonth=(int)[parseComp month];
-            int parseYear=(int)[[[NSCalendar currentCalendar]components:NSCalendarUnitYear fromDate:parseDate] year];
-            
-            int parseDay= (int)[[[NSCalendar currentCalendar]components:NSCalendarUnitDay fromDate:parseDate] day];
-            
-            
-            if((parseYear==thisYear) && (parseMonth==thisMonth) && (parseDay==startD)){
-                match=YES;
-                if([hadSession[parseNum] isEqual:@"YES"])
-                    addProject.backgroundColor = [UIColor redColor];
-                else
-                    addProject.backgroundColor = [UIColor greenColor];
-                
-                NSLog(@"Match %d", startD);
-            }
-        }
-        if(match==NO)
-            addProject.backgroundColor = [UIColor grayColor];
-        
         
         [self.view addSubview:addProject];
     }
@@ -256,19 +240,47 @@ int calendarOriginY;
     NSDateComponents *dateComponents = [calendar components:NSCalendarUnitWeekday fromDate:newDate];
     dateNum = dateComponents.weekday;
     
+    NSNumber *currDateNumber = [NSNumber numberWithInteger:dateNum];
+    //go through dictinoary and and get the event name and time for the relevant date
+   // NSDate *addEventOnDate = [NSDate date];
+    NSDateFormatter *nowDateFormatter = [[NSDateFormatter alloc] init];
+    [nowDateFormatter setDateFormat:@"e"];
+    
+    //gets the time format
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    [timeFormatter setDateFormat:@"HH:mm"];
+    
+    
+    //start add stuff to automate event popup
+   // NSString *selectedDate = [dateFormat stringFromDate:newDate];
+    //key is the event name
+    //objectForKey:key is the date
+    BOOL isEvent = false;
+    for (id key in eventDict) {
+        NSNumber *addEventOnDate = [eventDict objectForKey:key];
+        //NSString *addEventDate = [nowDateFormatter stringFromDate:addEventOnDate];
+        //NSString *nextEvent = [[NSString alloc] init];
+        if ([addEventOnDate isEqual:currDateNumber]) {
+            //NSString *timeString = [NSString stringWithFormat:@"Time: %@", [timeFormatter stringFromDate:addEventOnDate]];
+            //nextEvent = [NSString stringWithFormat:@"%@\n%@\n", key, timeString];
+            dailyActivity = key; //[dailyActivity stringByAppendingString:nextEvent];
+            isEvent = true;
+        }
+    }
+    if (!isEvent) {
+        dailyActivity = @"No events";
+    }
+    NSLog(@"Event: %@", dailyActivity);
+    
+    //end stuff to automate event popup
+    
     NSString * str1 = @"";
     NSString * str2 = @"";
     NSString * str3 = @"";
     NSString * str4 = @"";
-//    NSString * str5 = @"";
-//    NSString * str6 = @"";
-//    NSString * str7 = @"";
-//    NSString * str8 = @"";
-//    NSString * str9 = @"";
-//    NSString * str10 = @"";
     
     if (dateNum == 1) {
-        dailyActivity = @"There are no events scheduled for this Sunday.";
+        dailyActivity = @"There are no events scheduled for this day.";
     } else if (dateNum == 2) {
         str1 = @"Bowdoin Team Lift - Football";
         str2 = @"6:30a-8:00a in Lower Level Weightroom";
@@ -309,7 +321,7 @@ int calendarOriginY;
         
         dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
     } else if (dateNum == 7) {
-        dailyActivity = @"There are no events scheduled for this Saturday.";
+        dailyActivity = @"There are no events scheduled for this day.";
     }
     
     
@@ -333,8 +345,61 @@ int calendarOriginY;
 
 
 
--(void)grabData{//get data from your database system
+-(void)grabData{
+    NSString * str1 = @"";
+    NSString * str2 = @"";
+    NSString * str3 = @"";
+    NSString * str4 = @"";
     
+    for (int i = 1; i < 8; i++) {
+        if (i == 1) {
+            dailyActivity = @"There are no events scheduled for this day.";
+        } else if (i == 2) {
+            str1 = @"Bowdoin Team Lift - Football";
+            str2 = @"6:30a-8:00a in Lower Level Weightroom";
+            
+            str3 = @"Buti Yoga - Tanya Grigsby";
+            str4 = @"6:30p-7:30p in Buck Room 213";
+            dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+        } else if (i == 3) {
+            str1 = @"Tai Chi - Ken Ryan";
+            str2 = @"12:00p-1:00p in Buck Room 301";
+            
+            str3 = @"Meditation - Bernie Hershberger";
+            str4 = @"4:30p-5:15p in Buck Room 302";
+            
+            dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+        } else if (i == 4) {
+            str1 = @"Cardio Kickboxing - Justine Chabot";
+            str2 = @"6:45a-7:30a in Buck Room 213";
+            
+            str3 = @"Yin Yoga - Lucretia Woodruf";
+            str4 = @"6:00p-7:00p in Buck Room 301";
+            
+            dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+        } else if (i == 5) {
+            str1 = @"Speed Training - Neil Willey";
+            str2 = @"6:00a-7:00a in Morrell Gym";
+            
+            str3 = @"ZUMBA® Fitness - Bea Blakemore";
+            str4 = @"5:15p-6:00p in Buck Room 213";
+            
+            dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+        } else if (i == 6) {
+            str1 = @"Mat Pilates - Cindy Carraway-Wilson";
+            str2 = @"12:00p-12:45p in Buck Room 301";
+            
+            str3 = @"Bowdoin Team Lift - Men's Soccer";
+            str4 = @"3:00p-4:30p in Lower Level Weightroom";
+            
+            dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
+        } else if (i == 7) {
+            dailyActivity = @"There are no events scheduled for this day.";
+        }
+        NSString *event = dailyActivity;
+        NSNumber *date = [NSNumber numberWithInteger:i + 1];
+        [eventDict setObject:dailyActivity forKey:date];//get data from your database system
+    }
     
     /*
      PFUser *currentUser = [PFUser currentUser];

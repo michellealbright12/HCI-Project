@@ -18,6 +18,7 @@ extern NSString * dailyActivities;
 extern NSString * popup_Label;
 extern NSString * monthName;
 extern NSMutableDictionary * dict;
+extern int numEvents;
 
 @interface ProfileViewController : UIViewController {
     UserInfo *user;

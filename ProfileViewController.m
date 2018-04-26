@@ -31,6 +31,7 @@ NSString * monthName;
 NSMutableDictionary * dict;
 int calendarY;
 int yValue;
+int numEvents;
 
 @implementation ProfileViewController;
 @synthesize monthlyView;
@@ -54,6 +55,7 @@ int yValue;
     [self grabData];
     [self myCalendarView];
     dict = [NSMutableDictionary dictionary];
+    int numEvents = 0;
     NSLog(@"%@", dict);
     self.navigationItem.hidesBackButton = YES;
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
@@ -142,6 +144,13 @@ int yValue;
     
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"view will Appear");
+    [self moreDateInfo];
+}
+
 -(void)moreDateInfo{
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
@@ -201,35 +210,21 @@ int yValue;
         [addProject addTarget:self action:@selector(popupInformation:) forControlEvents:UIControlEventTouchUpInside];
         [addProject setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         addProject.tag = popInt;
+        addProject.backgroundColor = [UIColor grayColor];
         
-        
-        //if you are using a database this section checks to see if
-        //a certain criteria is met. If so, you can give the button a different background color.
-        BOOL match=NO;
-        
-        for(int parseNum=0; parseNum<created_At.count; parseNum++){
-            //Break Down date from Parse
-            NSDate * parseDate = created_At[parseNum];
-            NSDateComponents * parseComp = [gregorian components:NSCalendarUnitMonth fromDate:parseDate];
-            int parseMonth=(int)[parseComp month];
-            int parseYear=(int)[[[NSCalendar currentCalendar]components:NSCalendarUnitYear fromDate:parseDate] year];
-            
-            int parseDay= (int)[[[NSCalendar currentCalendar]components:NSCalendarUnitDay fromDate:parseDate] day];
-            
-            
-            if((parseYear==this_Year) && (parseMonth==this_Month) && (parseDay==startD)){
-                match=YES;
-                if([had_Session[parseNum] isEqual:@"YES"])
-                    addProject.backgroundColor = [UIColor redColor];
-                else
-                    addProject.backgroundColor = [UIColor greenColor];
-                
-                NSLog(@"Match %d", startD);
+        for (id key in dict) {
+            NSLog(@"key: %@", key);
+            NSDate *eventDate = [dict objectForKey:key];
+            NSLog(@"eventDate: %@", eventDate);
+            NSDateComponents *dictComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:eventDate];
+            NSInteger day = [dictComponents day];
+            NSInteger month = [dictComponents month];
+            NSInteger year = [dictComponents year];
+            if (day == startD && month == this_Month && year == this_Year) {
+                addProject.backgroundColor = [UIColor colorWithRed:0.04 green:0.85 blue:0.36 alpha:1.0];
             }
         }
-        if(match==NO)
-            addProject.backgroundColor = [UIColor grayColor];
-        
+
         
         [self.view addSubview:addProject];
     }
@@ -304,131 +299,14 @@ int yValue;
     [self presentPopupViewController:detailViewController animationType:MJPopupViewAnimationFade];
     
     
-    
-//    NSString * str1 = @"";
-//    NSString * str2 = @"";
-//    NSString * str3 = @"";
-//    NSString * str4 = @"";
-//    NSString * str5 = @"";
-//    NSString * str6 = @"";
-//    NSString * str7 = @"";
-//    NSString * str8 = @"";
-//    NSString * str9 = @"";
-//    NSString * str10 = @"";
-//
-//    if (dateNums == 1) {
-//        dailyActivity = @"There are no events scheduled for this Sunday.";
-//    } else if (dateNums == 2) {
-//        str1 = @"Bowdoin Team Lift - Football";
-//        str2 = @"6:30a-8:00a in Lower Level Weightroom";
-//
-//        str3 = @"Buti Yoga - Tanya Grigsby";
-//        str4 = @"6:30p-7:30p in Buck Room 213";
-//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-//    } else if (dateNums == 3) {
-//        str1 = @"Tai Chi - Ken Ryan";
-//        str2 = @"12:00p-1:00p in Buck Room 301";
-//
-//        str3 = @"Meditation - Bernie Hershberger";
-//        str4 = @"4:30p-5:15p in Buck Room 302";
-//
-//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-//    } else if (dateNums == 4) {
-//        str1 = @"Cardio Kickboxing - Justine Chabot";
-//        str2 = @"6:45a-7:30a in Buck Room 213";
-//
-//        str3 = @"Yin Yoga - Lucretia Woodruf";
-//        str4 = @"6:00p-7:00p in Buck Room 301";
-//
-//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-//    } else if (dateNums == 5) {
-//        str1 = @"Speed Training - Neil Willey";
-//        str2 = @"6:00a-7:00a in Morrell Gym";
-//
-//        str3 = @"ZUMBA® Fitness - Bea Blakemore";
-//        str4 = @"5:15p-6:00p in Buck Room 213";
-//
-//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-//    } else if (dateNums == 6) {
-//        str1 = @"Mat Pilates - Cindy Carraway-Wilson";
-//        str2 = @"12:00p-12:45p in Buck Room 301";
-//
-//        str3 = @"Bowdoin Team Lift - Men's Soccer";
-//        str4 = @"3:00p-4:30p in Lower Level Weightroom";
-//
-//        dailyActivity = [NSString stringWithFormat:@"%@\n%@\n\n%@\n%@", str1, str2, str3, str4];
-//    } else if (dateNums == 7) {
-//        dailyActivity = @"There are no events scheduled for this Saturday.";
-//    }
-
-    
-    
-    
 }
 
 
 -(void)grabData{//get data from your database system
     
     
-    /*
-     PFUser *currentUser = [PFUser currentUser];
-     if (currentUser) {
-     // do stuff with the user
-     NSLog(@"I AM LOGGED IN NOW!");
-     //see if you have a score saved yet
-     NSString * un;
-     un=[NSString stringWithFormat:@"%@",[[PFUser currentUser]valueForKey:@"username"]];
-     //search for user
-     PFQuery *query = [PFQuery queryWithClassName:@"checkins"];
-     [query whereKey:@"username" equalTo:un];
-     //query desc by created at
-     [query findObjectsInBackgroundWithBlock:^(NSArray *  checkins, NSError *error) {
-     
-     
-     if (!error) {//You do have data in the databse - let's see if it's current
-     
-     
-     created_At = [checkins valueForKey:@"created_At"];
-     
-     [self myCalView];//call to show the calendar
-     
-     }else{//You don't have any data saved in the database yet-----------------------
-     NSLog(@"NO Good");//no data
-     [self myCalView];//still show calendar
-     }
-     }];
-     
-     
-     } else {
-     // show the signup or login screen
-     NSLog(@"I AM not LOGGED IN!!!");//*********************************************
-     
-     
-     
-     }
-     
-     */
 }
 
-/*
- NSDate *now = [NSDate date];
- NSCalendar *calendar = [[NSCalendar alloc]
- initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
- NSCalendarUnit units = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay;
- NSDateComponents *components = [calendar components:units fromDate:now];
- 
- NSLog(@"Day: %ld", [components day]);
- NSLog(@"Month: %ld", [components month]);
- NSLog(@"Year: %ld", [components year]);
- 
- 
- 
- */
-
-/*
- NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
- weekday = [comps weekday];
- */
 
 
 
