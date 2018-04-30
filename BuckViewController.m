@@ -47,7 +47,7 @@ int calendarOriginX;
 - (void)viewDidLoad {
     
     calendarOriginY = monthly.frame.origin.y;
-    calendarOriginX = calendarSun.frame.origin.x + 14;
+    calendarOriginX = calendarSun.frame.origin.x - 3;
     yVal= calendarOriginY - 5;
     [super viewDidLoad];
     eventDict = [NSMutableDictionary dictionary];
