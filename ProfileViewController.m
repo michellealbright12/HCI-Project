@@ -250,7 +250,7 @@ int calendarX;
 
 /*
  Method that is called from the day button
- the ID of the button is recorded and it's current value can
+ the ID of the button is recorded and its current value can
  be used with thisMonth and thisYear to get the date cooresponding to the button clicked
  This date is saved to the parseSpot3 variable which can be accessed from the popup View
  This way we can use the date to grab further information if we need to

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="4352" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +30,6 @@
                 <navigationController id="CEp-Fw-AeS" userLabel="Other Resources" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Other Resources" image="Selfcare" id="S3m-ND-q8L" userLabel="Other Resources"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AB0-I3-gxC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1134,7 +1133,7 @@ Friday 8:30a-5p</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. Monday 8-10, Tuesday 1-3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDX-At-qIw">
-                                <rect key="frame" x="76.5" y="353.5" width="221" height="30"/>
+                                <rect key="frame" x="76.5" y="354" width="221" height="30"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1154,7 +1153,7 @@ Friday 8:30a-5p</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woO-Vx-3e1">
-                                <rect key="frame" x="27.5" y="208.5" width="320" height="95"/>
+                                <rect key="frame" x="27.5" y="208" width="320" height="95"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko2-Ew-RAE">
                                 <rect key="frame" x="0.0" y="104" width="375" height="24"/>
@@ -1586,6 +1585,9 @@ Friday 8:30a-5p</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-kO-LZa">
                                 <rect key="frame" x="228" y="544" width="45" height="30"/>
                                 <state key="normal" title="Delete"/>
+                                <connections>
+                                    <segue destination="Pl0-Q1-G0h" kind="show" id="AKP-R6-h49"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1980,6 +1982,35 @@ exciting and unique moves you will have fun while getting fit. </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdj-h8-Uyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3604" y="-256.82158920539734"/>
+        </scene>
+        <!--Delete Event-->
+        <scene sceneID="hHs-de-3oz">
+            <objects>
+                <viewController id="Pl0-Q1-G0h" customClass="DeleteEvent" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rts-ya-7d3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete Event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQj-b2-5IE">
+                                <rect key="frame" x="0.0" y="100" width="375" height="24"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ClarikaGeometric-Bold" family="Clarika Geometric" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wQj-b2-5IE" firstAttribute="leading" secondItem="9Uv-Kf-b9T" secondAttribute="leading" id="0aD-Fg-PW9"/>
+                            <constraint firstItem="wQj-b2-5IE" firstAttribute="top" secondItem="9Uv-Kf-b9T" secondAttribute="top" constant="36" id="70Z-ub-8Yd"/>
+                            <constraint firstItem="wQj-b2-5IE" firstAttribute="centerX" secondItem="9Uv-Kf-b9T" secondAttribute="centerX" id="ZQl-v7-PE3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Uv-Kf-b9T"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsn-oL-M3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4229.6000000000004" y="-965.21739130434787"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MfZ-gP-aCq">
@@ -2381,7 +2412,6 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Health Center" image="HealthCenter" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sWw-1Y-Jdc">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2400,7 +2430,6 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Buck Fitness" image="Buck" id="FJH-QX-oMf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pDJ-Vk-g5e">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2419,7 +2448,6 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Counseling Center" image="Counseling" id="QYD-Yh-xiK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z9x-EH-FcZ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2438,7 +2466,6 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
                     <tabBarItem key="tabBarItem" title="Profile" image="profileIcon" id="Sur-1o-B6K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wje-iO-uos">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

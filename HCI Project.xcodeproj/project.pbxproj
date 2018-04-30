@@ -98,6 +98,7 @@
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
 		3CFEFB232072A6F2004B2654 /* LoginSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB222072A6F2004B2654 /* LoginSegue.m */; };
+		A9ED60802096F75B00B1B5C5 /* DeleteEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = A9ED607F2096F75B00B1B5C5 /* DeleteEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,8 @@
 		3CFEFB1F2071E8BA004B2654 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		3CFEFB212072A6F2004B2654 /* LoginSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginSegue.h; sourceTree = "<group>"; };
 		3CFEFB222072A6F2004B2654 /* LoginSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginSegue.m; sourceTree = "<group>"; };
+		A9ED607E2096F75B00B1B5C5 /* DeleteEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteEvent.h; sourceTree = "<group>"; };
+		A9ED607F2096F75B00B1B5C5 /* DeleteEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,8 +289,11 @@
 				0A8771B7206AE4B200EEA672 /* BuckViewController.m */,
 				0AE7001F208909B80048FFC9 /* AddEvent.h */,
 				0AE70020208909B80048FFC9 /* AddEvent.m */,
+				A9ED607E2096F75B00B1B5C5 /* DeleteEvent.h */,
+				A9ED607F2096F75B00B1B5C5 /* DeleteEvent.m */,
 				3CFEFB1B20717A35004B2654 /* ProfileViewController.h */,
 				3CFEFB1C20717A35004B2654 /* ProfileViewController.m */,
+				0A87718C20696E4100EEA672 /* Main.storyboard */,
 				0A8771B8206AE4B200EEA672 /* MJDetailViewController.h */,
 				0A8771B9206AE4B200EEA672 /* MJDetailViewController.m */,
 				0A8771BA206AE4B200EEA672 /* MJDetailViewController.xib */,
@@ -310,7 +316,6 @@
 				0A9B59E5206DA46100B09F2A /* RequestAppointmentCounseling.m */,
 				0A87718920696E4100EEA672 /* HealthCenterViewController.h */,
 				0A87718A20696E4100EEA672 /* HealthCenterViewController.m */,
-				0A87718C20696E4100EEA672 /* Main.storyboard */,
 				0A9B59F32073C3DB00B09F2A /* OtherResourcesViewController.h */,
 				0A9B59F42073C3DB00B09F2A /* OtherResourcesViewController.m */,
 				0A9B59F02073B2BD00B09F2A /* PeerHealthViewController.h */,
@@ -619,6 +624,7 @@
 			files = (
 				0A9B59EC2073232D00B09F2A /* MulticulturalViewController.m in Sources */,
 				0A9B59D7206BCA1B00B09F2A /* RequestAppointmentHealth.m in Sources */,
+				A9ED60802096F75B00B1B5C5 /* DeleteEvent.m in Sources */,
 				0A87718B20696E4100EEA672 /* HealthCenterViewController.m in Sources */,
 				0A9B59F52073C3DB00B09F2A /* OtherResourcesViewController.m in Sources */,
 				0A87718520696E4100EEA672 /* AppDelegate.m in Sources */,
