@@ -28,19 +28,21 @@ NSString *buttonKey;
 
 - (void)keep{
     // write your implementation for cancel button here.
-    NSLog(@"You decided to keep it, eh?");
+    NSLog(@"Keeping the selected event");
 }
 
 - (void)delete{
     //write your implementation for ok button here
     //[dict removeObjectForKey:buttonKey];
     //NSMutableDictionary *newDict = dict;
-    for (id key in dict) {
-        //id anObject = [newDict objectForKey:key];
-
-            [dict removeObjectForKey:key];
-    }
-    [self displayEvents];
+    
+    NSArray *brokenByLines = [buttonKey componentsSeparatedByString:@"\n"];
+    NSString *updatedKey = brokenByLines[0];
+    NSLog(@"Updated key: %@", updatedKey);
+    
+    [dict removeObjectForKey:updatedKey];
+    NSLog(@"%@", dict);
+    //[self displayEvents];
 }
 
 - (void)buttonPressed:(UIButton *)button {
