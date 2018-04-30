@@ -37,9 +37,8 @@ NSString *buttonKey;
     //NSMutableDictionary *newDict = dict;
     for (id key in dict) {
         //id anObject = [newDict objectForKey:key];
-        if(key == buttonKey){
+
             [dict removeObjectForKey:key];
-        }
     }
     [self displayEvents];
 }
