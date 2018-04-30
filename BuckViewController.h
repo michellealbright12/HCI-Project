@@ -16,6 +16,7 @@ extern NSInteger dateNum;
 extern NSString * dailyActivity;
 extern NSString * popupLabel;
 extern NSInteger popupDefinition;
+extern NSMutableDictionary * dict;
 
 
 @interface ViewController : UIViewController

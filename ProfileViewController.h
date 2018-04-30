@@ -18,9 +18,11 @@ extern NSString * dailyActivities;
 extern NSString * popup_Label;
 extern NSString * monthName;
 extern NSMutableDictionary * dict;
+extern int numEvents;
 
 @interface ProfileViewController : UIViewController {
     UserInfo *user;
+    
 }
 
 - (IBAction)nextAction:(id)sender;
@@ -29,6 +31,7 @@ extern NSMutableDictionary * dict;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIButton *prevBtn;
 @property (strong, nonatomic) IBOutlet UILabel *sunLabel;
+@property (strong, nonatomic) IBOutlet UIButton *deleteSubviews;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *firstNameLabel;

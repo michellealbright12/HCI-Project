@@ -39,9 +39,10 @@ NSDate *date;
         
     }
     else {
-        
+        numEvents++;
+        event = [NSString stringWithFormat:@"%@", event];
         [dict setObject:date forKey:event];
-        NSLog(@"%@", dict);
+        
         alert = [[UIAlertView alloc] initWithTitle:@"Event Added"
         message:nil
         delegate:self
@@ -51,6 +52,17 @@ NSDate *date;
     [alert show];
 
 }
+
+/*
+ - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+ NSString *buttonTitle = [alertView buttonTitleAtIndex:buttonIndex];
+ 
+ if ([buttonTitle isEqualToString:@"OK"]) {
+ 
+ [self performSegueWithIdentifier:@"foo" sender:nil];
+ 
+ }
+ }*/
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [datePicker resignFirstResponder];
