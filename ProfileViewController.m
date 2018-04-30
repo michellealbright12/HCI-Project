@@ -48,37 +48,6 @@ int calendarX;
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender; {
-//    NSLog(@"XXX HERE 1 XXX");
-//    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"LOGGEDIN"]){
-//        NSLog(@"XXX HERE 2 XXX");
-//        return false;
-//    }
-//    return true;
-//}
-
-//- (BOOL)canPerformUnwindSegueAction:(SEL)action
-//                 fromViewController:(UIViewController *)fromViewController
-//                         withSender:(id)sender; {
-//    NSLog(@"XXX HERE 1 XXX");
-//    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"LOGGEDIN"] == false){
-//        NSLog(@"XXX HERE 2 XXX");
-//        return NO;
-//    }
-//    return YES;
-//}
-
-//- (BOOL)canPerformUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender {
-//    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"LOGGEDIN"] == true) {
-//        return NO;
-//    }
-//    return YES;
-//}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"PREVENTUNWIND"];
-}
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -132,6 +101,7 @@ int calendarX;
 -(void) viewWillAppear:(BOOL)animated {
     [self removeTags];
     [self updateCalendarNow];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"PREVENTUNWIND"];
 }
 
 -(void) removeTags{
