@@ -94,6 +94,8 @@
 		0ACDD044207D1D4B00003988 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD002207D1D4B00003988 /* OpenSans-BoldItalic.ttf */; };
 		0ACDD045207D1D4B00003988 /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0ACDD003207D1D4B00003988 /* SourceSansPro-Black.otf */; };
 		0AE70021208909B80048FFC9 /* AddEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE70020208909B80048FFC9 /* AddEvent.m */; };
+		3C047E402097652D006D3600 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C047E3F2097652D006D3600 /* TabBarViewController.m */; };
+		3C6E620C2097927800DB7260 /* ProfileNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E620B2097927800DB7260 /* ProfileNavigationController.m */; };
 		3CFEFB1A207161D4004B2654 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB19207161D4004B2654 /* LoginViewController.m */; };
 		3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1C20717A35004B2654 /* ProfileViewController.m */; };
 		3CFEFB202071E8BA004B2654 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFEFB1F2071E8BA004B2654 /* UserInfo.m */; };
@@ -224,6 +226,10 @@
 		0ACDD003207D1D4B00003988 /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.otf"; sourceTree = "<group>"; };
 		0AE7001F208909B80048FFC9 /* AddEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddEvent.h; sourceTree = "<group>"; };
 		0AE70020208909B80048FFC9 /* AddEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddEvent.m; sourceTree = "<group>"; };
+		3C047E3E2097652D006D3600 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		3C047E3F2097652D006D3600 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		3C6E620A2097927800DB7260 /* ProfileNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileNavigationController.h; sourceTree = "<group>"; };
+		3C6E620B2097927800DB7260 /* ProfileNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileNavigationController.m; sourceTree = "<group>"; };
 		3CFEFB18207161D4004B2654 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		3CFEFB19207161D4004B2654 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		3CFEFB1B20717A35004B2654 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
@@ -305,6 +311,10 @@
 				3CFEFB19207161D4004B2654 /* LoginViewController.m */,
 				3CFEFB212072A6F2004B2654 /* LoginSegue.h */,
 				3CFEFB222072A6F2004B2654 /* LoginSegue.m */,
+				3C047E3E2097652D006D3600 /* TabBarViewController.h */,
+				3C047E3F2097652D006D3600 /* TabBarViewController.m */,
+				3C6E620A2097927800DB7260 /* ProfileNavigationController.h */,
+				3C6E620B2097927800DB7260 /* ProfileNavigationController.m */,
 				3CFEFB1E2071E8BA004B2654 /* UserInfo.h */,
 				3CFEFB1F2071E8BA004B2654 /* UserInfo.m */,
 				0A87718320696E4100EEA672 /* AppDelegate.h */,
@@ -490,7 +500,7 @@
 				TargetAttributes = {
 					0A87717C20696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = SPKL99M6VN;
+						DevelopmentTeam = 58KQWW3M7K;
 					};
 					0A87719820696E4100EEA672 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -622,6 +632,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C047E402097652D006D3600 /* TabBarViewController.m in Sources */,
 				0A9B59EC2073232D00B09F2A /* MulticulturalViewController.m in Sources */,
 				0A9B59D7206BCA1B00B09F2A /* RequestAppointmentHealth.m in Sources */,
 				A9ED60802096F75B00B1B5C5 /* DeleteEvent.m in Sources */,
@@ -639,6 +650,7 @@
 				3CFEFB232072A6F2004B2654 /* LoginSegue.m in Sources */,
 				0A8771C0206AE4B200EEA672 /* BuckViewController.m in Sources */,
 				3CFEFB1D20717A35004B2654 /* ProfileViewController.m in Sources */,
+				3C6E620C2097927800DB7260 /* ProfileNavigationController.m in Sources */,
 				0A8771C3206AE4B200EEA672 /* MJPopupBackgroundView.m in Sources */,
 				0A9B59E6206DA46100B09F2A /* RequestAppointmentCounseling.m in Sources */,
 				0A9B59EF2073AF9E00B09F2A /* SWAGController.m in Sources */,
@@ -798,12 +810,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SPKL99M6VN;
+				DEVELOPMENT_TEAM = 58KQWW3M7K;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"MTL_ENABLE_DEBUG_INFO[arch=*]" = default;
-				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project-Ian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -812,11 +824,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SPKL99M6VN;
+				DEVELOPMENT_TEAM = 58KQWW3M7K;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = "Systems.HCI-Project-Ian";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

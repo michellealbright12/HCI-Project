@@ -101,6 +101,7 @@ int calendarX;
 -(void) viewWillAppear:(BOOL)animated {
     [self removeTags];
     [self updateCalendarNow];
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"PREVENTUNWIND"];
 }
 
 -(void) removeTags{

@@ -1407,10 +1407,10 @@ healthservices@bowdoin.edu</string>
             </objects>
             <point key="canvasLocation" x="2780" y="418.74062968515744"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -2505,7 +2505,7 @@ Additionally, Neil Willey, Head Coach of Strength and Conditioning, will be avai
         <!--Profile-->
         <scene sceneID="R7m-CL-eKs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TCs-a4-DYe" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TCs-a4-DYe" customClass="ProfileNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="profileIcon" id="Sur-1o-B6K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wje-iO-uos">
