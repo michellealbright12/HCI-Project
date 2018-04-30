@@ -42,14 +42,15 @@ NSString *buttonKey;
     
     [dict removeObjectForKey:updatedKey];
     NSLog(@"%@", dict);
-    //[self displayEvents];
+    [[self.view viewWithTag:updatedKey] removeFromSuperview];
+    [self displayEvents];
 }
 
 - (void)buttonPressed:(UIButton *)button {
     buttonKey = button.titleLabel.text;
     NSLog(@"Button Pressed. Key = %@", buttonKey);
     
-    UIAlertController * del_alert = [UIAlertController
+    UIAlertController* del_alert = [UIAlertController
                                
                                alertControllerWithTitle:@"Delete Event" message:@"Are you sure you wish to delete this event?"preferredStyle:UIAlertControllerStyleAlert];
     
@@ -105,6 +106,7 @@ NSString *buttonKey;
     //Creates the buttons and gives them each a tag (id)
     for (id key in dict) {
         UIButton *showEvent = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+        
         int y_coord = (curr_count * 70) + start_Y;
         
         curr_count++;
@@ -132,7 +134,7 @@ NSString *buttonKey;
         [showEvent setTitle:[NSString stringWithFormat: @"%@\n%@", eventName, timeString] forState:UIControlStateNormal];
         [showEvent setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         showEvent.backgroundColor = [UIColor grayColor];
-        
+        showEvent.tag = eventName;
         [self.view addSubview:showEvent];
     }
     

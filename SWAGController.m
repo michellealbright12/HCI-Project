@@ -57,7 +57,9 @@
     }];
 }
 
-
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (IBAction)staffPopup:(id)sender {
     NSString *leanaAmaezTitle = @"Leana Amaez: Associate Dean of Students for Diversity and Inclusion and Co-director of the Sexuality, Women and Gender Center";
