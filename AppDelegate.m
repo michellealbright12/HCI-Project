@@ -23,6 +23,8 @@
     [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
+    [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"PREVENTUNWIND"];
+    
     // Override point for customization after application launch.
     return YES;
 }
