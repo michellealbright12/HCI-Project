@@ -47,14 +47,27 @@ int calendarOriginX;
 - (void)viewDidLoad {
     
     calendarOriginY = monthly.frame.origin.y;
-    calendarOriginX = calendarSun.frame.origin.x - 3;
+    calendarOriginX = prevLabel.frame.origin.x;
+    NSLog(@"%d", calendarOriginX);
     yVal= calendarOriginY - 5;
+   
     [super viewDidLoad];
     eventDict = [NSMutableDictionary dictionary];
-    NSLog(@"%@", eventDict);
     
+    int screenHeight = (int) [[UIScreen mainScreen] nativeBounds].size.width;
+    //fixes bug with calendar positioning on diff sized phones
+    switch (screenHeight) {
+        case 1242:
+            calendarOriginX = calendarOriginX + 19;
+            break;
+        case 1125:
+            yVal = yVal + 25;
+            break;
+        default:
+            break;
+    }
     [self grabData];
-    [self myCalView];//don't need if you're using parse. You will call from grabData method
+    [self myCalView];
 }
 
 //Next and previous buttons
@@ -118,7 +131,7 @@ int calendarOriginX;
 
 
 
--(void)updateCalNow{// try to condense this so only one method is used instead of two
+-(void)updateCalNow{
     if(thisMonth>12){
         thisMonth=1;
         thisYear++;
@@ -156,7 +169,6 @@ int calendarOriginX;
     int newWeekDay=weekday-1;//make weekday zero based
     
     //coordinates for displaying the buttons
-    //int calendarOriginX = calendarSun.frame.origin.x -5;
     int yCount=1;
     
     

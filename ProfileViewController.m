@@ -55,15 +55,27 @@ int calendarX;
     calendarY = y - 11;
     x = sunLabel.frame.origin.x;
     //x = 75;
-    calendarX = x + 13;
+    calendarX = x - 3;
     NSLog(@"x origin: %d",x);
     yValue = calendarY + prevBtn.frame.size.height;
+    
+    int screenHeight = (int) [[UIScreen mainScreen] nativeBounds].size.width;
+    //fixes bug with calendar positioning on diff sized phones
+    switch (screenHeight) {
+        case 1242:
+            calendarX = calendarX + 19;
+            break;
+        case 1125:
+            yValue = yValue + 25;
+            break;
+        default:
+            break;
+    }
 
     //[self grabData];
     [self myCalendarView];
     dict = [NSMutableDictionary dictionary];
     int numEvents = 0;
-    NSLog(@"%@", dict);
     self.navigationItem.hidesBackButton = YES;
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"LOGGEDIN"];
     user = [[UserInfo alloc] initWithFirstName:@"John" withLastName:@"Smith" withIdNum:@"B1111"];

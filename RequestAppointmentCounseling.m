@@ -65,7 +65,7 @@ MFMailComposeViewController *createEmail;
         createEmail = [[MFMailComposeViewController alloc] init];
         createEmail.mailComposeDelegate = self;
         [createEmail setSubject:@"Appointment Request"];
-        [createEmail setToRecipients:@[@"malbrigh@bowdoin.edu"]];
+        [createEmail setToRecipients:@[@"ljacobs@bowdoin.edu"]];
         [createEmail setMessageBody: msgBody isHTML:NO];
         [self presentViewController:createEmail animated:YES completion:nil];
     } else {

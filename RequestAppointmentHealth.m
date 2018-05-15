@@ -110,7 +110,7 @@ MFMailComposeViewController *mailComposer;
         mailComposer = [[MFMailComposeViewController alloc] init];
         mailComposer.mailComposeDelegate = self;
         [mailComposer setSubject:@"Appointment Request"];
-        [mailComposer setToRecipients:@[@"malbrigh@bowdoin.edu"]];
+        [mailComposer setToRecipients:@[@"healthservices@bowdoin.edu"]];
         [mailComposer setMessageBody: msgBody isHTML:NO];
         [self presentViewController:mailComposer animated:YES completion:nil];
     } else {
